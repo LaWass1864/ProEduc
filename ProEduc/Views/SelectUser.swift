@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct selectuser: View {
+struct SelectUser: View {
     var body: some View {
         NavigationView {
             ZStack(){
@@ -77,5 +77,5 @@ struct selectuser: View {
 }
 
 #Preview {
-    selectuser()
+    SelectUser()
 }

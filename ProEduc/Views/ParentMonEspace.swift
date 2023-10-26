@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct monEspaceParent: View {
+struct ParentMonEspace: View {
     var body: some View {
         NavigationView {
             //Back en doublon
@@ -32,7 +32,7 @@ struct monEspaceParent: View {
                 NavigationLink(destination: ParentDeclaAbsence()) {
                     Text("Déclaration d'absence")
                 }
-                NavigationLink(destination: docPageParent()) {
+                NavigationLink(destination: ParentListDoc()) {
                     Text("Les documents")
                 }
             } .scrollContentBackground(.hidden)
@@ -43,6 +43,6 @@ struct monEspaceParent: View {
 }
 
 #Preview {
-    monEspaceParent()
+    ParentMonEspace()
 }
 

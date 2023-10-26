@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct docEleve: View {
+struct EleveListDoc: View {
     var body: some View {
         
         ZStack{
@@ -31,16 +31,16 @@ struct docEleve: View {
 struct ExtractedView: View {
     var body: some View {
         List{
-            NavigationLink(destination: besoinAide()) {
+            NavigationLink(destination: EleveBesoinAide()) {
                 Text("Attestation maladie")
             }
-            NavigationLink(destination: besoinAide()) {
+            NavigationLink(destination: EleveBesoinAide()) {
                 Text("Justificatif de domicile")
             }
-            NavigationLink(destination:besoinAide ()) {
+            NavigationLink(destination:EleveBesoinAide ()) {
                 Text("Documents tiers")
             }
-            NavigationLink(destination: besoinAide()) {
+            NavigationLink(destination: EleveBesoinAide()) {
                 Text("Les cartes")
             }
         }
@@ -51,6 +51,6 @@ struct ExtractedView: View {
 
 
 #Preview {
-    docEleve()
+    EleveListDoc()
 }
 

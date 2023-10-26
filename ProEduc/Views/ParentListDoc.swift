@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct docPageParent: View {
+struct ParentListDoc: View {
     var body: some View {
         
         ZStack{
@@ -27,30 +27,30 @@ struct docPageParent: View {
                         )
                     VStack{
                         List {
-                            NavigationLink(destination: ajouterDocParent()) {
+                            NavigationLink(destination: ParentAjoutDoc()) {
                                 
                                 Image(systemName: "bandage")
                                     .foregroundColor(.green)
                                 Text("Certificat médical")
                                 
                             }
-                            NavigationLink(destination: ajouterDocParent()) {
+                            NavigationLink(destination: ParentAjoutDoc()) {
                                 Image(systemName: "house")
                                     .foregroundColor(.pink)
                                 Text("Justificatif de domicile")
                             }
-                            NavigationLink(destination: ajouterDocParent()) {
+                            NavigationLink(destination: ParentAjoutDoc()) {
                                 Image(systemName: "doc")
                                     .foregroundColor(.indigo)
                                 Text("Document tiers")
                                 
                             }
-                            NavigationLink(destination: ajouterDocParent()) {
+                            NavigationLink(destination: ParentAjoutDoc()) {
                                 Image(systemName: "ticket")
                                     .foregroundColor(.orange)
                                 Text("Cartes jeune")
                             }
-                            NavigationLink(destination: ajouterDocParent()) {
+                            NavigationLink(destination: ParentAjoutDoc()) {
                                 Image(systemName: "doc.viewfinder")
                                     .foregroundColor(.mint)
                                 Text("Les documents")
@@ -76,5 +76,5 @@ struct docPageParent: View {
 }
 
 #Preview {
-    docPageParent()
+    ParentListDoc()
 }

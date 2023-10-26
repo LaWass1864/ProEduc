@@ -1,7 +1,7 @@
 import SwiftUI
 import Foundation
 
-struct ProfilesView: View {
+struct EleveMonProfil: View {
     @State private var isDarkModeEnabled: Bool = false
     @State private var notificationEnabled: Bool = false
     
@@ -60,7 +60,7 @@ struct ProfilesView: View {
                     }
 
                     HStack{
-                        NavigationLink(destination:besoinAide()) {
+                        NavigationLink(destination:EleveBesoinAide()) {
                             Image(systemName: "book")
                             Text("FAQ")
                         }
@@ -98,5 +98,5 @@ struct ProfilesView: View {
 }
 
 #Preview {
-   ProfilesView()
+   EleveMonProfil()
 }

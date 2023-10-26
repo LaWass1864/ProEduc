@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ajouterDocParent: View {
+struct ParentAjoutDoc: View {
     // Déclaration State pour le toggle absence d'enfant
     @State private var studentAbsent = true
     // Input text nom de l'enfant
@@ -72,5 +72,5 @@ struct ajouterDocParent: View {
 }
 
 #Preview {
-    ajouterDocParent()
+    ParentAjoutDoc()
 }

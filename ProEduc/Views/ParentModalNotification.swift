@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WritingMessage: View {
+struct ParentModalNotification: View {
     
     @State private var messageTitle = ""
     @State private var newMessage = ""
@@ -29,30 +29,30 @@ struct WritingMessage: View {
                         .foregroundColor(.white)
                 )
             Section {
-                    TextField("Title", text: $messageTitle)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .border(Color.gray, width: 1)
-                    TextEditor(text: $newMessage)
-                        .frame(minHeight: 200)
-                        .border(Color.gray, width: 1)
-                    }.padding()
+                TextField("Title", text: $messageTitle)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .border(Color.gray, width: 1)
+                TextEditor(text: $newMessage)
+                    .frame(minHeight: 200)
+                    .border(Color.gray, width: 1)
+            }.padding()
             Spacer()
             
             Button("Envoyer") {
-//             action of the button
+                //             action of the button
                 print("Message sent:  \(messageTitle) , \(newMessage) ")
             }
-                .padding()
-                .background(Color.blue)
-                .foregroundColor(.white)
-                .cornerRadius(10)
-     .scrollContentBackground(.hidden)
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+            .scrollContentBackground(.hidden)
         }
-
-//        Spacer()
+        
+        //        Spacer()
     }
 }
 #Preview {
-    WritingMessage()
+    ParentModalNotification()
 }
 

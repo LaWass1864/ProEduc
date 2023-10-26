@@ -11,7 +11,7 @@ struct tabView: View {
     var body: some View {
         TabView{
             
-            monEspaceParent()
+            ParentMonEspace()
                 .tabItem {
                     Text("Mon espace")
                     Image(systemName: "folder")
@@ -19,7 +19,7 @@ struct tabView: View {
                         .frame(width:90,height:90)
                 }
             
-            docPageParent()
+            ParentListDoc()
                 .tabItem {
                     Text("Document")
                     Image(systemName: "square.and.pencil")

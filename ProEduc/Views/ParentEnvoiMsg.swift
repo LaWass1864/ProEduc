@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct envoiMsgprof: View {
+struct ParentEnvoiMsg: View {
     @State private var usernameChild = "Enfant 1"
     @State private var textAbsence = "Texte"
     @State private var profContact = "Mister DEBUISSY"
@@ -62,5 +62,5 @@ struct envoiMsgprof: View {
 }
 
 #Preview {
-    envoiMsgprof()
+    ParentEnvoiMsg()
 }

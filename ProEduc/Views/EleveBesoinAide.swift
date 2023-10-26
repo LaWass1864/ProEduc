@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct besoinAide: View {
+struct EleveBesoinAide: View {
     var body: some View {
         VStack {
         // Push content to the top
@@ -55,5 +55,5 @@ struct besoinAide: View {
 }
 
 #Preview {
-    besoinAide()
+    EleveBesoinAide()
 }

@@ -29,13 +29,13 @@ struct ParentAnnuaire: View {
                 
                 
                 List {
-                    NavigationLink(destination: ajouterDocParent()) {
+                    NavigationLink(destination: ParentAjoutDoc()) {
                         Text("Professeur de Francais")
                     }
-                    NavigationLink(destination: ajouterDocParent()) {
+                    NavigationLink(destination: ParentAjoutDoc()) {
                         Text("Professeur de mathématique")
                     }
-                    NavigationLink(destination: ajouterDocParent()) {
+                    NavigationLink(destination: ParentAjoutDoc()) {
                         Text("Professeur de SVT")
                     }
                 }

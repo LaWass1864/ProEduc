@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct contactProfesseur: View {
+struct ParentContactprof: View {
     
     // Input text nom de l'enfant
     @State var usernameChild: String = ""
@@ -51,5 +51,5 @@ struct contactProfesseur: View {
     }
 }
 #Preview {
-    contactProfesseur()
+    ParentContactprof()
 }

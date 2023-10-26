@@ -14,7 +14,7 @@
 
 import SwiftUI
 
-struct monEspaceEleve: View {
+struct EleveMonEspace: View {
     @State private var isDarkModeEnabled: Bool = false
     
     
@@ -29,7 +29,7 @@ struct monEspaceEleve: View {
                         Spacer()
                         
                         
-                        NavigationLink(destination:ProfilesView()) {
+                        NavigationLink(destination:EleveMonProfil()) {
                             VStack{
                                 Image(systemName: "person")
                                     .resizable()
@@ -128,5 +128,5 @@ struct monEspaceEleve: View {
 }
 
 #Preview {
-    monEspaceEleve()
+    EleveMonEspace()
 }

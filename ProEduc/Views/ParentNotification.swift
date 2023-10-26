@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct notificationView: View {
+struct ParentNotification: View {
     
     @State private var isWritingMessageViewPresented = false
     
@@ -22,10 +22,10 @@ var message = ["Message 1", "Message 2", "Message 3", "Message 4"]
 //                        Spacer()
                         RoundedRectangle(cornerRadius: 25)
                             .frame(width: 350.0, height: 120.0)
-                            .foregroundColor(Color(red: 0.013, green: 0.78, blue: 0.778))
+                            .foregroundColor(Color("greenParent"))
                             .padding(.top, 11.0)
                             .overlay(
-                                Text("Message")
+                                Text("Mes Notifications")
                                     .font(.largeTitle)
                                     .bold()
                                     .foregroundColor(.white)
@@ -50,7 +50,7 @@ var message = ["Message 1", "Message 2", "Message 3", "Message 4"]
                                 Text("Envoyer un message")
                             }
                             .sheet(isPresented: $isWritingMessageViewPresented) {
-                                WritingMessage()
+                                ParentModalNotification()
                             }
                             .padding()
                             .background(Color(red: -0.192, green: 0.857, blue: 0.048))
@@ -65,17 +65,17 @@ var message = ["Message 1", "Message 2", "Message 3", "Message 4"]
             }
         }
     }
-    struct MessageDetailView: View {
-        var message: String
-        var body: some View {
-            Text("selected message.")
-                .font(.headline)
-                .padding()
-        }
-    }
+//    struct MessageDetailView: View {
+//        var message: String
+//        var body: some View {
+//            Text("selected message.")
+//                .font(.headline)
+//                .padding()
+//        }
+//    }
 //}
-    struct NotificationView_Previews: PreviewProvider {
+    struct ParentNotification_Previews: PreviewProvider {
         static var previews: some View {
-            notificationView()
+            ParentNotification()
         }
     }
