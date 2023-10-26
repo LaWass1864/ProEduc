@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct monEspaceParent: View {
     var body: some View {
         NavigationView {
             //Back en doublon
@@ -43,6 +43,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    monEspaceParent()
 }
 
