@@ -12,6 +12,13 @@
 		9B3EE3CD2AEA66DF002ABAFB /* contactProfesseur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CA2AEA66DF002ABAFB /* contactProfesseur.swift */; };
 		9B3EE3CE2AEA66DF002ABAFB /* classeParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CB2AEA66DF002ABAFB /* classeParent.swift */; };
 		9B3EE3CF2AEA66DF002ABAFB /* contactImportant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CC2AEA66DF002ABAFB /* contactImportant.swift */; };
+		9B3EE3D12AEA67CF002ABAFB /* declarationAbsenceParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D02AEA67CF002ABAFB /* declarationAbsenceParent.swift */; };
+		9B3EE3D42AEA67E2002ABAFB /* docPageParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D22AEA67E2002ABAFB /* docPageParent.swift */; };
+		9B3EE3D52AEA67E2002ABAFB /* docEleve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D32AEA67E2002ABAFB /* docEleve.swift */; };
+		9B3EE3DA2AEA67F2002ABAFB /* envoiMsgprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D62AEA67F2002ABAFB /* envoiMsgprof.swift */; };
+		9B3EE3DB2AEA67F2002ABAFB /* monEspaceParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D72AEA67F2002ABAFB /* monEspaceParent.swift */; };
+		9B3EE3DC2AEA67F2002ABAFB /* monEspaceEleve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D82AEA67F2002ABAFB /* monEspaceEleve.swift */; };
+		9B3EE3DD2AEA67F2002ABAFB /* notificatioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D92AEA67F2002ABAFB /* notificatioView.swift */; };
 		9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F812AEA64770011A542 /* ProEducApp.swift */; };
 		9B807F842AEA64770011A542 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F832AEA64770011A542 /* ContentView.swift */; };
 		9B807F862AEA64790011A542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F852AEA64790011A542 /* Assets.xcassets */; };
@@ -24,6 +31,13 @@
 		9B3EE3CA2AEA66DF002ABAFB /* contactProfesseur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactProfesseur.swift; sourceTree = "<group>"; };
 		9B3EE3CB2AEA66DF002ABAFB /* classeParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classeParent.swift; sourceTree = "<group>"; };
 		9B3EE3CC2AEA66DF002ABAFB /* contactImportant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactImportant.swift; sourceTree = "<group>"; };
+		9B3EE3D02AEA67CF002ABAFB /* declarationAbsenceParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = declarationAbsenceParent.swift; sourceTree = "<group>"; };
+		9B3EE3D22AEA67E2002ABAFB /* docPageParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = docPageParent.swift; sourceTree = "<group>"; };
+		9B3EE3D32AEA67E2002ABAFB /* docEleve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = docEleve.swift; sourceTree = "<group>"; };
+		9B3EE3D62AEA67F2002ABAFB /* envoiMsgprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = envoiMsgprof.swift; sourceTree = "<group>"; };
+		9B3EE3D72AEA67F2002ABAFB /* monEspaceParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = monEspaceParent.swift; sourceTree = "<group>"; };
+		9B3EE3D82AEA67F2002ABAFB /* monEspaceEleve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = monEspaceEleve.swift; sourceTree = "<group>"; };
+		9B3EE3D92AEA67F2002ABAFB /* notificatioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificatioView.swift; sourceTree = "<group>"; };
 		9B807F7E2AEA64770011A542 /* ProEduc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProEduc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B807F812AEA64770011A542 /* ProEducApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProEducApp.swift; sourceTree = "<group>"; };
 		9B807F832AEA64770011A542 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,8 +78,15 @@
 				9B807F812AEA64770011A542 /* ProEducApp.swift */,
 				9B807F832AEA64770011A542 /* ContentView.swift */,
 				9B3EE3CB2AEA66DF002ABAFB /* classeParent.swift */,
+				9B3EE3D02AEA67CF002ABAFB /* declarationAbsenceParent.swift */,
 				9B3EE3CC2AEA66DF002ABAFB /* contactImportant.swift */,
 				9B3EE3CA2AEA66DF002ABAFB /* contactProfesseur.swift */,
+				9B3EE3D32AEA67E2002ABAFB /* docEleve.swift */,
+				9B3EE3D22AEA67E2002ABAFB /* docPageParent.swift */,
+				9B3EE3D62AEA67F2002ABAFB /* envoiMsgprof.swift */,
+				9B3EE3D82AEA67F2002ABAFB /* monEspaceEleve.swift */,
+				9B3EE3D72AEA67F2002ABAFB /* monEspaceParent.swift */,
+				9B3EE3D92AEA67F2002ABAFB /* notificatioView.swift */,
 				9B3EE3C82AEA66D4002ABAFB /* besoinAide.swift */,
 				9B3EE3C62AEA66C6002ABAFB /* ajouterDocParent.swift */,
 				9B807F852AEA64790011A542 /* Assets.xcassets */,
@@ -152,10 +173,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3EE3D42AEA67E2002ABAFB /* docPageParent.swift in Sources */,
+				9B3EE3DB2AEA67F2002ABAFB /* monEspaceParent.swift in Sources */,
+				9B3EE3DC2AEA67F2002ABAFB /* monEspaceEleve.swift in Sources */,
 				9B3EE3C72AEA66C6002ABAFB /* ajouterDocParent.swift in Sources */,
+				9B3EE3DA2AEA67F2002ABAFB /* envoiMsgprof.swift in Sources */,
 				9B807F842AEA64770011A542 /* ContentView.swift in Sources */,
+				9B3EE3D12AEA67CF002ABAFB /* declarationAbsenceParent.swift in Sources */,
 				9B3EE3C92AEA66D4002ABAFB /* besoinAide.swift in Sources */,
+				9B3EE3DD2AEA67F2002ABAFB /* notificatioView.swift in Sources */,
 				9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */,
+				9B3EE3D52AEA67E2002ABAFB /* docEleve.swift in Sources */,
 				9B3EE3CE2AEA66DF002ABAFB /* classeParent.swift in Sources */,
 				9B3EE3CD2AEA66DF002ABAFB /* contactProfesseur.swift in Sources */,
 				9B3EE3CF2AEA66DF002ABAFB /* contactImportant.swift in Sources */,
