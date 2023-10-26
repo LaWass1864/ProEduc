@@ -18,6 +18,7 @@ struct ParentAnnuaire: View {
 
     @State private var selectedFlavor: Flavor = .chocolate
     
+    
     var body: some View {
         
         NavigationView {
@@ -37,6 +38,7 @@ struct ParentAnnuaire: View {
                 }
                 
            // Ajouter un Picker pour selectionner un enfant
+                
                     List {
                         NavigationLink(destination: ParentAjoutDoc()) {
                             Text("Professeur de Francais")
