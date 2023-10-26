@@ -11,7 +11,7 @@ struct tabView: View {
     var body: some View {
         TabView{
             
-            ContentView()
+            monEspaceParent()
                 .tabItem {
                     Text("Mon espace")
                     Image(systemName: "folder")
@@ -24,17 +24,17 @@ struct tabView: View {
                     Text("Document")
                     Image(systemName: "square.and.pencil")
                 }
-            classeParent()
+            ParentAnnuaire()
                 .tabItem {
                     Text("Annuaire")
                     Image(systemName: "person.3")
                 }
-            declarationAbsenceParent()
+            ParentDeclaAbsence()
                 .tabItem {
                     Text("Messagerie")
                     Image(systemName: "bell.and.waves.left.and.right")
                 }
-            contactImportant()
+            EleveContactImportant()
                 .tabItem {
                     Text("Messagerie")
                     Image(systemName: "bell.and.waves.left.and.right")

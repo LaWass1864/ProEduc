@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct classeParent: View {
+struct ParentAnnuaire: View {
     var body: some View {
         // l'encadré va rester au dessus, et changer les pages sans les encadrés.
         NavigationView {
@@ -49,5 +49,5 @@ struct classeParent: View {
 
 
 #Preview {
-    classeParent()
+    ParentAnnuaire()
 }

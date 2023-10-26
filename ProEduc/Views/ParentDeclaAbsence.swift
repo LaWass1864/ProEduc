@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct declarationAbsenceParent: View {
+struct ParentDeclaAbsence: View {
     // Déclaration State pour le toggle absence d'enfant
     @State private var isToggled = false
     // Input text nom de l'enfant
@@ -80,5 +80,5 @@ struct declarationAbsenceParent: View {
     }
 
 #Preview {
-    declarationAbsenceParent()
+    ParentDeclaAbsence()
 }

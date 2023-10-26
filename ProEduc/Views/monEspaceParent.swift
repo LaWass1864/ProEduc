@@ -26,10 +26,10 @@ struct monEspaceParent: View {
             }
             
             List {
-                NavigationLink(destination: classeParent()) {
+                NavigationLink(destination: ParentAnnuaire()) {
                     Text("Classes")
                 }
-                NavigationLink(destination: declarationAbsenceParent()) {
+                NavigationLink(destination: ParentDeclaAbsence()) {
                     Text("Déclaration d'absence")
                 }
                 NavigationLink(destination: docPageParent()) {

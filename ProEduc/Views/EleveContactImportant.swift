@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct contactImportant: View {
+struct EleveContactImportant: View {
     var phoneNumber = "0662892341" // Numéro de téléphone
     
     var body: some View {
@@ -103,5 +103,5 @@ struct contactImportant: View {
 
 
 #Preview {
-    contactImportant()
+    EleveContactImportant()
 }

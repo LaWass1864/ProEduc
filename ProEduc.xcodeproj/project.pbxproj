@@ -10,9 +10,9 @@
 		9B3EE3C72AEA66C6002ABAFB /* ajouterDocParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C62AEA66C6002ABAFB /* ajouterDocParent.swift */; };
 		9B3EE3C92AEA66D4002ABAFB /* besoinAide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C82AEA66D4002ABAFB /* besoinAide.swift */; };
 		9B3EE3CD2AEA66DF002ABAFB /* contactProfesseur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CA2AEA66DF002ABAFB /* contactProfesseur.swift */; };
-		9B3EE3CE2AEA66DF002ABAFB /* classeParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CB2AEA66DF002ABAFB /* classeParent.swift */; };
-		9B3EE3CF2AEA66DF002ABAFB /* contactImportant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CC2AEA66DF002ABAFB /* contactImportant.swift */; };
-		9B3EE3D12AEA67CF002ABAFB /* declarationAbsenceParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D02AEA67CF002ABAFB /* declarationAbsenceParent.swift */; };
+		9B3EE3CE2AEA66DF002ABAFB /* ParentAnnuaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CB2AEA66DF002ABAFB /* ParentAnnuaire.swift */; };
+		9B3EE3CF2AEA66DF002ABAFB /* EleveContactImportant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */; };
+		9B3EE3D12AEA67CF002ABAFB /* ParentDeclaAbsence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D02AEA67CF002ABAFB /* ParentDeclaAbsence.swift */; };
 		9B3EE3D42AEA67E2002ABAFB /* docPageParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D22AEA67E2002ABAFB /* docPageParent.swift */; };
 		9B3EE3D52AEA67E2002ABAFB /* docEleve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D32AEA67E2002ABAFB /* docEleve.swift */; };
 		9B3EE3DA2AEA67F2002ABAFB /* envoiMsgprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D62AEA67F2002ABAFB /* envoiMsgprof.swift */; };
@@ -24,7 +24,6 @@
 		9B3EE3E32AEA6880002ABAFB /* WritingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E02AEA6880002ABAFB /* WritingMessage.swift */; };
 		9B3EE3E52AEA68A4002ABAFB /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E42AEA68A4002ABAFB /* tabView.swift */; };
 		9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F812AEA64770011A542 /* ProEducApp.swift */; };
-		9B807F842AEA64770011A542 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F832AEA64770011A542 /* ContentView.swift */; };
 		9B807F862AEA64790011A542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F852AEA64790011A542 /* Assets.xcassets */; };
 		9B807F892AEA64790011A542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F882AEA64790011A542 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -33,9 +32,9 @@
 		9B3EE3C62AEA66C6002ABAFB /* ajouterDocParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ajouterDocParent.swift; sourceTree = "<group>"; };
 		9B3EE3C82AEA66D4002ABAFB /* besoinAide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = besoinAide.swift; sourceTree = "<group>"; };
 		9B3EE3CA2AEA66DF002ABAFB /* contactProfesseur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactProfesseur.swift; sourceTree = "<group>"; };
-		9B3EE3CB2AEA66DF002ABAFB /* classeParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classeParent.swift; sourceTree = "<group>"; };
-		9B3EE3CC2AEA66DF002ABAFB /* contactImportant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactImportant.swift; sourceTree = "<group>"; };
-		9B3EE3D02AEA67CF002ABAFB /* declarationAbsenceParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = declarationAbsenceParent.swift; sourceTree = "<group>"; };
+		9B3EE3CB2AEA66DF002ABAFB /* ParentAnnuaire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentAnnuaire.swift; sourceTree = "<group>"; };
+		9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveContactImportant.swift; sourceTree = "<group>"; };
+		9B3EE3D02AEA67CF002ABAFB /* ParentDeclaAbsence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentDeclaAbsence.swift; sourceTree = "<group>"; };
 		9B3EE3D22AEA67E2002ABAFB /* docPageParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = docPageParent.swift; sourceTree = "<group>"; };
 		9B3EE3D32AEA67E2002ABAFB /* docEleve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = docEleve.swift; sourceTree = "<group>"; };
 		9B3EE3D62AEA67F2002ABAFB /* envoiMsgprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = envoiMsgprof.swift; sourceTree = "<group>"; };
@@ -48,7 +47,6 @@
 		9B3EE3E42AEA68A4002ABAFB /* tabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
 		9B807F7E2AEA64770011A542 /* ProEduc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProEduc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B807F812AEA64770011A542 /* ProEducApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProEducApp.swift; sourceTree = "<group>"; };
-		9B807F832AEA64770011A542 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9B807F852AEA64790011A542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B807F882AEA64790011A542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +62,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B3EE3E62AEA6963002ABAFB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9B807F812AEA64770011A542 /* ProEducApp.swift */,
+				9B3EE3E42AEA68A4002ABAFB /* tabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9B3EE3E72AEA697F002ABAFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B3EE3CB2AEA66DF002ABAFB /* ParentAnnuaire.swift */,
+				9B3EE3D02AEA67CF002ABAFB /* ParentDeclaAbsence.swift */,
+				9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */,
+				9B3EE3CA2AEA66DF002ABAFB /* contactProfesseur.swift */,
+				9B3EE3D32AEA67E2002ABAFB /* docEleve.swift */,
+				9B3EE3D22AEA67E2002ABAFB /* docPageParent.swift */,
+				9B3EE3D62AEA67F2002ABAFB /* envoiMsgprof.swift */,
+				9B3EE3D82AEA67F2002ABAFB /* monEspaceEleve.swift */,
+				9B3EE3D72AEA67F2002ABAFB /* monEspaceParent.swift */,
+				9B3EE3D92AEA67F2002ABAFB /* notificatioView.swift */,
+				9B3EE3DF2AEA6880002ABAFB /* ProfilesView.swift */,
+				9B3EE3DE2AEA6880002ABAFB /* selectUser.swift */,
+				9B3EE3E02AEA6880002ABAFB /* WritingMessage.swift */,
+				9B3EE3C82AEA66D4002ABAFB /* besoinAide.swift */,
+				9B3EE3C62AEA66C6002ABAFB /* ajouterDocParent.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9B807F752AEA64770011A542 = {
 			isa = PBXGroup;
 			children = (
@@ -83,24 +112,8 @@
 		9B807F802AEA64770011A542 /* ProEduc */ = {
 			isa = PBXGroup;
 			children = (
-				9B807F812AEA64770011A542 /* ProEducApp.swift */,
-				9B3EE3E42AEA68A4002ABAFB /* tabView.swift */,
-				9B807F832AEA64770011A542 /* ContentView.swift */,
-				9B3EE3CB2AEA66DF002ABAFB /* classeParent.swift */,
-				9B3EE3D02AEA67CF002ABAFB /* declarationAbsenceParent.swift */,
-				9B3EE3CC2AEA66DF002ABAFB /* contactImportant.swift */,
-				9B3EE3CA2AEA66DF002ABAFB /* contactProfesseur.swift */,
-				9B3EE3D32AEA67E2002ABAFB /* docEleve.swift */,
-				9B3EE3D22AEA67E2002ABAFB /* docPageParent.swift */,
-				9B3EE3D62AEA67F2002ABAFB /* envoiMsgprof.swift */,
-				9B3EE3D82AEA67F2002ABAFB /* monEspaceEleve.swift */,
-				9B3EE3D72AEA67F2002ABAFB /* monEspaceParent.swift */,
-				9B3EE3D92AEA67F2002ABAFB /* notificatioView.swift */,
-				9B3EE3DF2AEA6880002ABAFB /* ProfilesView.swift */,
-				9B3EE3DE2AEA6880002ABAFB /* selectUser.swift */,
-				9B3EE3E02AEA6880002ABAFB /* WritingMessage.swift */,
-				9B3EE3C82AEA66D4002ABAFB /* besoinAide.swift */,
-				9B3EE3C62AEA66C6002ABAFB /* ajouterDocParent.swift */,
+				9B3EE3E62AEA6963002ABAFB /* App */,
+				9B3EE3E72AEA697F002ABAFB /* Views */,
 				9B807F852AEA64790011A542 /* Assets.xcassets */,
 				9B807F872AEA64790011A542 /* Preview Content */,
 			);
@@ -192,17 +205,16 @@
 				9B3EE3DC2AEA67F2002ABAFB /* monEspaceEleve.swift in Sources */,
 				9B3EE3C72AEA66C6002ABAFB /* ajouterDocParent.swift in Sources */,
 				9B3EE3DA2AEA67F2002ABAFB /* envoiMsgprof.swift in Sources */,
-				9B807F842AEA64770011A542 /* ContentView.swift in Sources */,
-				9B3EE3D12AEA67CF002ABAFB /* declarationAbsenceParent.swift in Sources */,
+				9B3EE3D12AEA67CF002ABAFB /* ParentDeclaAbsence.swift in Sources */,
 				9B3EE3C92AEA66D4002ABAFB /* besoinAide.swift in Sources */,
 				9B3EE3DD2AEA67F2002ABAFB /* notificatioView.swift in Sources */,
 				9B3EE3E12AEA6880002ABAFB /* selectUser.swift in Sources */,
 				9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */,
 				9B3EE3D52AEA67E2002ABAFB /* docEleve.swift in Sources */,
 				9B3EE3E22AEA6880002ABAFB /* ProfilesView.swift in Sources */,
-				9B3EE3CE2AEA66DF002ABAFB /* classeParent.swift in Sources */,
+				9B3EE3CE2AEA66DF002ABAFB /* ParentAnnuaire.swift in Sources */,
 				9B3EE3CD2AEA66DF002ABAFB /* contactProfesseur.swift in Sources */,
-				9B3EE3CF2AEA66DF002ABAFB /* contactImportant.swift in Sources */,
+				9B3EE3CF2AEA66DF002ABAFB /* EleveContactImportant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
