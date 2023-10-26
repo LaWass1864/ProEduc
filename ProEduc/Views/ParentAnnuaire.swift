@@ -31,7 +31,7 @@ struct ParentAnnuaire: View {
                         .frame(width: 350, height: 120)
                         .padding(.all)
                     
-                    Text("Les classes")
+                    Text("Les classess")
                         .foregroundColor(.white)
                         .font(.system(size: 36))
                         .fontWeight(.bold)
