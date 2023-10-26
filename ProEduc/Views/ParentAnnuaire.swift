@@ -37,18 +37,23 @@ struct ParentAnnuaire: View {
                 }
                 
            // Ajouter un Picker pour selectionner un enfant
+                List{
+                    NavigationLink(destination: ParentAnnuaire())
+                    Text("1er Enfent")
                     List {
-                        NavigationLink(destination: ParentAjoutDoc()) {
-                            Text("Professeur de Francais")
-                        }
-                        NavigationLink(destination: ParentAjoutDoc()) {
-                            Text("Professeur de mathématique")
-                        }
-                        NavigationLink(destination: ParentAjoutDoc()) {
-                            Text("Professeur de SVT")
-                        }
-                    }
-                    
+                             NavigationLink(destination: ParentAjoutDoc()) {
+                                 Text("Professeur de Francais")
+                             }
+                             NavigationLink(destination: ParentAjoutDoc()) {
+                                 Text("Professeur de mathématique")
+                             }
+                             NavigationLink(destination: ParentAjoutDoc()) {
+                                 Text("Professeur de SVT")
+                             }
+                         }
+                    NavigationLink(destination: ParentAnnuaire())
+                    Text("2eme Enfent")
+                }
                 }
                 
             }
