@@ -9,25 +9,25 @@ import SwiftUI
 
 struct EleveListDoc: View {
     var body: some View {
-        
-        ZStack{
+        VStack{
+            ZStack{
+                
+                Rectangle()
+                    .cornerRadius(50)
+                    .frame(width:350, height: 100)
+                    .foregroundColor(Color("green_student"))
+                Text("Document")
+                    .font(.title)
+            }
             
-            Rectangle()
-                .cornerRadius(50)
-                .frame(width:350, height: 100)
-                .foregroundColor(Color("green_student"))
-            Text("Document")
-                .font(.title)
+            NavigationView {
+                ExtractedView()
+            }
+            
         }
-
-        NavigationView {
-            ExtractedView()
-        }
-
+        
     }
-
 }
-
 struct ExtractedView: View {
     var body: some View {
         List{

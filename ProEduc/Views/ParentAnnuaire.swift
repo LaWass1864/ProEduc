@@ -20,7 +20,7 @@ struct ParentAnnuaire: View {
     
     var body: some View {
         
-        NavigationView {
+        NavigationStack {
             
             VStack{
                 ZStack{
@@ -38,7 +38,7 @@ struct ParentAnnuaire: View {
                 
            // Ajouter un Picker pour selectionner un enfant
                     List {
-                        NavigationLink(destination: ParentAjoutDoc()) {
+                        NavigationLink(destination: ParentContactprof()) {
                             Text("Professeur de Francais")
                         }
                         NavigationLink(destination: ParentAjoutDoc()) {

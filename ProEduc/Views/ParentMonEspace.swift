@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ParentMonEspace: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             //Back en doublon
             // Encadré Mon espace
             VStack{
