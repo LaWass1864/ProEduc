@@ -27,6 +27,7 @@
 		9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F812AEA64770011A542 /* ProEducApp.swift */; };
 		9B807F862AEA64790011A542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F852AEA64790011A542 /* Assets.xcassets */; };
 		9B807F892AEA64790011A542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F882AEA64790011A542 /* Preview Assets.xcassets */; };
+		DF617C582AEAADD500D0D7BB /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF617C572AEAADD500D0D7BB /* Classes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		9B807F812AEA64770011A542 /* ProEducApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProEducApp.swift; sourceTree = "<group>"; };
 		9B807F852AEA64790011A542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B807F882AEA64790011A542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF617C572AEAADD500D0D7BB /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				9B3EE3D22AEA67E2002ABAFB /* ParentListDoc.swift */,
 				9B3EE3D62AEA67F2002ABAFB /* ParentEnvoiMsg.swift */,
 				9B3EE3D82AEA67F2002ABAFB /* EleveMonEspace.swift */,
+				DF617C572AEAADD500D0D7BB /* Classes.swift */,
 				9B3EE3D72AEA67F2002ABAFB /* ParentMonEspace.swift */,
 				9B3EE3D92AEA67F2002ABAFB /* EleveNotification.swift */,
 				9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */,
@@ -213,6 +216,7 @@
 				9B3EE3DD2AEA67F2002ABAFB /* EleveNotification.swift in Sources */,
 				9B3EE3E12AEA6880002ABAFB /* SelectUser.swift in Sources */,
 				9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */,
+				DF617C582AEAADD500D0D7BB /* Classes.swift in Sources */,
 				9B3EE3E92AEA75B8002ABAFB /* ParentNotification.swift in Sources */,
 				9B3EE3D52AEA67E2002ABAFB /* EleveListDoc.swift in Sources */,
 				9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */,

@@ -11,6 +11,7 @@ struct EleveMonProfil: View {
 
     
     var body: some View {
+        
         NavigationView {
             Form {
                 ZStack {
