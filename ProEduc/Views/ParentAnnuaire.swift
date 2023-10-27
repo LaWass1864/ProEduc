@@ -9,19 +9,18 @@
 import SwiftUI
 
 struct ParentAnnuaire: View {
-   
+    
     enum Flavor: String, CaseIterable, Identifiable {
         case chocolate, vanilla, strawberry
         var id: Self { self }
     }
-
-
+    
+    
     @State private var selectedFlavor: Flavor = .chocolate
     
     var body: some View {
         
         NavigationStack {
-            
             VStack{
                 ZStack{
                     
@@ -36,25 +35,25 @@ struct ParentAnnuaire: View {
                         .fontWeight(.bold)
                 }
                 
-           // Ajouter un Picker pour selectionner un enfant
-                    List {
-                        NavigationLink(destination: ParentContactprof()) {
-                            Text("Professeur de Francais")
-                        }
-                        NavigationLink(destination: ParentAjoutDoc()) {
-                            Text("Professeur de mathématique")
-                        }
-                        NavigationLink(destination: ParentAjoutDoc()) {
-                            Text("Professeur de SVT")
-                        }
+                // Ajouter un Picker pour selectionner un enfant
+                List {
+                    NavigationLink(destination: ParentContactprof()) {
+                        Text("Professeur de Francais")
                     }
-                    
+                    NavigationLink(destination: ParentAjoutDoc()) {
+                        Text("Professeur de mathématique")
+                    }
+                    NavigationLink(destination: ParentAjoutDoc()) {
+                        Text("Professeur de SVT")
+                    }
                 }
                 
             }
             
         }
+        
     }
+}
 
 
 #Preview {
