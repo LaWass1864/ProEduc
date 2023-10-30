@@ -24,6 +24,14 @@
 		9B3EE3E32AEA6880002ABAFB /* ParentModalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */; };
 		9B3EE3E52AEA68A4002ABAFB /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E42AEA68A4002ABAFB /* tabView.swift */; };
 		9B3EE3E92AEA75B8002ABAFB /* ParentNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */; };
+		9B3EE3EC2AEFAA39002ABAFB /* local.env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3EB2AEFAA39002ABAFB /* local.env.swift */; };
+		9B3EE3EF2AEFACFF002ABAFB /* EleveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3EE2AEFACFF002ABAFB /* EleveModel.swift */; };
+		9B3EE3F32AEFBD69002ABAFB /* QRCodeGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3F22AEFBD69002ABAFB /* QRCodeGenerate.swift */; };
+		9B3EE3F52AEFC456002ABAFB /* QrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3F42AEFC456002ABAFB /* QrCode.swift */; };
+		9B3EE3F72AF03622002ABAFB /* ParentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3F62AF03622002ABAFB /* ParentModel.swift */; };
+		9B3EE3F92AF0363F002ABAFB /* imagemodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3F82AF0363F002ABAFB /* imagemodel.swift */; };
+		9B3EE3FB2AF036D1002ABAFB /* APIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */; };
+		9B3EE3FD2AF03730002ABAFB /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3FC2AF03730002ABAFB /* UserListView.swift */; };
 		9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F812AEA64770011A542 /* ProEducApp.swift */; };
 		9B807F862AEA64790011A542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F852AEA64790011A542 /* Assets.xcassets */; };
 		9B807F892AEA64790011A542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F882AEA64790011A542 /* Preview Assets.xcassets */; };
@@ -47,6 +55,14 @@
 		9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModalNotification.swift; sourceTree = "<group>"; };
 		9B3EE3E42AEA68A4002ABAFB /* tabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
 		9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentNotification.swift; sourceTree = "<group>"; };
+		9B3EE3EB2AEFAA39002ABAFB /* local.env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = local.env.swift; sourceTree = "<group>"; };
+		9B3EE3EE2AEFACFF002ABAFB /* EleveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveModel.swift; sourceTree = "<group>"; };
+		9B3EE3F22AEFBD69002ABAFB /* QRCodeGenerate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerate.swift; sourceTree = "<group>"; };
+		9B3EE3F42AEFC456002ABAFB /* QrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCode.swift; sourceTree = "<group>"; };
+		9B3EE3F62AF03622002ABAFB /* ParentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentModel.swift; sourceTree = "<group>"; };
+		9B3EE3F82AF0363F002ABAFB /* imagemodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemodel.swift; sourceTree = "<group>"; };
+		9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestViewModel.swift; sourceTree = "<group>"; };
+		9B3EE3FC2AF03730002ABAFB /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		9B807F7E2AEA64770011A542 /* ProEduc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProEduc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B807F812AEA64770011A542 /* ProEducApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProEducApp.swift; sourceTree = "<group>"; };
 		9B807F852AEA64790011A542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,8 +108,30 @@
 				9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */,
 				9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */,
 				9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */,
+				9B3EE3F42AEFC456002ABAFB /* QrCode.swift */,
+				9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */,
+				9B3EE3FC2AF03730002ABAFB /* UserListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9B3EE3EA2AEFAA20002ABAFB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9B3EE3EB2AEFAA39002ABAFB /* local.env.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9B3EE3ED2AEFACE8002ABAFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B3EE3EE2AEFACFF002ABAFB /* EleveModel.swift */,
+				9B3EE3F22AEFBD69002ABAFB /* QRCodeGenerate.swift */,
+				9B3EE3F62AF03622002ABAFB /* ParentModel.swift */,
+				9B3EE3F82AF0363F002ABAFB /* imagemodel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9B807F752AEA64770011A542 = {
@@ -115,6 +153,8 @@
 		9B807F802AEA64770011A542 /* ProEduc */ = {
 			isa = PBXGroup;
 			children = (
+				9B3EE3ED2AEFACE8002ABAFB /* Models */,
+				9B3EE3EA2AEFAA20002ABAFB /* Helper */,
 				9B3EE3E62AEA6963002ABAFB /* App */,
 				9B3EE3E72AEA697F002ABAFB /* Views */,
 				9B807F852AEA64790011A542 /* Assets.xcassets */,
@@ -204,8 +244,12 @@
 				9B3EE3E52AEA68A4002ABAFB /* tabView.swift in Sources */,
 				9B3EE3D42AEA67E2002ABAFB /* ParentListDoc.swift in Sources */,
 				9B3EE3DB2AEA67F2002ABAFB /* ParentMonEspace.swift in Sources */,
+				9B3EE3F52AEFC456002ABAFB /* QrCode.swift in Sources */,
 				9B3EE3E32AEA6880002ABAFB /* ParentModalNotification.swift in Sources */,
+				9B3EE3F32AEFBD69002ABAFB /* QRCodeGenerate.swift in Sources */,
 				9B3EE3DC2AEA67F2002ABAFB /* EleveMonEspace.swift in Sources */,
+				9B3EE3FB2AF036D1002ABAFB /* APIRequestViewModel.swift in Sources */,
+				9B3EE3EF2AEFACFF002ABAFB /* EleveModel.swift in Sources */,
 				9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */,
 				9B3EE3DA2AEA67F2002ABAFB /* ParentEnvoiMsg.swift in Sources */,
 				9B3EE3D12AEA67CF002ABAFB /* ParentDeclaAbsence.swift in Sources */,
@@ -217,8 +261,12 @@
 				9B3EE3D52AEA67E2002ABAFB /* EleveListDoc.swift in Sources */,
 				9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */,
 				9B3EE3CE2AEA66DF002ABAFB /* ParentAnnuaire.swift in Sources */,
+				9B3EE3F72AF03622002ABAFB /* ParentModel.swift in Sources */,
+				9B3EE3EC2AEFAA39002ABAFB /* local.env.swift in Sources */,
 				9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */,
 				9B3EE3CF2AEA66DF002ABAFB /* EleveContactImportant.swift in Sources */,
+				9B3EE3F92AF0363F002ABAFB /* imagemodel.swift in Sources */,
+				9B3EE3FD2AF03730002ABAFB /* UserListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
