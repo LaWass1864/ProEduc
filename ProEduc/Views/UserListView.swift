@@ -10,13 +10,13 @@ import SwiftUI
 struct UserListView: View {
     
     //ici on lit la variable observer dans les vues enfants via le @EnvironmentObjet
-    @EnvironmentObject var EleveRequete: EleveAPIRequest
+    @EnvironmentObject var EleveRequete: EleveAPIRequestViewModel
     
     var body: some View {
         NavigationStack {
             LazyVStack {
                 ForEach(EleveRequete.allUser) { eleve in
-                    NavigationLink(destination: EleveDetail(Eleve: eleve), label: {
+                    NavigationLink(destination: EleveAPIRequestViewModel(Eleve: eleve), label: {
                         Text(Eleve.nom)
                     })
                    
