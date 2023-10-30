@@ -10,13 +10,6 @@ import SwiftUI
 
 struct ParentAnnuaire: View {
     
-    enum Flavor: String, CaseIterable, Identifiable {
-        case chocolate, vanilla, strawberry
-        var id: Self { self }
-    }
-    
-    
-    @State private var selectedFlavor: Flavor = .chocolate
     
     var body: some View {
         
