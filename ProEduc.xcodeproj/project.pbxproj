@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B10EADF2AEFC98800D23857 /* local.env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EADE2AEFC98800D23857 /* local.env.swift */; };
+		7B10EAE32AEFCAC700D23857 /* elevemodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAE22AEFCAC700D23857 /* elevemodel.swift */; };
+		7B10EAE52AEFF0A300D23857 /* imagemodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAE42AEFF0A300D23857 /* imagemodel.swift */; };
+		7B10EAE72AEFF45100D23857 /* ParentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAE62AEFF45100D23857 /* ParentModel.swift */; };
+		7B10EAE92AEFF99B00D23857 /* APIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAE82AEFF99B00D23857 /* APIRequestViewModel.swift */; };
+		7B10EAEB2AEFFCDB00D23857 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAEA2AEFFCDB00D23857 /* UserListView.swift */; };
+		7B10EAEF2AF0074800D23857 /* EleveAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAEE2AF0074800D23857 /* EleveAPIRequestViewModel.swift */; };
 		9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */; };
 		9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */; };
 		9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */; };
@@ -30,6 +37,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B10EADE2AEFC98800D23857 /* local.env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = local.env.swift; sourceTree = "<group>"; };
+		7B10EAE22AEFCAC700D23857 /* elevemodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elevemodel.swift; sourceTree = "<group>"; };
+		7B10EAE42AEFF0A300D23857 /* imagemodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemodel.swift; sourceTree = "<group>"; };
+		7B10EAE62AEFF45100D23857 /* ParentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentModel.swift; sourceTree = "<group>"; };
+		7B10EAE82AEFF99B00D23857 /* APIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestViewModel.swift; sourceTree = "<group>"; };
+		7B10EAEA2AEFFCDB00D23857 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		7B10EAEE2AF0074800D23857 /* EleveAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveAPIRequestViewModel.swift; sourceTree = "<group>"; };
 		9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentAjoutDoc.swift; sourceTree = "<group>"; };
 		9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveBesoinAide.swift; sourceTree = "<group>"; };
 		9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentContactprof.swift; sourceTree = "<group>"; };
@@ -64,6 +78,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B10EADD2AEFC95D00D23857 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7B10EADE2AEFC98800D23857 /* local.env.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7B10EAE12AEFCA6A00D23857 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B10EAE22AEFCAC700D23857 /* elevemodel.swift */,
+				7B10EAE42AEFF0A300D23857 /* imagemodel.swift */,
+				7B10EAE62AEFF45100D23857 /* ParentModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9B3EE3E62AEA6963002ABAFB /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +124,9 @@
 				9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */,
 				9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */,
 				9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */,
+				7B10EAE82AEFF99B00D23857 /* APIRequestViewModel.swift */,
+				7B10EAEA2AEFFCDB00D23857 /* UserListView.swift */,
+				7B10EAEE2AF0074800D23857 /* EleveAPIRequestViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +150,8 @@
 		9B807F802AEA64770011A542 /* ProEduc */ = {
 			isa = PBXGroup;
 			children = (
+				7B10EAE12AEFCA6A00D23857 /* Models */,
+				7B10EADD2AEFC95D00D23857 /* Helper */,
 				9B3EE3E62AEA6963002ABAFB /* App */,
 				9B3EE3E72AEA697F002ABAFB /* Views */,
 				9B807F852AEA64790011A542 /* Assets.xcassets */,
@@ -202,21 +239,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3EE3E52AEA68A4002ABAFB /* tabView.swift in Sources */,
+				7B10EAE32AEFCAC700D23857 /* elevemodel.swift in Sources */,
 				9B3EE3D42AEA67E2002ABAFB /* ParentListDoc.swift in Sources */,
 				9B3EE3DB2AEA67F2002ABAFB /* ParentMonEspace.swift in Sources */,
 				9B3EE3E32AEA6880002ABAFB /* ParentModalNotification.swift in Sources */,
 				9B3EE3DC2AEA67F2002ABAFB /* EleveMonEspace.swift in Sources */,
 				9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */,
 				9B3EE3DA2AEA67F2002ABAFB /* ParentEnvoiMsg.swift in Sources */,
+				7B10EAE52AEFF0A300D23857 /* imagemodel.swift in Sources */,
 				9B3EE3D12AEA67CF002ABAFB /* ParentDeclaAbsence.swift in Sources */,
 				9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */,
 				9B3EE3DD2AEA67F2002ABAFB /* EleveNotification.swift in Sources */,
+				7B10EAE92AEFF99B00D23857 /* APIRequestViewModel.swift in Sources */,
 				9B3EE3E12AEA6880002ABAFB /* SelectUser.swift in Sources */,
 				9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */,
 				9B3EE3E92AEA75B8002ABAFB /* ParentNotification.swift in Sources */,
+				7B10EAE72AEFF45100D23857 /* ParentModel.swift in Sources */,
 				9B3EE3D52AEA67E2002ABAFB /* EleveListDoc.swift in Sources */,
 				9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */,
+				7B10EAEB2AEFFCDB00D23857 /* UserListView.swift in Sources */,
 				9B3EE3CE2AEA66DF002ABAFB /* ParentAnnuaire.swift in Sources */,
+				7B10EADF2AEFC98800D23857 /* local.env.swift in Sources */,
+				7B10EAEF2AF0074800D23857 /* EleveAPIRequestViewModel.swift in Sources */,
 				9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */,
 				9B3EE3CF2AEA66DF002ABAFB /* EleveContactImportant.swift in Sources */,
 			);
