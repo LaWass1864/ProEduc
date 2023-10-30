@@ -32,6 +32,7 @@
 		9B3EE3F92AF0363F002ABAFB /* imagemodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3F82AF0363F002ABAFB /* imagemodel.swift */; };
 		9B3EE3FB2AF036D1002ABAFB /* APIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */; };
 		9B3EE3FD2AF03730002ABAFB /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3FC2AF03730002ABAFB /* UserListView.swift */; };
+		9B3EE3FF2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */; };
 		9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F812AEA64770011A542 /* ProEducApp.swift */; };
 		9B807F862AEA64790011A542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F852AEA64790011A542 /* Assets.xcassets */; };
 		9B807F892AEA64790011A542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F882AEA64790011A542 /* Preview Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		9B3EE3F82AF0363F002ABAFB /* imagemodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemodel.swift; sourceTree = "<group>"; };
 		9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestViewModel.swift; sourceTree = "<group>"; };
 		9B3EE3FC2AF03730002ABAFB /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveAPIRequestViewModel.swift; sourceTree = "<group>"; };
 		9B807F7E2AEA64770011A542 /* ProEduc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProEduc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B807F812AEA64770011A542 /* ProEducApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProEducApp.swift; sourceTree = "<group>"; };
 		9B807F852AEA64790011A542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				9B3EE3F42AEFC456002ABAFB /* QrCode.swift */,
 				9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */,
 				9B3EE3FC2AF03730002ABAFB /* UserListView.swift */,
+				9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				9B3EE3D52AEA67E2002ABAFB /* EleveListDoc.swift in Sources */,
 				9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */,
 				9B3EE3CE2AEA66DF002ABAFB /* ParentAnnuaire.swift in Sources */,
+				9B3EE3FF2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift in Sources */,
 				9B3EE3F72AF03622002ABAFB /* ParentModel.swift in Sources */,
 				9B3EE3EC2AEFAA39002ABAFB /* local.env.swift in Sources */,
 				9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */,

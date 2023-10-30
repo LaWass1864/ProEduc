@@ -10,7 +10,7 @@ import SwiftUI
 struct UserListView: View {
     
     //ici on lit la variable observer dans les vues enfants via le @EnvironmentObjet
-    @EnvironmentObject var EleveRequete: EleveAPIRequestViewModel
+    @EnvironmentObject var EleveRequete: EleveAPIRequest
     
     var body: some View {
         NavigationStack {
@@ -28,7 +28,7 @@ struct UserListView: View {
 
 struct UserDetail: View {
     
-    @EnvironmentObject var ParentRequest: ParentAPIRequestViewModel
+    @EnvironmentObject var ParentRequest: ParentAPIRequest
     
     var Parent: Parent
     
