@@ -18,7 +18,7 @@ import Foundation
 // MARK: - Welcome
 struct ParentRequete: Codable {
     let records: [ParentRecord]
-    let offset: String
+
 }
 
 // MARK: - Record

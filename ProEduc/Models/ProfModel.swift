@@ -4,12 +4,11 @@
 //
 //  Created by Apprenant 76 on 31/10/2023.
 //
-
 import Foundation
 
 // MARK: - Welcome
 struct ProfRequete: Codable {
-    let records: [ProfRequete]
+    let records: [ProfRecord]
 
 }
 

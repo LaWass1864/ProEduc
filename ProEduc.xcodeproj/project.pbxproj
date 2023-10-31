@@ -11,6 +11,9 @@
 		9B0805512AF10F4C00FB72DE /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0805502AF10F4C00FB72DE /* WelcomeScreenView.swift */; };
 		9B0805532AF1101000FB72DE /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0805522AF1101000FB72DE /* SignInScreenView.swift */; };
 		9B3E03B02AF139430075E824 /* ProfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03AF2AF139430075E824 /* ProfModel.swift */; };
+		9B3E03B22AF14E900075E824 /* ParentAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */; };
+		9B3E03B42AF14EE30075E824 /* ProfAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */; };
+		9B3E03B82AF160400075E824 /* ParentSelectEnfant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */; };
 		9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */; };
 		9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */; };
 		9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */; };
@@ -47,6 +50,9 @@
 		9B0805502AF10F4C00FB72DE /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 		9B0805522AF1101000FB72DE /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
 		9B3E03AF2AF139430075E824 /* ProfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfModel.swift; sourceTree = "<group>"; };
+		9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentAPIRequestViewModel.swift; sourceTree = "<group>"; };
+		9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfAPIRequestViewModel.swift; sourceTree = "<group>"; };
+		9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentSelectEnfant.swift; sourceTree = "<group>"; };
 		9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentAjoutDoc.swift; sourceTree = "<group>"; };
 		9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveBesoinAide.swift; sourceTree = "<group>"; };
 		9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentContactprof.swift; sourceTree = "<group>"; };
@@ -125,6 +131,9 @@
 				9B08054E2AF109E700FB72DE /* ParentConnexion.swift */,
 				9B0805502AF10F4C00FB72DE /* WelcomeScreenView.swift */,
 				9B0805522AF1101000FB72DE /* SignInScreenView.swift */,
+				9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */,
+				9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */,
+				9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -272,11 +281,14 @@
 				9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */,
 				9B3EE3DD2AEA67F2002ABAFB /* EleveNotification.swift in Sources */,
 				9B3EE3E12AEA6880002ABAFB /* SelectUser.swift in Sources */,
+				9B3E03B42AF14EE30075E824 /* ProfAPIRequestViewModel.swift in Sources */,
 				9B08054F2AF109E700FB72DE /* ParentConnexion.swift in Sources */,
 				9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */,
 				9B3EE3E92AEA75B8002ABAFB /* ParentNotification.swift in Sources */,
+				9B3E03B22AF14E900075E824 /* ParentAPIRequestViewModel.swift in Sources */,
 				9B3EE3D52AEA67E2002ABAFB /* EleveListDoc.swift in Sources */,
 				9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */,
+				9B3E03B82AF160400075E824 /* ParentSelectEnfant.swift in Sources */,
 				9B3EE3CE2AEA66DF002ABAFB /* ParentAnnuaire.swift in Sources */,
 				9B3E03B02AF139430075E824 /* ProfModel.swift in Sources */,
 				9B0805532AF1101000FB72DE /* SignInScreenView.swift in Sources */,
