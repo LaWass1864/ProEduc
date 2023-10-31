@@ -21,105 +21,110 @@ struct ParentConnexion: View {
     @State var authenticationDidSucceed: Bool = false
     
     var body: some View {
-        
-        ZStack {
-            VStack {
-                HelloText()
-                UserImage()
-                UsernameTextField(username: $username)
-                PasswordSecureField(password: $password)
-                if authenticationDidFail {
-                    Text("Information incorrecte. Réessayez.")
-                        .offset(y: -10)
-                        .foregroundColor(.red)
-                }
-                
-                Button(action: {
-                    if self.username == storedUsername && self.password == storedPassword {
-                        self.authenticationDidSucceed = true
-                        self.authenticationDidFail = false
-                    } else {
-                        self.authenticationDidFail = true
-                        self.authenticationDidSucceed = false
+        NavigationView{
+            ZStack {
+                VStack {
+                    HelloText()
+                    UserImage()
+                    UsernameTextField(username: $username)
+                    PasswordSecureField(password: $password)
+                    if authenticationDidFail {
+                        Text("Information incorrecte. Réessayez.")
+                            .offset(y: -10)
+                            .foregroundColor(.red)
                     }
-                }) {
-                    LoginButtonContent()
-                }
-            }
-            .padding()
-            if authenticationDidSucceed {
-                Text("Connexion réussie !")
-                    .font(.headline)
-                    .frame(width: 250, height: 80)
-                    .background(Color.yellow)
-                    .cornerRadius(20.0)
                     
+                    Button(action: {
+                        if self.username == storedUsername && self.password == storedPassword {
+                            self.authenticationDidSucceed = true
+                            self.authenticationDidFail = false
+                        } else {
+                            self.authenticationDidFail = true
+                            self.authenticationDidSucceed = false
+                        }
+                    }) {
+                        LoginButtonContent()
+                    }
+                }
+                .padding()
+                if authenticationDidSucceed {
+                    NavigationLink(destination: ParentAnnuaire()) {
+                        
+                        
+                        Text("Connexion réussie !")
+                            .font(.headline)
+                            .frame(width: 250, height: 80)
+                            .background(Color(.blueParent))
+                            .cornerRadius(20.0)
+                        
+                    }
+                }
             }
         }
+        
     }
-}
-
-
-
-struct HelloText: View {
-    var body: some View {
-        Text("Bonjour!")
-            .font(.largeTitle)
-            .fontWeight(.semibold)
-            .padding(.bottom, 20)
-    }
-}
-
-struct UserImage: View {
-    var body: some View {
-        Image("userImage")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 150, height: 150)
-            .clipped()
-            .cornerRadius(150)
-            .padding(.bottom, 75)
-    }
-}
-
-struct LoginButtonContent: View {
-    var body: some View {
-        Text("CONNEXION")
-            .font(.headline)
-            .foregroundColor(.white)
-            .padding()
-            .frame(width: 220, height: 60)
-            .background(Color.black)
-            .cornerRadius(35.0)
-    }
-}
-
-struct UsernameTextField: View {
     
-    @Binding var username: String
     
-    var body: some View {
-        TextField(("Pseudo"), text: $username)
-            .padding()
-            .background(lightGreyColor)
-            .cornerRadius(5.0)
-            .padding(.bottom, 20)
+    struct HelloText: View {
+        var body: some View {
+            Text("Bonjour!")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .padding(.bottom, 20)
+        }
     }
-}
-
-struct PasswordSecureField: View {
     
-    @Binding var password: String
-    
-    var body: some View {
-        SecureField("Mot de passe", text: $password)
-            .padding()
-            .background(lightGreyColor)
-            .cornerRadius(5.0)
-            .padding(.bottom, 20)
+    struct UserImage: View {
+        var body: some View {
+            Image("userImage")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 150, height: 150)
+                .clipped()
+                .cornerRadius(150)
+                .padding(.bottom, 75)
+        }
     }
+    
+    struct LoginButtonContent: View {
+        var body: some View {
+            Text("CONNEXION")
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding()
+                .frame(width: 220, height: 60)
+                .background(Color.black)
+                .cornerRadius(35.0)
+        }
+    }
+    
+    struct UsernameTextField: View {
+        
+        @Binding var username: String
+        
+        var body: some View {
+            TextField(("Pseudo"), text: $username)
+                .padding()
+                .background(lightGreyColor)
+                .cornerRadius(5.0)
+                .padding(.bottom, 20)
+        }
+    }
+    
+    struct PasswordSecureField: View {
+        
+        @Binding var password: String
+        
+        var body: some View {
+            SecureField("Mot de passe", text: $password)
+                .padding()
+                .background(lightGreyColor)
+                .cornerRadius(5.0)
+                .padding(.bottom, 20)
+        }
+    }
+    
 }
-
 
 #Preview {
     ParentConnexion()

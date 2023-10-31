@@ -10,6 +10,7 @@
 		9B08054F2AF109E700FB72DE /* ParentConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08054E2AF109E700FB72DE /* ParentConnexion.swift */; };
 		9B0805512AF10F4C00FB72DE /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0805502AF10F4C00FB72DE /* WelcomeScreenView.swift */; };
 		9B0805532AF1101000FB72DE /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0805522AF1101000FB72DE /* SignInScreenView.swift */; };
+		9B3E03B02AF139430075E824 /* ProfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03AF2AF139430075E824 /* ProfModel.swift */; };
 		9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */; };
 		9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */; };
 		9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */; };
@@ -45,6 +46,7 @@
 		9B08054E2AF109E700FB72DE /* ParentConnexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentConnexion.swift; sourceTree = "<group>"; };
 		9B0805502AF10F4C00FB72DE /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 		9B0805522AF1101000FB72DE /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
+		9B3E03AF2AF139430075E824 /* ProfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfModel.swift; sourceTree = "<group>"; };
 		9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentAjoutDoc.swift; sourceTree = "<group>"; };
 		9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveBesoinAide.swift; sourceTree = "<group>"; };
 		9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentContactprof.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				9B3EE3F22AEFBD69002ABAFB /* QRCodeGenerate.swift */,
 				9B3EE3F62AF03622002ABAFB /* ParentModel.swift */,
 				9B3EE3F82AF0363F002ABAFB /* imagemodel.swift */,
+				9B3E03AF2AF139430075E824 /* ProfModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				9B3EE3D52AEA67E2002ABAFB /* EleveListDoc.swift in Sources */,
 				9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */,
 				9B3EE3CE2AEA66DF002ABAFB /* ParentAnnuaire.swift in Sources */,
+				9B3E03B02AF139430075E824 /* ProfModel.swift in Sources */,
 				9B0805532AF1101000FB72DE /* SignInScreenView.swift in Sources */,
 				9B3EE3FF2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift in Sources */,
 				9B3EE3F72AF03622002ABAFB /* ParentModel.swift in Sources */,

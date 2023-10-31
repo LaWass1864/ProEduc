@@ -64,10 +64,10 @@ struct ParentAnnuaire: View {
                         NavigationLink(destination: ParentContactprof()) {
                             Text("Professeur de Francais")
                         }
-                        NavigationLink(destination: ParentAjoutDoc()) {
+                        NavigationLink(destination: ParentContactprof()) {
                             Text("Professeur de mathématique")
                         }
-                        NavigationLink(destination: ParentAjoutDoc()) {
+                        NavigationLink(destination: ParentContactprof()) {
                             Text("Professeur de SVT")
                         }
                     }
