@@ -13,8 +13,7 @@ struct SelectUser: View {
             NavigationView {
                 
                 ZStack(){
-                    //                RadialGradient(gradient: Gradient(colors: [Color.blue , Color.white ]), center: .center , startRadius: 55, endRadius: 359)
-                    //
+                   
                     VStack {
                         NavigationLink(destination: tabView()) {
                             Image("student")

@@ -3,14 +3,14 @@
 //  proEduc
 //
 //  Created by Apprenant 76 on 23/10/2023.
-// Ajouter un select dans lequel il y a les tout les enfants
-// Et ensuite on fait apparaitre ses professeurs
 
 import SwiftUI
 
 struct ParentAnnuaire: View {
-    
-    
+    @State private var isChildDetailActive: Bool = false
+    @State var selectedChild: String? = nil
+    var placeholder = "Selectioner Enfent"
+    var dropDownList = ["Lida", "Wassila", "Zachari", "Sofian"]
     var body: some View {
         
         NavigationStack {
@@ -28,21 +28,73 @@ struct ParentAnnuaire: View {
                         .fontWeight(.bold)
                 }
                 
-                // Ajouter un Picker pour selectionner un enfant
-                List {
-                    NavigationLink(destination: ParentContactprof()) {
-                        Text("Professeur de Francais")
+                VStack {
+                    Text("Selectioner votre enfant")
+                    NavigationLink(
+                        destination: ChildDetail(childName: $selectedChild),
+                        isActive: $isChildDetailActive,
+                        label: { EmptyView() }
+                    )
+                    Menu {
+                        ForEach(dropDownList, id: \.self) { child in
+                            Button(child) {
+                                self.selectedChild = child
+                                self.isChildDetailActive = true                        }
+                        }
+                    } label: {
+                        VStack(spacing: 20) {
+                            HStack {
+                                Text(selectedChild ?? placeholder)
+                                    .foregroundColor(selectedChild == nil ? .gray : .black)
+                                Spacer()
+                                Image(systemName: "chevron.down")
+                                    .foregroundColor(Color.orange)
+                                    .font(Font.system(size: 20, weight: .bold))
+                            }
+                            .padding(.horizontal)
+                            Rectangle()
+                                .fill(Color.orange)
+                                .frame(height: 2)
+                        }
+                        .padding()
                     }
-                    NavigationLink(destination: ParentAjoutDoc()) {
-                        Text("Professeur de mathématique")
+                    
+                    // Ajouter un Picker pour selectionner un enfant
+                    List {
+                        NavigationLink(destination: ParentContactprof()) {
+                            Text("Professeur de Francais")
+                        }
+                        NavigationLink(destination: ParentAjoutDoc()) {
+                            Text("Professeur de mathématique")
+                        }
+                        NavigationLink(destination: ParentAjoutDoc()) {
+                            Text("Professeur de SVT")
+                        }
                     }
-                    NavigationLink(destination: ParentAjoutDoc()) {
-                        Text("Professeur de SVT")
-                    }
+                    
                 }
-                
             }
-            
+            var selectedChildBinding: Binding<Bool> {
+                Binding(
+                    get: { selectedChild != nil },
+                    set: { newValue in
+                        if !newValue {
+                            selectedChild = nil
+                            
+                        }
+                    }
+                )
+            }
+        }
+        
+    }
+    
+    struct ChildDetail: View {
+        @Binding var childName: String?
+        // *** The selected child's name is passed to the ChildDetail view using a @Binding variable. ***
+        var body: some View {
+            Text("Child Detail for \(childName ?? "")")
+                .navigationBarTitle("Child Detail", displayMode: .inline)
         }
         
     }

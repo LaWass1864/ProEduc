@@ -7,7 +7,7 @@ struct WelcomeScreenView: View {
                 Color("BgColor").edgesIgnoringSafeArea(.all)
                 VStack {
                     Spacer()
-                    Image(uiImage: #imageLiteral(resourceName: "onboard"))
+                    Image(systemName: "mug")
                     Spacer()
                     
                     
@@ -17,7 +17,7 @@ struct WelcomeScreenView: View {
                             Text("Sign In")
                                 .font(.title3)
                                 .fontWeight(.bold)
-                                .foregroundColor(Color("PrimaryColor"))
+                                .foregroundColor(.blue)
                                 .padding()
                                 .frame(maxWidth: .infinity)
                                 .background(Color.white)
@@ -30,7 +30,7 @@ struct WelcomeScreenView: View {
                     HStack {
                         Text("New around here? ")
                         Text("Sign in")
-                            .foregroundColor(Color("PrimaryColor"))
+                            .foregroundColor(.blue)
                     }
                 }
                 .padding()

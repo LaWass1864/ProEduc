@@ -11,7 +11,7 @@ struct SignInScreenView: View {
     @State private var email: String = "" // by default it's empty
     var body: some View {
         ZStack {
-            Color("BgColor").edgesIgnoringSafeArea(.all)
+            Color(.blue).edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
                 
@@ -20,16 +20,12 @@ struct SignInScreenView: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding(.bottom, 30)
-                    
-                    SocalLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "apple")), text: Text("Sign in with Apple"))
-                    
-                    SocalLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "google")), text: Text("Sign in with Google").foregroundColor(Color("PrimaryColor")))
-                        .padding(.vertical)
+                   
                     
                     Text("or get a link emailed to you")
                         .foregroundColor(Color.black.opacity(0.4))
                     
-                    TextField("Work email address", text: $email)
+                    TextField("Adresse mail", text: $email)
                         .font(.title3)
                         .padding()
                         .frame(maxWidth: .infinity)
