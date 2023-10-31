@@ -1,17 +1,4 @@
-//
-//  EleveAPIRequestViewModel.swift
-//  ProEduc
-//
-//  Created by wahib zachari on 30/10/2023.
-//
 
-
-//
-//  DrinkAPIRequestViewModel.swift
-//  GitHubExercice
-//
-//  Created by Zohra Achour on 27/10/2023.
-//
 
 import Foundation
 
@@ -38,7 +25,7 @@ class EleveAPIRequestViewModel: ObservableObject {
                 return fetchedEleve
             }
             
-            let parsedRecord = try JSONDecoder().decode(EleveRequest.self, from: serverData)
+            let parsedRecord = try JSONDecoder().decode(EleveRequete.self, from: serverData)
             
             parsedRecord.records.forEach { drink in
                 fetchedEleve.append(drink.fields)
@@ -56,3 +43,4 @@ class EleveAPIRequestViewModel: ObservableObject {
     
     
 }
+

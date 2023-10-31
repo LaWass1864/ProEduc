@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct tabView: View {
+    @StateObject var eleve = EleveAPIRequestViewModel()
+    
     var body: some View {
         TabView{
             
@@ -39,8 +41,21 @@ struct tabView: View {
                     Text("Messagerie")
                     Image(systemName: "bell.and.waves.left.and.right")
                 }
+            UserListView()
+                .tabItem {
+                    Text("Messagerie")
+                    Image(systemName: "bell.and.waves.left.and.right")
+                }
+             
         }
+        .onAppear {
+                    Task {
+                        eleve.allEleve = await eleve.fetchedEleve()
+                    
+                    }
+                }.environmentObject(eleve)
     }
+    
 }
 
 
