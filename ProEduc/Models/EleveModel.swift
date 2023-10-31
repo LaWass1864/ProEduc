@@ -5,6 +5,7 @@
 
 import Foundation
 
+
 // MARK: - Welcome
 struct EleveRequete: Codable {
     let records: [EleveRecord]
@@ -18,7 +19,7 @@ struct EleveRecord: Codable {
 }
 
 // MARK: - Fields
-struct Eleve: Codable {
+struct Eleve: Codable, Identifiable {
     let parent: [String]
     let carteEntree: [DataBaseImage]
     let prenom: String
