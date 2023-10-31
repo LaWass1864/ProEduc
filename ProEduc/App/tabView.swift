@@ -46,14 +46,14 @@ struct tabView: View {
                     Text("Messagerie")
                     Image(systemName: "bell.and.waves.left.and.right")
                 }
-             
+            
         }
         .onAppear {
-                    Task {
-                        eleve.allEleve = await eleve.fetchedEleve()
-                    
-                    }
-                }.environmentObject(eleve)
+            Task {
+                eleve.allEleve = await eleve.fetchedEleve()
+                
+            }
+        }.environmentObject(eleve)
     }
     
 }
