@@ -36,7 +36,7 @@ struct EleveMonProfil: View {
                                         AsyncImage(url: URL(string: imageFound.url)) {
                                             phase in
                                             if let carteSelf = phase.carteSelf {
-                                                Image(Image(systemName: "mug"))
+                                               carteSelf
                                                     .resizable()
                                                     .frame(width:100, height: 100, alignment: .center)
                                             } else if phase.error != nil {
