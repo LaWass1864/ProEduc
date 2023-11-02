@@ -17,6 +17,10 @@ import SwiftUI
 struct EleveMonEspace: View {
     @State private var isDarkModeEnabled: Bool = false
     
+    // Pull API des Eleves
+    //mais aussi de l'utilisateur renseigné car seul lui peut voir ses informations
+    @EnvironmentObject var eleveRequest: EleveAPIRequestViewModel
+    @EnvironmentObject var userSession: User
     
     @State var showTabView = false
     var body: some View {
@@ -49,7 +53,9 @@ struct EleveMonEspace: View {
                             .foregroundColor(.blue)
                             .frame(width:300, height: 100)
                         Text("Bienvenue sur mon espace")
+                            .font(.title2)
                             .foregroundColor(.white)
+                        
                         
                         
                     }
@@ -69,7 +75,7 @@ struct EleveMonEspace: View {
                         
                         
                         Toggle(isOn: $isDarkModeEnabled){
-                            Text(" je déclare mon Absens")
+                            Text("Je déclare mon absence")
                             
                             
                             
@@ -97,11 +103,7 @@ struct EleveMonEspace: View {
                     }
                     
                 }
-                
-                
-                
-                
-                
+
                 ZStack{
                     Rectangle()
                         .cornerRadius(20)
@@ -109,17 +111,15 @@ struct EleveMonEspace: View {
                         .frame(width:360, height: 220)
                     VStack{
                         Image("recto_min")
-                        Text(" carte Self")
+                        Text("Carte Self")
                             .font(.title2)
                             .fontWeight(.regular)
                     }
-                    
-                    
                 }
             }
-
+            
             Spacer()
-   
+            
             
                 .navigationBarBackButtonHidden(true)
         }

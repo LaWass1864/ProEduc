@@ -14,6 +14,7 @@
 		9B3E03B22AF14E900075E824 /* ParentAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */; };
 		9B3E03B42AF14EE30075E824 /* ProfAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */; };
 		9B3E03B82AF160400075E824 /* ParentSelectEnfant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */; };
+		9B3E03BA2AF396BD0075E824 /* EleveConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */; };
 		9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */; };
 		9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */; };
 		9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */; };
@@ -53,6 +54,7 @@
 		9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentAPIRequestViewModel.swift; sourceTree = "<group>"; };
 		9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfAPIRequestViewModel.swift; sourceTree = "<group>"; };
 		9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentSelectEnfant.swift; sourceTree = "<group>"; };
+		9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveConnexion.swift; sourceTree = "<group>"; };
 		9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentAjoutDoc.swift; sourceTree = "<group>"; };
 		9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveBesoinAide.swift; sourceTree = "<group>"; };
 		9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentContactprof.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */,
 				9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */,
 				9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */,
+				9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				9B3EE3CF2AEA66DF002ABAFB /* EleveContactImportant.swift in Sources */,
 				9B3EE3F92AF0363F002ABAFB /* imagemodel.swift in Sources */,
 				9B3EE3FD2AF03730002ABAFB /* UserListView.swift in Sources */,
+				9B3E03BA2AF396BD0075E824 /* EleveConnexion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
