@@ -29,10 +29,11 @@ class Eleve: Codable, Identifiable, ObservableObject {
     //si vous utilisez des attachements sur Airtable toutes vos images vont venir de la même manière
     //donc on utilise un type global d'image, ici DataBaseImage que ce soit utiliser partout et éviter d'avoir 3-4 structures d'images différentes
     //alors que la donnée  reçu reste la même
-    @Published var image: [DataBaseImage]
+   
     @Published var idFromEleve: [String]
     @Published var eleve: [String]
-    
+    @Published var carteEntree: [DataBaseImage]
+    @Published var carteSelf : [DataBaseImage]
     //si on souhaite faire une connexion un Bool qui change en fonction de l'action est utile
     //on le met ici au cas où, si il n'est pas utile, on l'enlèvera
     @Published var loggedIn: Bool?
@@ -40,24 +41,26 @@ class Eleve: Codable, Identifiable, ObservableObject {
     //ce truc là c'est pour nous aider a coder et decoder
     //ça communique les infos envoyer avec ce style pour se conformer au attentes de Airtable
     enum CodingKeys: String, CodingKey {
-        case nom, id, prenom, image, professeurs, classe, adresse, loggedIn
+        case nom, id, prenom, image, professeurs, classe, adresse, loggedIn, carteEntree, carteSelf
         case eleve = "Eleve"
         case idFromEleve = "id (from Eleve)"
+        
     }
     
     //vue qu'on est maintenant dans une class on doit init (mettre prêt à l'emploi) les propriétés de class
     
-    init(nom: String, prenom: String, classe: String, professeurs: [String], adresse: String, id: String, image: [DataBaseImage], idFromEleve: [String], eleve: [String], loggedIn: Bool? = nil) {
+    init(nom: String, prenom: String, classe: String, professeurs: [String], adresse: String, id: String, carteEntree: [DataBaseImage],carteSelf: [DataBaseImage], idFromEleve: [String], eleve: [String], loggedIn: Bool? = nil) {
         self.nom = nom
         self.prenom = prenom
         self.classe = classe
         self.professeurs = professeurs
         self.adresse = adresse
         self.id = id
-        self.image = image
         self.idFromEleve = idFromEleve
         self.eleve = eleve
         self.loggedIn = loggedIn
+        self.carteEntree = carteEntree
+        self.carteSelf = carteSelf
     }
     //ensuite on leur explique comment elles vont être décodées
     //en utilisant l'enum de CodingKeys on va lui dire quoi décoder
@@ -74,12 +77,11 @@ class Eleve: Codable, Identifiable, ObservableObject {
         self.professeurs = try container.decode([String].self, forKey: .professeurs)
         self.adresse = try container.decode(String.self, forKey: .adresse)
         self.id = try container.decode(String.self, forKey: .id)
-        self.image = try container.decode([DataBaseImage].self, forKey: .image)
         self.idFromEleve = try container.decode([String].self, forKey: .idFromEleve)
         self.eleve = try container.decode([String].self, forKey: .eleve)
         self.loggedIn = try container.decode(Bool.self, forKey: .loggedIn)
-       
-       
+        self.carteEntree = try container.decode([DataBaseImage].self, forKey: .image)
+        self.carteSelf = try container.decode([DataBaseImage].self, forKey: .image)
     }
     
     //Le principle pour encoder est le même, on utilise les CodingKeys pour ciblé la bonne propriété
@@ -92,12 +94,11 @@ class Eleve: Codable, Identifiable, ObservableObject {
         try container.encode(professeurs, forKey: .professeurs)
         try container.encode(adresse, forKey: .adresse)
         try container.encode(id, forKey: .id)
-        try container.encode(image, forKey: .image)
         try container.encode(idFromEleve, forKey: .idFromEleve)
         try container.encode(eleve, forKey: .eleve)
         try container.encode(classe, forKey: .classe)
-      
-        
+        try container.encode(carteEntree, forKey: .carteEntree)
+        try container.encode(carteSelf, forKey: .carteSelf)
     }
     
 }

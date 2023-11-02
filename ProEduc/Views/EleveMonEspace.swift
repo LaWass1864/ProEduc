@@ -52,7 +52,7 @@ struct EleveMonEspace: View {
                             .cornerRadius(20)
                             .foregroundColor(.blue)
                             .frame(width:300, height: 100)
-                        Text("Bienvenue sur mon espace")
+                        Text("Bienvenue")
                             .font(.title2)
                             .foregroundColor(.white)
                         

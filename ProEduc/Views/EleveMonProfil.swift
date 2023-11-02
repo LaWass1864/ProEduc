@@ -32,11 +32,11 @@ struct EleveMonProfil: View {
                                 VStack {
                                     
                                     // user informations
-                                    if let imageFound = unwrappedUser.image.first {
+                                    if let imageFound = unwrappedUser.carteSelf.first {
                                         AsyncImage(url: URL(string: imageFound.url)) {
                                             phase in
-                                            if let image = phase.image {
-                                                Image("oeoeoe")
+                                            if let carteSelf = phase.carteSelf {
+                                                Image(Image(systemName: "mug"))
                                                     .resizable()
                                                     .frame(width:100, height: 100, alignment: .center)
                                             } else if phase.error != nil {
@@ -113,7 +113,7 @@ struct EleveMonProfil: View {
                                 
                             })
                         }
-                            .navigationBarTitle("Mon Profil")
+                           
                     }
                     
                 }
@@ -123,13 +123,5 @@ struct EleveMonProfil: View {
 }
         #Preview {
             EleveMonProfil()
-//            EleveMonProfil(eleve: Eleve(id: "att9cM7UqgqFVTmwx", 
-//                                        name: "Tremblay",
-//                                        prenom:"Lida",
-//                                        classe: "6emeA",
-//                                        carteSelf: "Carte Self",
-//                                        carteEntree: "Carte Entree",
-//                                        image: [DataBaseImage(id: "2222", width: 1000, height: 1000, url: "", filename: "carte-06.jpg", size: 2800, type: "image/jpeg", thumbnails: Thumbnails(small: .init(url: "", width: 0, height: 0), large: .init(url: "", width: 0, height: 0), full: .init(url: "", width: 1000, height: 1000)))],
-//                                        eleve: [String](),
-//                                        idFromEleve: [String]()))
+//
         }
