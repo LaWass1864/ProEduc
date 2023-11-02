@@ -20,7 +20,7 @@ struct EleveMonEspace: View {
     // Pull API des Eleves
     //mais aussi de l'utilisateur renseigné car seul lui peut voir ses informations
     @EnvironmentObject var eleveRequest: EleveAPIRequestViewModel
-    @EnvironmentObject var userSession: User
+    @EnvironmentObject var userSession: Eleve
     
     @State var showTabView = false
     var body: some View {

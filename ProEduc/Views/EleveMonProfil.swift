@@ -113,7 +113,7 @@ struct EleveMonProfil: View {
                                 
                             })
                         }
-                            .navigationBarTitle("Profils")
+                            .navigationBarTitle("Mon Profil")
                     }
                     
                 }
