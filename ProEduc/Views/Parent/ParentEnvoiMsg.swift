@@ -14,6 +14,7 @@ struct ParentEnvoiMsg: View {
     @State private var profContact = "Monsieur DEBUISSY"
     @State private var isShowingModal = false
     var body: some View {
+        
         VStack{
             ZStack{
                 
@@ -30,24 +31,24 @@ struct ParentEnvoiMsg: View {
             }
             
             VStack{
-                HStack{
-                    TextField("Nom et prenom de votre enfant", text: $usernameChild)
-                        .padding()
-                        .background(Color.white)
-                        .foregroundColor(.black)
-                        .font(.headline)
-                        .border(Color("blue_parent"), width: 2)
-                        .cornerRadius(10)
-                    Image(systemName: "mail")
+                HStack {
+                    ZStack {
+                        TextField("Nom et prenom de votre enfant", text: $usernameChild)
+                            .padding()
+                            .background(lightGreyColor)
+                            .cornerRadius(5.0)
+                            .padding(.bottom, 20)
+                        
+                        Image(systemName: "mail")
+                            .foregroundColor(.gray) // Couleur de l'image
+                            .offset(x: 140, y: -10) // Ajustez cette valeur pour déplacer l'image à droite
+                    }
                 }
                 TextEditor(text: $textAbsence)
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity) // Pour occuper tout l'espace disponible
-                    .foregroundColor(.black) // Couleur du texte
-                    .background(Color.gray) // Couleur d'arrière-plan
-                    .padding() // Remplissage
-                    .font(.headline) // Taille de la police
-                    .border(Color("blue_parent"), width: 2)
-                    .cornerRadius(10)
+                    .padding()
+                    .background(lightGreyColor)
+                    .cornerRadius(5.0)
+                    .padding(.bottom, 20)
                 
                 Button(action: {
                            isShowingModal = true
@@ -68,7 +69,7 @@ struct ParentEnvoiMsg: View {
                            )
                        }
                    }
-            }.padding()
+            }.padding(25)
         }
     }
 
