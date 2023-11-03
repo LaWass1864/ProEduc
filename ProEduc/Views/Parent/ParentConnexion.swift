@@ -21,7 +21,7 @@ struct ParentConnexion: View {
     @State var authenticationDidSucceed: Bool = false
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ZStack {
                 VStack {
                     HelloText()
