@@ -10,7 +10,7 @@ import SwiftUI
 struct EleveBesoinAide: View {
     var body: some View {
         VStack {
-        // Push content to the top
+            // Push content to the top
             Spacer()
             ZStack {
                 Rectangle()
@@ -19,7 +19,7 @@ struct EleveBesoinAide: View {
                     .foregroundColor(Color("greenStudent"))
                 Text("Besoin D'aide")
                     .font(.title)
-            
+                
             }
             
             VStack {
@@ -33,7 +33,7 @@ struct EleveBesoinAide: View {
                 .overlay(
                     HStack {
                         Text("0768989090")
-                    
+                        
                             .font(.title)
                             .padding(20)
                         Image("phone-call")
@@ -43,14 +43,14 @@ struct EleveBesoinAide: View {
                                 Circle()
                                     .foregroundColor(.green)
                                     .frame(width: 70, height: 70)
-                            
+                                
                             )
                     }
                 )
             Spacer()
-//            .padding()
+            //            .padding()
         }
-         // Push content to the top
+        // Push content to the top
     }
 }
 

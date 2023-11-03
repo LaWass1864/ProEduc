@@ -16,59 +16,57 @@ struct ParentAjoutDoc: View {
     @State private var textAbsence = "Entrer la raison de cette absence"
     
     var body: some View {
-        VStack{
-            NavigationView {
-                VStack{
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 25)
-                            .foregroundColor(Color(.blueParent))
-                            .frame(width: 350, height: 120)
-                            .padding(.all)
-                        
-                        Text("Nouveau document")
-                            .foregroundColor(.white)
-                            .font(.system(size: 36))
-                            .fontWeight(.bold)
-                    }
+        NavigationView {
+            VStack{
+                ZStack{
+                    RoundedRectangle(cornerRadius: 25)
+                        .foregroundColor(Color(.blueParent))
+                        .frame(width: 350, height: 120)
+                        .padding(.all)
                     
-                    VStack{
-                        // Input text avec le nom de l'enfant
-                        Text("Nom du document")
-                            .font(.title3)
-                            .bold()
-                        TextField("Nom du document", text: $docName)
-                            .font(.title3)
-                            .padding(.bottom,25)
-                            .border(Color.yellow, width: 2)
-                        
-                        // textArea Motif de l'absence
-                        Text("Description")
-                            .font(.title3)
-                            .bold()
-                            .padding(.bottom,25)
-                        TextEditor(text: $textAbsence)
-                            .font(.body)
-                            .padding(.top, 20)
-                            .border(Color.yellow, width: 2)
-                        
-                        // Bouton upload document
-                        Image(systemName: "camera")
-                            .padding(90)
-                        // Bouton valider le document
-                        Button(action: {
-                            // Action à exécuter lorsque le bouton est appuyé
-                        }) {
-                            Text("Valider")
-                                .foregroundColor(.white)
-                                .padding()
-                        }
-                        .frame(width: 250, height: 50) // Réglage de la largeur et la hauteur
-                        .background(Color("green_btn")) // Modification de la couleur d'arrière-plan du bouton
-                        .cornerRadius(10) // Ajoutez des coins arrondis si nécessaire
-                    }
+                    Text("Nouveau document")
+                        .foregroundColor(.white)
+                        .font(.system(size: 36))
+                        .fontWeight(.bold)
                 }
-                .padding(25)
+                
+                VStack{
+                    // Input text avec le nom de l'enfant
+                    Text("Nom du document")
+                        .font(.title3)
+                        .bold()
+                    TextField("Nom du document", text: $docName)
+                        .font(.title3)
+                        .padding(.bottom,25)
+                        .border(Color.yellow, width: 2)
+                    
+                    // textArea Motif de l'absence
+                    Text("Description")
+                        .font(.title3)
+                        .bold()
+                        .padding(.bottom,25)
+                    TextEditor(text: $textAbsence)
+                        .font(.body)
+                        .padding(.top, 20)
+                        .border(Color.yellow, width: 2)
+                    
+                    // Bouton upload document
+                    Image(systemName: "camera")
+                        .padding(90)
+                    // Bouton valider le document
+                    Button(action: {
+                        // Action à exécuter lorsque le bouton est appuyé
+                    }) {
+                        Text("Valider")
+                            .foregroundColor(.white)
+                            .padding()
+                    }
+                    .frame(width: 250, height: 50) // Réglage de la largeur et la hauteur
+                    .background(Color("green_btn")) // Modification de la couleur d'arrière-plan du bouton
+                    .cornerRadius(10) // Ajoutez des coins arrondis si nécessaire
+                }
             }
+            .padding(25)
         }
     }
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B08054F2AF109E700FB72DE /* ParentConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08054E2AF109E700FB72DE /* ParentConnexion.swift */; };
+		9B3E03B02AF139430075E824 /* ProfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03AF2AF139430075E824 /* ProfModel.swift */; };
+		9B3E03B22AF14E900075E824 /* ParentAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */; };
+		9B3E03B42AF14EE30075E824 /* ProfAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */; };
+		9B3E03B82AF160400075E824 /* ParentSelectEnfant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */; };
+		9B3E03BA2AF396BD0075E824 /* EleveConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */; };
 		9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */; };
 		9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */; };
 		9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */; };
@@ -24,13 +30,28 @@
 		9B3EE3E32AEA6880002ABAFB /* ParentModalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */; };
 		9B3EE3E52AEA68A4002ABAFB /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E42AEA68A4002ABAFB /* tabView.swift */; };
 		9B3EE3E92AEA75B8002ABAFB /* ParentNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */; };
+		9B3EE3EC2AEFAA39002ABAFB /* local.env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3EB2AEFAA39002ABAFB /* local.env.swift */; };
+		9B3EE3EF2AEFACFF002ABAFB /* EleveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3EE2AEFACFF002ABAFB /* EleveModel.swift */; };
+		9B3EE3F32AEFBD69002ABAFB /* QRCodeGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3F22AEFBD69002ABAFB /* QRCodeGenerate.swift */; };
+		9B3EE3F52AEFC456002ABAFB /* QrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3F42AEFC456002ABAFB /* QrCode.swift */; };
+		9B3EE3F72AF03622002ABAFB /* ParentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3F62AF03622002ABAFB /* ParentModel.swift */; };
+		9B3EE3F92AF0363F002ABAFB /* imagemodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3F82AF0363F002ABAFB /* imagemodel.swift */; };
+		9B3EE3FB2AF036D1002ABAFB /* APIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */; };
+		9B3EE3FD2AF03730002ABAFB /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3FC2AF03730002ABAFB /* UserListView.swift */; };
+		9B3EE3FF2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */; };
 		9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F812AEA64770011A542 /* ProEducApp.swift */; };
 		9B807F862AEA64790011A542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F852AEA64790011A542 /* Assets.xcassets */; };
 		9B807F892AEA64790011A542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F882AEA64790011A542 /* Preview Assets.xcassets */; };
-		DF617C582AEAADD500D0D7BB /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF617C572AEAADD500D0D7BB /* Classes.swift */; };
+		DF7BA47C2AF4F0A200598EC6 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7BA47B2AF4F0A200598EC6 /* Classes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B08054E2AF109E700FB72DE /* ParentConnexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentConnexion.swift; sourceTree = "<group>"; };
+		9B3E03AF2AF139430075E824 /* ProfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfModel.swift; sourceTree = "<group>"; };
+		9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentAPIRequestViewModel.swift; sourceTree = "<group>"; };
+		9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfAPIRequestViewModel.swift; sourceTree = "<group>"; };
+		9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentSelectEnfant.swift; sourceTree = "<group>"; };
+		9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveConnexion.swift; sourceTree = "<group>"; };
 		9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentAjoutDoc.swift; sourceTree = "<group>"; };
 		9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveBesoinAide.swift; sourceTree = "<group>"; };
 		9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentContactprof.swift; sourceTree = "<group>"; };
@@ -48,11 +69,20 @@
 		9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModalNotification.swift; sourceTree = "<group>"; };
 		9B3EE3E42AEA68A4002ABAFB /* tabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
 		9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentNotification.swift; sourceTree = "<group>"; };
+		9B3EE3EB2AEFAA39002ABAFB /* local.env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = local.env.swift; sourceTree = "<group>"; };
+		9B3EE3EE2AEFACFF002ABAFB /* EleveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveModel.swift; sourceTree = "<group>"; };
+		9B3EE3F22AEFBD69002ABAFB /* QRCodeGenerate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerate.swift; sourceTree = "<group>"; };
+		9B3EE3F42AEFC456002ABAFB /* QrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCode.swift; sourceTree = "<group>"; };
+		9B3EE3F62AF03622002ABAFB /* ParentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentModel.swift; sourceTree = "<group>"; };
+		9B3EE3F82AF0363F002ABAFB /* imagemodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemodel.swift; sourceTree = "<group>"; };
+		9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestViewModel.swift; sourceTree = "<group>"; };
+		9B3EE3FC2AF03730002ABAFB /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveAPIRequestViewModel.swift; sourceTree = "<group>"; };
 		9B807F7E2AEA64770011A542 /* ProEduc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProEduc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B807F812AEA64770011A542 /* ProEducApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProEducApp.swift; sourceTree = "<group>"; };
 		9B807F852AEA64790011A542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B807F882AEA64790011A542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DF617C572AEAADD500D0D7BB /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		DF7BA47B2AF4F0A200598EC6 /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Classes.swift; path = ../../../ProEduc3/ProEduc/Views/Classes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +116,8 @@
 				9B3EE3D22AEA67E2002ABAFB /* ParentListDoc.swift */,
 				9B3EE3D62AEA67F2002ABAFB /* ParentEnvoiMsg.swift */,
 				9B3EE3D82AEA67F2002ABAFB /* EleveMonEspace.swift */,
-				DF617C572AEAADD500D0D7BB /* Classes.swift */,
 				9B3EE3D72AEA67F2002ABAFB /* ParentMonEspace.swift */,
+				DF7BA47B2AF4F0A200598EC6 /* Classes.swift */,
 				9B3EE3D92AEA67F2002ABAFB /* EleveNotification.swift */,
 				9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */,
 				9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */,
@@ -95,8 +125,37 @@
 				9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */,
 				9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */,
 				9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */,
+				9B3EE3F42AEFC456002ABAFB /* QrCode.swift */,
+				9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */,
+				9B3EE3FC2AF03730002ABAFB /* UserListView.swift */,
+				9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */,
+				9B08054E2AF109E700FB72DE /* ParentConnexion.swift */,
+				9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */,
+				9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */,
+				9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */,
+				9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9B3EE3EA2AEFAA20002ABAFB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9B3EE3EB2AEFAA39002ABAFB /* local.env.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9B3EE3ED2AEFACE8002ABAFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B3EE3EE2AEFACFF002ABAFB /* EleveModel.swift */,
+				9B3EE3F22AEFBD69002ABAFB /* QRCodeGenerate.swift */,
+				9B3EE3F62AF03622002ABAFB /* ParentModel.swift */,
+				9B3EE3F82AF0363F002ABAFB /* imagemodel.swift */,
+				9B3E03AF2AF139430075E824 /* ProfModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9B807F752AEA64770011A542 = {
@@ -118,6 +177,8 @@
 		9B807F802AEA64770011A542 /* ProEduc */ = {
 			isa = PBXGroup;
 			children = (
+				9B3EE3ED2AEFACE8002ABAFB /* Models */,
+				9B3EE3EA2AEFAA20002ABAFB /* Helper */,
 				9B3EE3E62AEA6963002ABAFB /* App */,
 				9B3EE3E72AEA697F002ABAFB /* Views */,
 				9B807F852AEA64790011A542 /* Assets.xcassets */,
@@ -207,22 +268,37 @@
 				9B3EE3E52AEA68A4002ABAFB /* tabView.swift in Sources */,
 				9B3EE3D42AEA67E2002ABAFB /* ParentListDoc.swift in Sources */,
 				9B3EE3DB2AEA67F2002ABAFB /* ParentMonEspace.swift in Sources */,
+				9B3EE3F52AEFC456002ABAFB /* QrCode.swift in Sources */,
 				9B3EE3E32AEA6880002ABAFB /* ParentModalNotification.swift in Sources */,
+				9B3EE3F32AEFBD69002ABAFB /* QRCodeGenerate.swift in Sources */,
 				9B3EE3DC2AEA67F2002ABAFB /* EleveMonEspace.swift in Sources */,
+				9B3EE3FB2AF036D1002ABAFB /* APIRequestViewModel.swift in Sources */,
+				9B3EE3EF2AEFACFF002ABAFB /* EleveModel.swift in Sources */,
 				9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */,
 				9B3EE3DA2AEA67F2002ABAFB /* ParentEnvoiMsg.swift in Sources */,
 				9B3EE3D12AEA67CF002ABAFB /* ParentDeclaAbsence.swift in Sources */,
+				DF7BA47C2AF4F0A200598EC6 /* Classes.swift in Sources */,
 				9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */,
 				9B3EE3DD2AEA67F2002ABAFB /* EleveNotification.swift in Sources */,
 				9B3EE3E12AEA6880002ABAFB /* SelectUser.swift in Sources */,
+				9B3E03B42AF14EE30075E824 /* ProfAPIRequestViewModel.swift in Sources */,
+				9B08054F2AF109E700FB72DE /* ParentConnexion.swift in Sources */,
 				9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */,
-				DF617C582AEAADD500D0D7BB /* Classes.swift in Sources */,
 				9B3EE3E92AEA75B8002ABAFB /* ParentNotification.swift in Sources */,
+				9B3E03B22AF14E900075E824 /* ParentAPIRequestViewModel.swift in Sources */,
 				9B3EE3D52AEA67E2002ABAFB /* EleveListDoc.swift in Sources */,
 				9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */,
+				9B3E03B82AF160400075E824 /* ParentSelectEnfant.swift in Sources */,
 				9B3EE3CE2AEA66DF002ABAFB /* ParentAnnuaire.swift in Sources */,
+				9B3E03B02AF139430075E824 /* ProfModel.swift in Sources */,
+				9B3EE3FF2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift in Sources */,
+				9B3EE3F72AF03622002ABAFB /* ParentModel.swift in Sources */,
+				9B3EE3EC2AEFAA39002ABAFB /* local.env.swift in Sources */,
 				9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */,
 				9B3EE3CF2AEA66DF002ABAFB /* EleveContactImportant.swift in Sources */,
+				9B3EE3F92AF0363F002ABAFB /* imagemodel.swift in Sources */,
+				9B3EE3FD2AF03730002ABAFB /* UserListView.swift in Sources */,
+				9B3E03BA2AF396BD0075E824 /* EleveConnexion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

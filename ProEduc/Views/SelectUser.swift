@@ -11,72 +11,77 @@ struct SelectUser: View {
     var body: some View {
         VStack{
             NavigationView {
+                
                 ZStack(){
-                    //                RadialGradient(gradient: Gradient(colors: [Color.blue , Color.white ]), center: .center , startRadius: 55, endRadius: 359)
-                    //
+                    
                     VStack {
-                        NavigationLink(destination: tabView()) {
-                            Image("student")
+//                        NavigationLink(destination: tabView()) {
+                NavigationLink(destination: EleveConnexion()){
+                                Image("student")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 100, height:100)
+                                    .overlay(
+                                        Text("Eleves")
+                                            .font(.headline)
+                                            .foregroundColor(.white)
+                                            .padding(5)
+                                            .offset(x: 5, y: -32)
+                                    ).padding()
+                            }
+                        NavigationLink(destination: ParentConnexion()){
+                            Image("school")
+                            
                                 .resizable()
-                                .aspectRatio(contentMode: .fit)
+                                .aspectRatio(contentMode: .fill)
                                 .frame(width: 100, height:100)
                                 .overlay(
-                                    Text("Eleves")
+                                    Text("Vie scolaire")
                                         .font(.headline)
+                                        .bold()
+                                        .foregroundColor(.white)
+                                        .offset(x: 5, y: -32)
+                                )
+                        }
+                        NavigationLink(destination: EleveConnexion()){
+                            Image("parent")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100, height: 100)
+                                .overlay(
+                                    Text("Parent")
+                                        .font(.headline)
+                                        .bold()
+                                        .foregroundColor(.white)
+                                        .padding(5)
+                                        .offset(x: 5, y: -32)
+                                    
+                                ) .padding()
+                        }
+                        NavigationLink(destination: EleveConnexion()){
+                            Image("prof")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100, height: 100)
+                                .overlay(
+                                    Text("Prof")
+                                        .font(.headline)
+                                        .bold()
                                         .foregroundColor(.white)
                                         .padding(5)
                                         .offset(x: 5, y: -32)
                                 ).padding()
+                            
                         }
-                        Image("school")
-                        
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 100, height:100)
-                            .overlay(
-                                Text("Vie scolaire")
-                                    .font(.headline)
-                                    .bold()
-                                    .foregroundColor(.white)
-                                    .offset(x: 5, y: -32)
-                            )
-                        
-                        Image("parent")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 100, height: 100)
-                            .overlay(
-                                Text("Parent")
-                                    .font(.headline)
-                                    .bold()
-                                    .foregroundColor(.white)
-                                    .padding(5)
-                                    .offset(x: 5, y: -32)
-                                
-                            ) .padding()
-                        
-                        Image("prof")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 100, height: 100)
-                            .overlay(
-                                Text("Prof")
-                                    .font(.headline)
-                                    .bold()
-                                    .foregroundColor(.white)
-                                    .padding(5)
-                                    .offset(x: 5, y: -32)
-                            ).padding()
-                        
                     }
+                    .background(Image("bg"))
+                    .ignoresSafeArea()
                 }
-                .background(Image("bg"))
-                .ignoresSafeArea()
+                
             }
         }
-   }
+    }
 }
-
 #Preview {
     SelectUser()
 }
