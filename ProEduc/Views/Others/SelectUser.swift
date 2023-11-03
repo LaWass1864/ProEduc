@@ -17,7 +17,7 @@ struct SelectUser: View {
                     VStack {
 //                        NavigationLink(destination: tabView()) {
                 NavigationLink(destination: EleveConnexion()){
-                                Image("student")
+                                Image("eleve")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 100, height:100)
@@ -30,7 +30,7 @@ struct SelectUser: View {
                                     ).padding()
                             }
                         NavigationLink(destination: ParentConnexion()){
-                            Image("school")
+                            Image("viescolaire")
                             
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -44,7 +44,7 @@ struct SelectUser: View {
                                 )
                         }
                         NavigationLink(destination: EleveConnexion()){
-                            Image("parent")
+                            Image("parents")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 100, height: 100)
@@ -59,7 +59,7 @@ struct SelectUser: View {
                                 ) .padding()
                         }
                         NavigationLink(destination: EleveConnexion()){
-                            Image("prof")
+                            Image("professeurs")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 100, height: 100)
