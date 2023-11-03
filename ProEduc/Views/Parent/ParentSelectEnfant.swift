@@ -13,7 +13,7 @@ struct ParentSelectEnfant: View {
     var placeholder = "Selectionner un enfant"
     var dropDownList = ["Lida", "Wassila", "Zachari", "Sofian"]
     var body: some View {
-        NavigationView {
+        NavigationStack{
             VStack{
                 ZStack{
                     
