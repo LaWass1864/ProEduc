@@ -1,4 +1,13 @@
 //
+//  EleveConnexion.swift
+//  ProEduc
+//
+//  Created by Apprenant 76 on 02/11/2023.
+//
+
+import SwiftUI
+
+//
 //  ParentConnexion.swift
 //  ProEduc
 //
@@ -7,13 +16,13 @@
 
 import SwiftUI
 
-let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
+let lightBlueColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
 
-let storedUsername = "Dupont"
-let storedPassword = "AZERTY"
+let storedUsernameEleve = "Garcia"
+let storedPasswordEleve = "123"
 
-struct ParentConnexion: View {
-    
+struct EleveConnexion: View {
+
     @State var username: String = ""
     @State var password: String = ""
     
@@ -35,7 +44,7 @@ struct ParentConnexion: View {
                     }
                     
                     Button(action: {
-                        if self.username == storedUsername && self.password == storedPassword {
+                        if self.username == storedUsernameEleve && self.password == storedPasswordEleve {
                             self.authenticationDidSucceed = true
                             self.authenticationDidFail = false
                         } else {
@@ -48,18 +57,15 @@ struct ParentConnexion: View {
                 }
                 .padding()
                 if authenticationDidSucceed {
-                    NavigationLink(destination: ParentAnnuaire()) {
-                        
-                        
-                        Text("Connexion réussie !")
-                            .font(.headline)
-                            .frame(width: 250, height: 80)
-                            .background(Color(.blueParent))
-                            .cornerRadius(20.0)
-                        
+                   
+                    NavigationLink(destination: TabViewEleve(), isActive: $authenticationDidSucceed) {
+                           EmptyView()
+                       }
+                       
+//
                     }
                 }
-            }
+            }.navigationBarBackButtonHidden(true)
         }
         
     }
@@ -67,7 +73,7 @@ struct ParentConnexion: View {
     
     struct HelloText: View {
         var body: some View {
-            Text("Bonjour!")
+            Text("Hello !")
                 .font(.largeTitle)
                 .fontWeight(.semibold)
                 .padding(.bottom, 20)
@@ -124,8 +130,8 @@ struct ParentConnexion: View {
         }
     }
     
-}
+
 
 #Preview {
-    ParentConnexion()
+    EleveConnexion()
 }

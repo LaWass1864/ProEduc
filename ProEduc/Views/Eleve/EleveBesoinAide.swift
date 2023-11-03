@@ -14,7 +14,7 @@ struct EleveBesoinAide: View {
             Spacer()
             ZStack {
                 Rectangle()
-                    .cornerRadius(50)
+                    .cornerRadius(25)
                     .frame(width: 350, height: 100)
                     .foregroundColor(Color("greenStudent"))
                 Text("Besoin D'aide")
@@ -27,7 +27,7 @@ struct EleveBesoinAide: View {
                 Text("Nous vous proposons ce numéro ")
             }
             Rectangle()
-                .cornerRadius(50)
+                .cornerRadius(25)
                 .frame(width: 350, height: 100)
                 .foregroundColor(Color(.green))
                 .overlay(

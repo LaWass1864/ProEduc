@@ -13,7 +13,7 @@ struct EleveListDoc: View {
             ZStack{
                 
                 Rectangle()
-                    .cornerRadius(50)
+                    .cornerRadius(25)
                     .frame(width:350, height: 100)
                     .foregroundColor(Color("green_student"))
                 Text("Documents")

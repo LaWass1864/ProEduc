@@ -1,13 +1,4 @@
 //
-//  EleveConnexion.swift
-//  ProEduc
-//
-//  Created by Apprenant 76 on 02/11/2023.
-//
-
-import SwiftUI
-
-//
 //  ParentConnexion.swift
 //  ProEduc
 //
@@ -16,12 +7,12 @@ import SwiftUI
 
 import SwiftUI
 
-let lightBlueColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
+let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
 
-let storedUsernameEleve = "Garcia"
-let storedPasswordEleve = "QWERTY"
+let storedUsername = "Dupont"
+let storedPassword = "12345"
 
-struct EleveConnexion: View {
+struct ParentConnexion: View {
     
     @State var username: String = ""
     @State var password: String = ""
@@ -44,7 +35,7 @@ struct EleveConnexion: View {
                     }
                     
                     Button(action: {
-                        if self.username == storedUsernameEleve && self.password == storedPasswordEleve {
+                        if self.username == storedUsername && self.password == storedPassword {
                             self.authenticationDidSucceed = true
                             self.authenticationDidFail = false
                         } else {
@@ -57,13 +48,13 @@ struct EleveConnexion: View {
                 }
                 .padding()
                 if authenticationDidSucceed {
-                    NavigationLink(destination: EleveMonEspace()) {
+                    NavigationLink(destination: ParentAnnuaire()) {
                         
                         
                         Text("Connexion réussie !")
                             .font(.headline)
                             .frame(width: 250, height: 80)
-                            .background(Color("greenStudent"))
+                            .background(Color(.blueParent))
                             .cornerRadius(20.0)
                         
                     }
@@ -76,7 +67,7 @@ struct EleveConnexion: View {
     
     struct HelloText: View {
         var body: some View {
-            Text("Hello !")
+            Text("Bonjour!")
                 .font(.largeTitle)
                 .fontWeight(.semibold)
                 .padding(.bottom, 20)
@@ -136,5 +127,5 @@ struct EleveConnexion: View {
 }
 
 #Preview {
-    EleveConnexion()
+    ParentConnexion()
 }

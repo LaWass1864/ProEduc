@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Classes: View {
+struct ParentSelectEnfent: View {
     @State private var isChildDetailActive: Bool = false
     @State var selectedChild: String? = nil
     var placeholder = "Selectioner Enfent"
@@ -77,5 +77,5 @@ struct Classes: View {
 }
 
 #Preview {
-    Classes()
+    ParentSelectEnfent()
 }

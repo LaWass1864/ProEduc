@@ -34,3 +34,7 @@ struct Full: Codable {
     let url: String
     let width, height: Int
 }
+struct Student {
+    let name: String
+    let imageURL: URL?
+}

@@ -11,7 +11,8 @@ import SwiftUI
 struct ProEducApp: App {
     var body: some Scene {
         WindowGroup {
-            tabView()
+            SelectUser()
+//            tabView()
         }
     }
 }

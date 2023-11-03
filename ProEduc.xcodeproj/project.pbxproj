@@ -28,7 +28,7 @@
 		9B3EE3E12AEA6880002ABAFB /* SelectUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3DE2AEA6880002ABAFB /* SelectUser.swift */; };
 		9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */; };
 		9B3EE3E32AEA6880002ABAFB /* ParentModalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */; };
-		9B3EE3E52AEA68A4002ABAFB /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E42AEA68A4002ABAFB /* tabView.swift */; };
+		9B3EE3E52AEA68A4002ABAFB /* tabViewParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E42AEA68A4002ABAFB /* tabViewParent.swift */; };
 		9B3EE3E92AEA75B8002ABAFB /* ParentNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */; };
 		9B3EE3EC2AEFAA39002ABAFB /* local.env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3EB2AEFAA39002ABAFB /* local.env.swift */; };
 		9B3EE3EF2AEFACFF002ABAFB /* EleveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3EE2AEFACFF002ABAFB /* EleveModel.swift */; };
@@ -42,7 +42,12 @@
 		9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F812AEA64770011A542 /* ProEducApp.swift */; };
 		9B807F862AEA64790011A542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F852AEA64790011A542 /* Assets.xcassets */; };
 		9B807F892AEA64790011A542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F882AEA64790011A542 /* Preview Assets.xcassets */; };
-		DF7BA47C2AF4F0A200598EC6 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7BA47B2AF4F0A200598EC6 /* Classes.swift */; };
+		DF6C4FA32AF4F4C900D1E925 /* ParentSelectEnfent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6C4FA22AF4F4C900D1E925 /* ParentSelectEnfent.swift */; };
+		DF6C4FA52AF4F87C00D1E925 /* ImageServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6C4FA42AF4F87C00D1E925 /* ImageServise.swift */; };
+		DF6C4FA72AF4FAF600D1E925 /* cartes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6C4FA62AF4FAF600D1E925 /* cartes.swift */; };
+		DF6C4FAA2AF5037300D1E925 /* ImageAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6C4FA92AF5037300D1E925 /* ImageAPIRequestViewModel.swift */; };
+		DF6C4FAC2AF52B5100D1E925 /* Profils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6C4FAB2AF52B5100D1E925 /* Profils.swift */; };
+		DF6C4FAE2AF52C7E00D1E925 /* tabViewEleve.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6C4FAD2AF52C7E00D1E925 /* tabViewEleve.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +72,7 @@
 		9B3EE3DE2AEA6880002ABAFB /* SelectUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUser.swift; sourceTree = "<group>"; };
 		9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveMonProfil.swift; sourceTree = "<group>"; };
 		9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModalNotification.swift; sourceTree = "<group>"; };
-		9B3EE3E42AEA68A4002ABAFB /* tabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
+		9B3EE3E42AEA68A4002ABAFB /* tabViewParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabViewParent.swift; sourceTree = "<group>"; };
 		9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentNotification.swift; sourceTree = "<group>"; };
 		9B3EE3EB2AEFAA39002ABAFB /* local.env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = local.env.swift; sourceTree = "<group>"; };
 		9B3EE3EE2AEFACFF002ABAFB /* EleveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveModel.swift; sourceTree = "<group>"; };
@@ -82,7 +87,12 @@
 		9B807F812AEA64770011A542 /* ProEducApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProEducApp.swift; sourceTree = "<group>"; };
 		9B807F852AEA64790011A542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B807F882AEA64790011A542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DF7BA47B2AF4F0A200598EC6 /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Classes.swift; path = ../../../ProEduc3/ProEduc/Views/Classes.swift; sourceTree = "<group>"; };
+		DF6C4FA22AF4F4C900D1E925 /* ParentSelectEnfent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentSelectEnfent.swift; sourceTree = "<group>"; };
+		DF6C4FA42AF4F87C00D1E925 /* ImageServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServise.swift; sourceTree = "<group>"; };
+		DF6C4FA62AF4FAF600D1E925 /* cartes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartes.swift; sourceTree = "<group>"; };
+		DF6C4FA92AF5037300D1E925 /* ImageAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIRequestViewModel.swift; sourceTree = "<group>"; };
+		DF6C4FAB2AF52B5100D1E925 /* Profils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profils.swift; sourceTree = "<group>"; };
+		DF6C4FAD2AF52C7E00D1E925 /* tabViewEleve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabViewEleve.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				9B807F812AEA64770011A542 /* ProEducApp.swift */,
-				9B3EE3E42AEA68A4002ABAFB /* tabView.swift */,
+				9B3EE3E42AEA68A4002ABAFB /* tabViewParent.swift */,
+				DF6C4FAD2AF52C7E00D1E925 /* tabViewEleve.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -108,32 +119,13 @@
 		9B3EE3E72AEA697F002ABAFB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9B3EE3CB2AEA66DF002ABAFB /* ParentAnnuaire.swift */,
-				9B3EE3D02AEA67CF002ABAFB /* ParentDeclaAbsence.swift */,
-				9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */,
-				9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */,
-				9B3EE3D32AEA67E2002ABAFB /* EleveListDoc.swift */,
-				9B3EE3D22AEA67E2002ABAFB /* ParentListDoc.swift */,
-				9B3EE3D62AEA67F2002ABAFB /* ParentEnvoiMsg.swift */,
-				9B3EE3D82AEA67F2002ABAFB /* EleveMonEspace.swift */,
-				9B3EE3D72AEA67F2002ABAFB /* ParentMonEspace.swift */,
-				DF7BA47B2AF4F0A200598EC6 /* Classes.swift */,
-				9B3EE3D92AEA67F2002ABAFB /* EleveNotification.swift */,
-				9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */,
-				9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */,
-				9B3EE3DE2AEA6880002ABAFB /* SelectUser.swift */,
-				9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */,
-				9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */,
-				9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */,
 				9B3EE3F42AEFC456002ABAFB /* QrCode.swift */,
-				9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */,
+				DF6C4FAB2AF52B5100D1E925 /* Profils.swift */,
+				9B3EE3DE2AEA6880002ABAFB /* SelectUser.swift */,
+				DF6C4FA62AF4FAF600D1E925 /* cartes.swift */,
 				9B3EE3FC2AF03730002ABAFB /* UserListView.swift */,
-				9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */,
-				9B08054E2AF109E700FB72DE /* ParentConnexion.swift */,
-				9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */,
-				9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */,
-				9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */,
-				9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */,
+				DF6C4FB02AF52F9F00D1E925 /* Parent */,
+				DF6C4FAF2AF52F8400D1E925 /* Eleve */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				9B3EE3EB2AEFAA39002ABAFB /* local.env.swift */,
+				DF6C4FA42AF4F87C00D1E925 /* ImageServise.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -180,6 +173,7 @@
 				9B3EE3ED2AEFACE8002ABAFB /* Models */,
 				9B3EE3EA2AEFAA20002ABAFB /* Helper */,
 				9B3EE3E62AEA6963002ABAFB /* App */,
+				DF6C4FA82AF5030400D1E925 /* API */,
 				9B3EE3E72AEA697F002ABAFB /* Views */,
 				9B807F852AEA64790011A542 /* Assets.xcassets */,
 				9B807F872AEA64790011A542 /* Preview Content */,
@@ -193,6 +187,51 @@
 				9B807F882AEA64790011A542 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF6C4FA82AF5030400D1E925 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */,
+				9B3E03B12AF14E900075E824 /* ParentAPIRequestViewModel.swift */,
+				9B3E03B32AF14EE30075E824 /* ProfAPIRequestViewModel.swift */,
+				9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */,
+				DF6C4FA92AF5037300D1E925 /* ImageAPIRequestViewModel.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DF6C4FAF2AF52F8400D1E925 /* Eleve */ = {
+			isa = PBXGroup;
+			children = (
+				9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */,
+				9B3EE3D32AEA67E2002ABAFB /* EleveListDoc.swift */,
+				9B3EE3D92AEA67F2002ABAFB /* EleveNotification.swift */,
+				9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */,
+				9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */,
+				9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */,
+				9B3EE3D82AEA67F2002ABAFB /* EleveMonEspace.swift */,
+			);
+			path = Eleve;
+			sourceTree = "<group>";
+		};
+		DF6C4FB02AF52F9F00D1E925 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				9B3EE3D02AEA67CF002ABAFB /* ParentDeclaAbsence.swift */,
+				9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */,
+				9B3EE3D22AEA67E2002ABAFB /* ParentListDoc.swift */,
+				9B3EE3D72AEA67F2002ABAFB /* ParentMonEspace.swift */,
+				9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */,
+				9B3EE3D62AEA67F2002ABAFB /* ParentEnvoiMsg.swift */,
+				9B08054E2AF109E700FB72DE /* ParentConnexion.swift */,
+				9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */,
+				9B3E03B72AF160400075E824 /* ParentSelectEnfant.swift */,
+				9B3EE3CB2AEA66DF002ABAFB /* ParentAnnuaire.swift */,
+				9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */,
+				DF6C4FA22AF4F4C900D1E925 /* ParentSelectEnfent.swift */,
+			);
+			path = Parent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3EE3E52AEA68A4002ABAFB /* tabView.swift in Sources */,
+				9B3EE3E52AEA68A4002ABAFB /* tabViewParent.swift in Sources */,
 				9B3EE3D42AEA67E2002ABAFB /* ParentListDoc.swift in Sources */,
 				9B3EE3DB2AEA67F2002ABAFB /* ParentMonEspace.swift in Sources */,
 				9B3EE3F52AEFC456002ABAFB /* QrCode.swift in Sources */,
@@ -276,12 +315,14 @@
 				9B3EE3EF2AEFACFF002ABAFB /* EleveModel.swift in Sources */,
 				9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */,
 				9B3EE3DA2AEA67F2002ABAFB /* ParentEnvoiMsg.swift in Sources */,
+				DF6C4FAA2AF5037300D1E925 /* ImageAPIRequestViewModel.swift in Sources */,
 				9B3EE3D12AEA67CF002ABAFB /* ParentDeclaAbsence.swift in Sources */,
-				DF7BA47C2AF4F0A200598EC6 /* Classes.swift in Sources */,
+				DF6C4FA32AF4F4C900D1E925 /* ParentSelectEnfent.swift in Sources */,
 				9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */,
 				9B3EE3DD2AEA67F2002ABAFB /* EleveNotification.swift in Sources */,
 				9B3EE3E12AEA6880002ABAFB /* SelectUser.swift in Sources */,
 				9B3E03B42AF14EE30075E824 /* ProfAPIRequestViewModel.swift in Sources */,
+				DF6C4FA72AF4FAF600D1E925 /* cartes.swift in Sources */,
 				9B08054F2AF109E700FB72DE /* ParentConnexion.swift in Sources */,
 				9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */,
 				9B3EE3E92AEA75B8002ABAFB /* ParentNotification.swift in Sources */,
@@ -296,8 +337,11 @@
 				9B3EE3EC2AEFAA39002ABAFB /* local.env.swift in Sources */,
 				9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */,
 				9B3EE3CF2AEA66DF002ABAFB /* EleveContactImportant.swift in Sources */,
+				DF6C4FAE2AF52C7E00D1E925 /* tabViewEleve.swift in Sources */,
 				9B3EE3F92AF0363F002ABAFB /* imagemodel.swift in Sources */,
 				9B3EE3FD2AF03730002ABAFB /* UserListView.swift in Sources */,
+				DF6C4FAC2AF52B5100D1E925 /* Profils.swift in Sources */,
+				DF6C4FA52AF4F87C00D1E925 /* ImageServise.swift in Sources */,
 				9B3E03BA2AF396BD0075E824 /* EleveConnexion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

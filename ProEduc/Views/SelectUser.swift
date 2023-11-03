@@ -72,9 +72,9 @@ struct SelectUser: View {
                                         .offset(x: 5, y: -32)
                                 ).padding()
                             
-                        }
+                        }.navigationBarBackButtonHidden(true)
                     }
-                    .background(Image("bg"))
+//                    .background(Image("bg"))
                     .ignoresSafeArea()
                 }
                 
