@@ -48,13 +48,12 @@ struct ParentConnexion: View {
                 }
                 .padding()
                 if authenticationDidSucceed {
-                    NavigationLink(destination: ParentAnnuaire()) {
-                        
+                    NavigationLink(destination: ParentSelectEnfant()) {
                         
                         Text("Connexion réussie !")
                             .font(.headline)
                             .frame(width: 250, height: 80)
-                            .background(Color(.blueParent))
+                            .background(Color("blue_parent"))
                             .cornerRadius(20.0)
                         
                     }
@@ -93,7 +92,7 @@ struct ParentConnexion: View {
                 .foregroundColor(.white)
                 .padding()
                 .frame(width: 220, height: 60)
-                .background(Color.black)
+                .background(Color("blue_parent"))
                 .cornerRadius(35.0)
         }
     }

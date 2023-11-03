@@ -47,7 +47,7 @@ struct ParentDeclaAbsence: View {
                     .padding()
                     .cornerRadius(10)
                     .foregroundColor(.white)
-                    .border(Color.yellow, width: 1)
+                    .border(Color.gray, width: 1)
                     .font(.title)
                 
                 // TextArea Motif de l'absence
@@ -62,19 +62,22 @@ struct ParentDeclaAbsence: View {
                     .cornerRadius(10) // Coins arrondis
                     .padding() // Remplissage
                     .font(.title) // Taille de la police
-                    .border(Color.yellow, width: 1) // border jaune
+                    .border(Color.gray, width: 1) // border jaune
             
                 // Bouton upload document
                 Button(action: {
                     // Action à exécuter lorsque le bouton est appuyé
                 }) {
-                    Text("Ajouter une attestation")
+                    Text("Ajouter un document")
                         .foregroundColor(.white)
                         .padding()
                 }
-                .frame(width: 250, height: 50) // Réglage de la largeur et la hauteur
-                .background(Color("green_btn")) // Modification de la couleur d'arrière-plan du bouton
-                .cornerRadius(10) // Ajoutez des coins arrondis si nécessaire
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding()
+                .frame(width: 220, height: 60)
+                .background(Color("blue_parent"))
+                .cornerRadius(35.0)
             }.padding()
     }
     }

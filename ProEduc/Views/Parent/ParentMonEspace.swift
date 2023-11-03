@@ -36,6 +36,8 @@ struct ParentMonEspace: View {
                     Text("Les documents")
                 }
             } .scrollContentBackground(.hidden)
+                    .navigationBarBackButtonHidden(true)
+
         }
             .background(.white)
     }

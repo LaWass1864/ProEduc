@@ -14,9 +14,10 @@ struct ParentAjoutDoc: View {
     @State var docName: String = ""
     // textarea description
     @State private var textAbsence = "Entrer la raison de cette absence"
+    @State private var isShowingModal = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack{
                 ZStack{
                     RoundedRectangle(cornerRadius: 25)
@@ -38,7 +39,8 @@ struct ParentAjoutDoc: View {
                     TextField("Nom du document", text: $docName)
                         .font(.title3)
                         .padding(.bottom,25)
-                        .border(Color.yellow, width: 2)
+                        .border(Color("blue_parent"), width: 2)
+                        .cornerRadius(10)
                     
                     // textArea Motif de l'absence
                     Text("Description")
@@ -46,31 +48,43 @@ struct ParentAjoutDoc: View {
                         .bold()
                         .padding(.bottom,25)
                     TextEditor(text: $textAbsence)
-                        .font(.body)
-                        .padding(.top, 20)
-                        .border(Color.yellow, width: 2)
-                    
-                    // Bouton upload document
-                    Image(systemName: "camera")
-                        .padding(90)
-                    // Bouton valider le document
-                    Button(action: {
-                        // Action à exécuter lorsque le bouton est appuyé
-                    }) {
-                        Text("Valider")
-                            .foregroundColor(.white)
-                            .padding()
-                    }
-                    .frame(width: 250, height: 50) // Réglage de la largeur et la hauteur
-                    .background(Color("green_btn")) // Modification de la couleur d'arrière-plan du bouton
-                    .cornerRadius(10) // Ajoutez des coins arrondis si nécessaire
+                        .frame(minWidth: 0, idealWidth: .infinity, maxWidth: .infinity, minHeight: 0, idealHeight: .infinity, maxHeight: .infinity)
+                        .background(
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(Color.gray.opacity(0.2))
+                        )
+                        .padding()
+                        .border(Color("blue_parent"), width: 2)
+                        .cornerRadius(10)
+                }
+                
+                // Bouton upload document
+                Image(systemName: "camera")
+                    .padding(90)
+                // Bouton valider le document
+                Button(action: {
+                    isShowingModal = true
+                }) {
+                    Text("Envoyer")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 220, height: 60)
+                        .background(Color("blue_parent"))
+                        .cornerRadius(35.0)
+                }
+                .alert(isPresented: $isShowingModal) {
+                    Alert(
+                        title: Text("Votre document a bien été pris en charge"),
+                        
+                        dismissButton: .default(Text("OK"))
+                    )
                 }
             }
             .padding(25)
         }
     }
 }
-
 #Preview {
     ParentAjoutDoc()
 }

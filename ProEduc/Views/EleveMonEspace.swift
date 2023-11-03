@@ -16,11 +16,11 @@ import SwiftUI
 
 struct EleveMonEspace: View {
     @State private var isDarkModeEnabled: Bool = false
-    
+   
     // Pull API des Eleves
     //mais aussi de l'utilisateur renseigné car seul lui peut voir ses informations
     @EnvironmentObject var eleveRequest: EleveAPIRequestViewModel
-    @EnvironmentObject var userSession: Eleve
+    @EnvironmentObject var eleveSession: Eleve
     
     @State var showTabView = false
     var body: some View {
@@ -95,7 +95,7 @@ struct EleveMonEspace: View {
                         .foregroundColor(Color(red: 0.941, green: 0.941, blue: 0.941))
                         .frame(width:360, height: 220)
                     VStack{
-                        Image("Carte Jeune")
+                        Image("recto_min")
                         Text("Carte jeune")
                             .font(.title2)
                             .fontWeight(.regular)
@@ -111,7 +111,7 @@ struct EleveMonEspace: View {
                         .frame(width:360, height: 220)
                     VStack{
                         Image("recto_min")
-                        Text("Carte Self")
+                        Text("Carte de self")
                             .font(.title2)
                             .fontWeight(.regular)
                     }

@@ -19,17 +19,20 @@ var message = ["Message 1", "Message 2", "Message 3", "Message 4"]
             NavigationView {
                 VStack{
                     ZStack{
-//                        Spacer()
-                        RoundedRectangle(cornerRadius: 25)
-                            .frame(width: 350.0, height: 120.0)
-                            .foregroundColor(Color(red: 0.013, green: 0.78, blue: 0.778))
-                            .padding(.top, 11.0)
-                            .overlay(
-                                Text("Mes Notifications")
-                                    .font(.largeTitle)
-                                    .bold()
-                                    .foregroundColor(.white)
-                            )
+
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 25)
+                                .foregroundColor(Color(.blueParent))
+                                .frame(width: 350, height: 120)
+                            
+                            Text("Mes notifications")
+                                .foregroundColor(.white)
+                                .font(.system(size: 32))
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.center)
+                            
+                        }
+                            
                     }
                     VStack{
                         
@@ -52,15 +55,17 @@ var message = ["Message 1", "Message 2", "Message 3", "Message 4"]
                             .sheet(isPresented: $isWritingMessageViewPresented) {
                                 ParentModalNotification()
                             }
+                            .font(.headline)
+                            .foregroundColor(.white)
                             .padding()
-                            .background(Color(red: -0.192, green: 0.857, blue: 0.048))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
+                            .frame(width: 220, height: 60)
+                            .background(Color("blue_parent"))
+                            .cornerRadius(35.0)
                         }
                     }
                     .padding(.bottom, 30.0)
                     }
-                .background(Image("BG"))
+               
                 }
             }
         }

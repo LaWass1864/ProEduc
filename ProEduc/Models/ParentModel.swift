@@ -18,7 +18,7 @@ import Foundation
 // MARK: - Welcome
 struct ParentRequete: Codable {
     let records: [ParentRecord]
-
+    
 }
 
 // MARK: - Record
@@ -32,12 +32,12 @@ struct Parent: Codable {
     let eleveID: [String]
     let phone, nom, adresse, prenom: String
     let id: String
-   let father: Bool?
+    let father: Bool?
     let document: [DataBaseImage]
     let email: String
     let nameOfChildFromEleve: [String]
-  let mother: Bool?
-
+    let mother: Bool?
+    
     enum CodingKeys: String, CodingKey {
         case eleveID = "Eleve ID"
         case phone, nom, adresse, prenom
