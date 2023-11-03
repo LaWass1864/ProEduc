@@ -101,6 +101,14 @@
 		9B3E03BE2AF539840075E824 /* Eleve */ = {
 			isa = PBXGroup;
 			children = (
+				9B3EE3D32AEA67E2002ABAFB /* EleveListDoc.swift */,
+				9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */,
+				9B3EE3D82AEA67F2002ABAFB /* EleveMonEspace.swift */,
+				9B3EE3D92AEA67F2002ABAFB /* EleveNotification.swift */,
+				9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */,
+				9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */,
+				9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */,
+				9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */,
 			);
 			path = Eleve;
 			sourceTree = "<group>";
@@ -148,14 +156,6 @@
 			children = (
 				9B3E03BF2AF5398C0075E824 /* Parent */,
 				9B3E03BE2AF539840075E824 /* Eleve */,
-				9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */,
-				9B3EE3D32AEA67E2002ABAFB /* EleveListDoc.swift */,
-				9B3EE3D82AEA67F2002ABAFB /* EleveMonEspace.swift */,
-				9B3EE3D92AEA67F2002ABAFB /* EleveNotification.swift */,
-				9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */,
-				9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */,
-				9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */,
-				9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */,
 				9B3E03C02AF53A3D0075E824 /* Others */,
 				9B3EE3FA2AF036D1002ABAFB /* APIRequestViewModel.swift */,
 				9B3EE3FC2AF03730002ABAFB /* UserListView.swift */,
