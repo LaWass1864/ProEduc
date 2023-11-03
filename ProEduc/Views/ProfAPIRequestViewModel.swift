@@ -33,10 +33,10 @@ class ProfAPIRequestViewModel: ObservableObject {
             }
             
             let parsedRecord = try JSONDecoder().decode(ProfRequete.self, from: serverData)
-            
-            parsedRecord.records.forEach { drink in
-                fetchedProf.append(drink.fields)
-            }
+       print(parsedRecord)
+        parsedRecord.records.forEach { ProfR in
+            fetchedProf.append(ProfR.fields)
+       }
             
             return fetchedProf
             

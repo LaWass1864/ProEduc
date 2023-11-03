@@ -8,7 +8,7 @@ import Foundation
 
 // MARK: - Welcome
 struct ProfRequete: Codable {
-    let records: [ProfRequete]
+    let records: [ProfRecord]
 
 }
 

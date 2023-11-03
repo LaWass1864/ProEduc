@@ -71,6 +71,6 @@ struct UserListView: View {
 
 #Preview {
     UserListView()
-    
+        .environmentObject(EleveAPIRequestViewModel())
 }
 

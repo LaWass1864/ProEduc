@@ -15,7 +15,7 @@ struct EleveListDoc: View {
             Rectangle()
                 .cornerRadius(50)
                 .frame(width:350, height: 100)
-                .foregroundColor(Color("green_student"))
+                .foregroundColor(Color(red: 0.118, green: 0.529, blue: 0.819))
             Text("Documents")
                 .font(.title)
         }

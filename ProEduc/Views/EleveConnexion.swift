@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
+let blue = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
 
-let storedUsername = "Dupont"
-let storedPassword = "12345"
+let storedUsernameEleve = "U"
+let storedPasswordEleve = "u"
 
-struct ParentConnexion: View {
+struct EleveConnexion: View {
     
-    @State var username: String = ""
-    @State var password: String = ""
+    @State var username: String = "U"
+    @State var password: String = "u"
     
     @State var authenticationDidFail: Bool = false
     @State var authenticationDidSucceed: Bool = false
@@ -24,6 +24,7 @@ struct ParentConnexion: View {
         NavigationView{
             ZStack {
                 VStack {
+                    
                     HelloText()
                     UserImage()
                     UsernameTextField(username: $username)
@@ -34,8 +35,10 @@ struct ParentConnexion: View {
                             .foregroundColor(.red)
                     }
                     
+                    
+                    
                     Button(action: {
-                        if self.username == storedUsername && self.password == storedPassword {
+                        if self.username == storedUsernameEleve && self.password == storedPasswordEleve {
                             self.authenticationDidSucceed = true
                             self.authenticationDidFail = false
                         } else {
@@ -71,8 +74,19 @@ struct ParentConnexion: View {
                 .font(.largeTitle)
                 .fontWeight(.semibold)
                 .padding(.bottom, 20)
+            Spacer()
+            ZStack{
+                Rectangle()
+                    .cornerRadius(20)
+                    .foregroundColor(Color(red: 0.11, green: 0.518, blue: 0.799))
+                    .frame(width:300, height: 100)
+                Text("Bienvenue sur mon espace")
+                    .foregroundColor(.white)
+            }
         }
     }
+    
+    
     
     struct UserImage: View {
         var body: some View {
@@ -93,7 +107,7 @@ struct ParentConnexion: View {
                 .foregroundColor(.white)
                 .padding()
                 .frame(width: 220, height: 60)
-                .background(Color.black)
+                .background(Color.greenStudent)
                 .cornerRadius(35.0)
         }
     }
@@ -105,7 +119,7 @@ struct ParentConnexion: View {
         var body: some View {
             TextField(("Pseudo"), text: $username)
                 .padding()
-                .background(lightGreyColor)
+                .background(blue)
                 .cornerRadius(5.0)
                 .padding(.bottom, 20)
         }
@@ -118,7 +132,7 @@ struct ParentConnexion: View {
         var body: some View {
             SecureField("Mot de passe", text: $password)
                 .padding()
-                .background(lightGreyColor)
+                .background(blue)
                 .cornerRadius(5.0)
                 .padding(.bottom, 20)
         }
@@ -127,5 +141,6 @@ struct ParentConnexion: View {
 }
 
 #Preview {
-    ParentConnexion()
+    EleveConnexion()
 }
+
