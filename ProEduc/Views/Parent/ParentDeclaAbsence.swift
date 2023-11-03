@@ -58,9 +58,10 @@ struct ParentDeclaAbsence: View {
                 TextEditor(text: $textAbsence)
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity) // Pour occuper tout l'espace disponible
                     .foregroundColor(.black) // Couleur du texte
-                    .background(Color.gray) // Couleur d'arrière-plan
-                    .cornerRadius(10) // Coins arrondis
-                    .padding() // Remplissage
+                    .background(lightGreyColor)
+                    .cornerRadius(5.0)
+                    .padding(.bottom, 20)
+                    .cornerRadius(10) // Coins arrondi
                     .font(.title) // Taille de la police
                     .border(Color.gray, width: 1) // border jaune
             

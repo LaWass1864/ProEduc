@@ -16,6 +16,9 @@ struct ParentAjoutDoc: View {
     @State private var textAbsence = "Entrer la raison de cette absence"
     @State private var isShowingModal = false
     
+    let lightGreyColor = Color.gray.opacity(0.4)
+    
+    
     var body: some View {
         NavigationStack {
             VStack{
@@ -37,10 +40,10 @@ struct ParentAjoutDoc: View {
                         .font(.title3)
                         .bold()
                     TextField("Nom du document", text: $docName)
-                        .font(.title3)
-                        .padding(.bottom,25)
-                        .border(Color("blue_parent"), width: 2)
-                        .cornerRadius(10)
+                        .padding()
+                        .background(lightGreyColor)
+                        .cornerRadius(5.0)
+                        .padding(.bottom, 20)
                     
                     // textArea Motif de l'absence
                     Text("Description")
@@ -48,19 +51,18 @@ struct ParentAjoutDoc: View {
                         .bold()
                         .padding(.bottom,25)
                     TextEditor(text: $textAbsence)
-                        .frame(minWidth: 0, idealWidth: .infinity, maxWidth: .infinity, minHeight: 0, idealHeight: .infinity, maxHeight: .infinity)
-                        .background(
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(Color.gray.opacity(0.2))
-                        )
                         .padding()
-                        .border(Color("blue_parent"), width: 2)
-                        .cornerRadius(10)
+                        .background(lightGreyColor)
+                        .cornerRadius(5.0)
+                        .foregroundColor(lightGreyColor)
+                    
                 }
                 
                 // Bouton upload document
                 Image(systemName: "camera")
                     .padding(90)
+                    .frame(width: 200, height: 200)
+                
                 // Bouton valider le document
                 Button(action: {
                     isShowingModal = true
