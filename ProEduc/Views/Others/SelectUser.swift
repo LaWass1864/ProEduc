@@ -1,87 +1,50 @@
-//
-//  selectUser.swift
-//  proEduc
-//
-//  Created by Apprenant 76 on 26/10/2023.
-//
-
 import SwiftUI
 
 struct SelectUser: View {
+    let imageCornerRadius: CGFloat = 20
+
     var body: some View {
         VStack{
             NavigationView {
-                
-                ZStack(){
-                    
+                ZStack{
                     VStack {
-//                        NavigationLink(destination: tabView()) {
-                NavigationLink(destination: EleveConnexion()){
-                                Image("eleve")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 100, height:100)
-                                    .overlay(
-                                        Text("Eleves")
-                                            .font(.headline)
-                                            .foregroundColor(.white)
-                                            .padding(5)
-                                            .offset(x: 5, y: -32)
-                                    ).padding()
+                        NavigationLink(destination: EleveConnexion()){
+                            HStack {
+                                ImageView("eleve", label: "Eleves")
+                                ImageView("viescolaire", label: "Vie scolaire")
                             }
-                        NavigationLink(destination: ParentConnexion()){
-                            Image("viescolaire")
-                            
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 100, height:100)
-                                .overlay(
-                                    Text("Vie scolaire")
-                                        .font(.headline)
-                                        .bold()
-                                        .foregroundColor(.white)
-                                        .offset(x: 5, y: -32)
-                                )
                         }
                         NavigationLink(destination: EleveConnexion()){
-                            Image("parents")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 100, height: 100)
-                                .overlay(
-                                    Text("Parent")
-                                        .font(.headline)
-                                        .bold()
-                                        .foregroundColor(.white)
-                                        .padding(5)
-                                        .offset(x: 5, y: -32)
-                                    
-                                ) .padding()
-                        }
-                        NavigationLink(destination: EleveConnexion()){
-                            Image("professeurs")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 100, height: 100)
-                                .overlay(
-                                    Text("Prof")
-                                        .font(.headline)
-                                        .bold()
-                                        .foregroundColor(.white)
-                                        .padding(5)
-                                        .offset(x: 5, y: -32)
-                                ).padding()
-                            
+                            HStack {
+                                ImageView("parents", label: "Parent")
+                                ImageView("professeurs", label: "Professeur")
+                            }
                         }
                     }
-                   
                     .ignoresSafeArea()
                 }
-                
             }
         }
     }
+
+    func ImageView(_ imageName: String, label: String) -> some View {
+        Image(imageName)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 150, height: 150)
+            .cornerRadius(imageCornerRadius)
+            .overlay(
+                Text(label)
+                    .font(.headline)
+                    .bold()
+                    .foregroundColor(.white)
+                    .offset(x: 5, y: -50)
+            )
+            .padding()
+    }
 }
+
+
 #Preview {
     SelectUser()
 }
