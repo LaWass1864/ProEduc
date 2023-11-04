@@ -6,18 +6,18 @@ struct WelcomeScreen: View {
             Color(Color(.welcomeScreen)).edgesIgnoringSafeArea(.all)
             
             VStack {
-                Image("logo") 
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 150, height: 150)
-                    .padding()
+               
                 
                 Text("Bienvenue dans l'application")
                     .font(.title)
                     .foregroundColor(.white)
                     .padding(.top, 20)
                 
-                Spacer()
+                Image("logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150, height: 150)
+                    .padding()
             }
         }
     }
