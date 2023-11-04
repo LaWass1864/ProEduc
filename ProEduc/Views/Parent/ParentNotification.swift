@@ -1,78 +1,86 @@
-//
-//  notificatioView.swift
-//  proEduc
-//
-//  Created by Apprenant 76 on 26/10/2023.
-//
-
 import SwiftUI
 
 struct ParentNotification: View {
     
     @State private var isWritingMessageViewPresented = false
+    @State private var selectedNotification: Notification?
+    @State private var isShowingNotificationDetails = false
     
-var message = ["Message 1", "Message 2", "Message 3", "Message 4"]
+    var messages: [Notification] = [
+        Notification(title: "Nouveau message", text: "Vous avez reçu un nouveau message."),
+        Notification(title: "Réunion", text: "N'oubliez pas la réunion demain à 18H."),
+        Notification(title: "Voyage scolaire", text: "Voyage scolaire en Italie du 8/11 au 15/11"),
+        Notification(title: "Absence professeur", text: "Mme Anglais sera absente du 9/11 au 10/11")
+    ]
     
     var body: some View {
-        
-        VStack{
+        VStack {
             NavigationView {
-                VStack{
-                    ZStack{
-
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 25)
-                                .foregroundColor(Color(.blueParent))
-                                .frame(width: 350, height: 120)
-                            
-                            Text("Mes notifications")
-                                .foregroundColor(.white)
-                                .font(.system(size: 32))
-                                .fontWeight(.bold)
-                                .multilineTextAlignment(.center)
-                            
-                        }
-                            
-                    }
-                    VStack{
+                VStack {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 25)
+                            .foregroundColor(Color(.blueParent))
+                            .frame(width: 350, height: 120)
                         
-                        List(message, id: \.self) { message in
-                            NavigationLink(
-                                destination: MessageDetailView(message: message),
-                                label: {
-                                    Text(message)
-                                }
-                            )
-                            .padding(.vertical, 10.0)
-                        }
-                        .scrollContentBackground(.hidden)
-//                  changing background color of list !!!
-                        VStack{
-                            Button(action: { self.isWritingMessageViewPresented = true } )
-                            {
-                                Text("Envoyer un message")
-                            }
-                            .sheet(isPresented: $isWritingMessageViewPresented) {
-                                ParentModalNotification()
-                            }
-                            .font(.headline)
+                        Text("Mes notifications")
                             .foregroundColor(.white)
-                            .padding()
-                            .frame(width: 220, height: 60)
-                            .background(Color("blue_parent"))
-                            .cornerRadius(35.0)
+                            .font(.system(size: 32))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                    }
+                    
+                    VStack {
+                        ForEach(messages.indices, id: \.self) { index in
+                            NotificationBubble(notification: messages[index])
+                                .onTapGesture {
+                                    selectedNotification = messages[index]
+                                    isShowingNotificationDetails = true
+                                }
                         }
                     }
-                    .padding(.bottom, 30.0)
-                    }
-               
+                    .padding(50)
                 }
+            }
+            .alert(isPresented: $isShowingNotificationDetails) {
+                Alert(
+                    title: Text(selectedNotification?.title ?? ""),
+                    message: Text(selectedNotification?.text ?? ""),
+                    dismissButton: .default(Text("OK"))
+                )
             }
         }
     }
-
-    struct ParentNotification_Previews: PreviewProvider {
-        static var previews: some View {
-            ParentNotification()
+    
+    struct NotificationBubble: View {
+        var notification: Notification
+        
+        var body: some View {
+            RoundedRectangle(cornerRadius: 15)
+                .fill(Color(.blueParent))
+                .overlay(
+                    VStack(alignment: .leading) {
+                        Text(notification.title)
+                            .font(.headline)
+                            .foregroundColor(.white)
+                        Text(notification.text)
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+                    }
+                        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+                                )
+                )
+        }
+        
+        struct ParentNotification_Previews: PreviewProvider {
+            static var previews: some View {
+                ParentNotification()
+            }
         }
     }
+    
+    struct Notification {
+        var title: String
+        var text: String
+    }
+    
+}

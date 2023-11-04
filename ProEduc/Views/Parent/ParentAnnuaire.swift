@@ -40,13 +40,13 @@ struct ParentAnnuaire: View {
                     
                     // Ajouter un Picker pour selectionner un enfant
                     List {
-                        NavigationLink(destination: ParentContactprof()) {
+                        NavigationLink(destination: ParentEnvoiMsg()) {
                             Text("Professeur de Francais")
                         }
-                        NavigationLink(destination: ParentContactprof()) {
+                        NavigationLink(destination: ParentEnvoiMsg()) {
                             Text("Professeur de mathématique")
                         }
-                        NavigationLink(destination: ParentContactprof()) {
+                        NavigationLink(destination: ParentEnvoiMsg()) {
                             Text("Professeur de SVT")
                         }
                     }

@@ -44,6 +44,7 @@
 		9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F812AEA64770011A542 /* ProEducApp.swift */; };
 		9B807F862AEA64790011A542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F852AEA64790011A542 /* Assets.xcassets */; };
 		9B807F892AEA64790011A542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F882AEA64790011A542 /* Preview Assets.xcassets */; };
+		9BF895FE2AF6748000DBC6C3 /* SelectUser2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF895FD2AF6748000DBC6C3 /* SelectUser2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		9B807F812AEA64770011A542 /* ProEducApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProEducApp.swift; sourceTree = "<group>"; };
 		9B807F852AEA64790011A542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B807F882AEA64790011A542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9BF895FD2AF6748000DBC6C3 /* SelectUser2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUser2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				9B3EE3DE2AEA6880002ABAFB /* SelectUser.swift */,
 				9B3EE3F42AEFC456002ABAFB /* QrCode.swift */,
+				9BF895FD2AF6748000DBC6C3 /* SelectUser2.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */,
 				9B3E03B82AF160400075E824 /* ParentSelectEnfant.swift in Sources */,
 				9B3EE3CE2AEA66DF002ABAFB /* ParentAnnuaire.swift in Sources */,
+				9BF895FE2AF6748000DBC6C3 /* SelectUser2.swift in Sources */,
 				9B3E03B02AF139430075E824 /* ProfModel.swift in Sources */,
 				9B0805532AF1101000FB72DE /* SignInScreenView.swift in Sources */,
 				9B3EE3FF2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift in Sources */,

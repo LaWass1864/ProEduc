@@ -85,7 +85,7 @@ struct EleveConnexion: View {
     
     struct UserImage: View {
         var body: some View {
-            Image("userImage")
+            Image("avatarEleve")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 150, height: 150)

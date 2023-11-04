@@ -53,7 +53,7 @@ struct ParentConnexion: View {
                         Text("Connexion réussie !")
                             .font(.headline)
                             .frame(width: 250, height: 80)
-                            .background(Color("blue_parent"))
+                            .background(Color(.yellow))
                             .cornerRadius(20.0)
                         
                     }
@@ -75,7 +75,7 @@ struct ParentConnexion: View {
     
     struct UserImage: View {
         var body: some View {
-            Image("userImage")
+            Image("avatarParent")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 150, height: 150)
