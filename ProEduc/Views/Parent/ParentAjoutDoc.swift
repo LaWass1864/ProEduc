@@ -1,22 +1,21 @@
 import SwiftUI
 import UIKit
-import UniformTypeIdentifiers
+import MobileCoreServices
 
 struct DocumentPickerView: UIViewControllerRepresentable {
     @Binding var documentURL: URL?
     
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-    
     func makeUIViewController(context: Context) -> UIDocumentPickerViewController {
-        let allowedContentTypes = UTType.types(tag: "public.content", tagClass: .filenameExtension, conformingTo: nil)
-        let picker = UIDocumentPickerViewController(forOpeningContentTypes: allowedContentTypes, asCopy: true)
-        picker.delegate = context.coordinator
-        return picker
+        let documentPicker = UIDocumentPickerViewController(documentTypes: [String(kUTTypePDF), String(kUTTypeText)], in: .import)
+        documentPicker.delegate = context.coordinator
+        return documentPicker
     }
     
     func updateUIViewController(_ uiViewController: UIDocumentPickerViewController, context: Context) {}
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
     
     class Coordinator: NSObject, UIDocumentPickerDelegate {
         var parent: DocumentPickerView
@@ -32,10 +31,11 @@ struct DocumentPickerView: UIViewControllerRepresentable {
         }
         
         func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
-          
         }
     }
 }
+
+
 
 struct ParentAjoutDoc: View {
     @State private var docName: String = ""
@@ -128,8 +128,8 @@ struct ParentAjoutDoc: View {
     }
 }
 
-struct ParentAjoutDoc_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
+  
         ParentAjoutDoc()
     }
-}
+
