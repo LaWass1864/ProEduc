@@ -60,17 +60,19 @@ struct ParentListDoc: View {
                                 }
                                 
                             } .scrollContentBackground(.hidden)
-                            Button("Ajouter un document") { }
-                                .foregroundColor(.white)
-                                .controlSize(.large)
-                                .padding(50)
-                                .frame(width: 280, height: 50) // Réglage de la largeur et la hauteur
-                                .background(Color("green_btn")) // Modification de la couleur d'arrière-plan du bouton
-                                .cornerRadius(10) // Ajoutez des coins arrondis si nécessaire
+                            NavigationLink(destination: ParentAjoutDoc()) {
+                                Text("Ajouter un document")
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .frame(width: 220, height: 60)
+                                    .background(Color("blue_parent"))
+                                    .cornerRadius(35.0)
+                            }
                         }
                     }
+                    
                 }
-                
             }
         }
     }

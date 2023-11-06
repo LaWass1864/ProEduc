@@ -7,82 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C8152812AF92698002331F2 /* BIDON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8152802AF92698002331F2 /* BIDON.swift */; };
+		3C8152832AF926A7002331F2 /* ParentContactprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8152822AF926A7002331F2 /* ParentContactprof.swift */; };
+		3C8152852AF926F8002331F2 /* ParentAjoutDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8152842AF926F8002331F2 /* ParentAjoutDoc.swift */; };
+		3C8152872AF92774002331F2 /* EleveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8152862AF92774002331F2 /* EleveModel.swift */; };
+		3C8152892AF92799002331F2 /* ParentNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8152882AF92799002331F2 /* ParentNotification.swift */; };
+		3C81528B2AF927AE002331F2 /* ParentAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81528A2AF927AE002331F2 /* ParentAPIRequestViewModel.swift */; };
+		3C81528D2AF927D9002331F2 /* ParentMonEspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81528C2AF927D9002331F2 /* ParentMonEspace.swift */; };
+		3C81528F2AF927F3002331F2 /* ParentListDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81528E2AF927F3002331F2 /* ParentListDoc.swift */; };
+		3C8152912AF92805002331F2 /* ParentAnnuaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8152902AF92805002331F2 /* ParentAnnuaire.swift */; };
+		3C8152932AF92816002331F2 /* ParentDeclaAbsence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8152922AF92816002331F2 /* ParentDeclaAbsence.swift */; };
+		3C8152952AF92825002331F2 /* ParentEnvoiMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8152942AF92825002331F2 /* ParentEnvoiMsg.swift */; };
+		3C8152972AF92846002331F2 /* ParentConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8152962AF92846002331F2 /* ParentConnexion.swift */; };
+		3C8152992AF92855002331F2 /* ParentModalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8152982AF92855002331F2 /* ParentModalNotification.swift */; };
+		3C81529B2AF92865002331F2 /* ParentSelectEnfant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81529A2AF92865002331F2 /* ParentSelectEnfant.swift */; };
 		7B10EADF2AEFC98800D23857 /* local.env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EADE2AEFC98800D23857 /* local.env.swift */; };
 		7B10EAE52AEFF0A300D23857 /* imagemodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAE42AEFF0A300D23857 /* imagemodel.swift */; };
 		7B10EAE72AEFF45100D23857 /* ParentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAE62AEFF45100D23857 /* ParentModel.swift */; };
 		7B10EAE92AEFF99B00D23857 /* APIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAE82AEFF99B00D23857 /* APIRequestViewModel.swift */; };
 		7B10EAEB2AEFFCDB00D23857 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAEA2AEFFCDB00D23857 /* UserListView.swift */; };
 		7B10EAEF2AF0074800D23857 /* EleveAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAEE2AF0074800D23857 /* EleveAPIRequestViewModel.swift */; };
-		7B10EAF32AF11C3B00D23857 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAF22AF11C3B00D23857 /* Classes.swift */; };
 		7B10EAF52AF13CDC00D23857 /* ProfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAF42AF13CDC00D23857 /* ProfModel.swift */; };
-		7B10EAF92AF13E4500D23857 /* ParentContactprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAF82AF13E4400D23857 /* ParentContactprof.swift */; };
-		7B10EAFD2AF13F5200D23857 /* ParentAnnuaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAFC2AF13F5200D23857 /* ParentAnnuaire.swift */; };
-		7B10EAFF2AF1401D00D23857 /* ParentConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAFE2AF1401D00D23857 /* ParentConnexion.swift */; };
-		7B10EB012AF1478B00D23857 /* ParentAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EB002AF1478B00D23857 /* ParentAPIRequestViewModel.swift */; };
-		7B10EB032AF14A0F00D23857 /* ProfAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EB022AF14A0F00D23857 /* ProfAPIRequestViewModel.swift */; };
-		7B10EB052AF39F9A00D23857 /* EleveConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EB042AF39F9A00D23857 /* EleveConnexion.swift */; };
-		7B10EB072AF3FD6E00D23857 /* EleveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EB062AF3FD6D00D23857 /* EleveModel.swift */; };
 		7B10EB0B2AF539F900D23857 /* Cartes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EB0A2AF539F900D23857 /* Cartes.swift */; };
-		7B10EB0F2AF53C1700D23857 /* ParentSelectEnfant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EB0E2AF53C1700D23857 /* ParentSelectEnfant.swift */; };
-		7B10EB112AF53C3E00D23857 /* ParentSelectEnfent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EB102AF53C3D00D23857 /* ParentSelectEnfent.swift */; };
-		7B10EB132AF53D8700D23857 /* Profils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EB122AF53D8700D23857 /* Profils.swift */; };
-		9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */; };
+		7B64CE3B2AF9385C000AE11F /* EleveCarts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64CE3A2AF9385C000AE11F /* EleveCarts.swift */; };
+		7B64CE3D2AF93C61000AE11F /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64CE3C2AF93C60000AE11F /* ChangePassword.swift */; };
+		7B64CE412AF941B1000AE11F /* tabViewEleve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64CE402AF941B1000AE11F /* tabViewEleve.swift */; };
+		7B64CE432AF941CC000AE11F /* tabViewParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64CE422AF941CC000AE11F /* tabViewParent.swift */; };
+		7B64CE452AF942CC000AE11F /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64CE442AF942CC000AE11F /* WelcomeScreen.swift */; };
+		7B64CE472AF9431F000AE11F /* EleveConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64CE462AF9431F000AE11F /* EleveConnexion.swift */; };
+		7B64CE492AF944AC000AE11F /* teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64CE482AF944AC000AE11F /* teste.swift */; };
+		7B70634B2AF9241100290BDB /* ProfAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70634A2AF9241100290BDB /* ProfAPIRequestViewModel.swift */; };
 		9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */; };
-		9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */; };
 		9B3EE3CF2AEA66DF002ABAFB /* EleveContactImportant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */; };
-		9B3EE3D12AEA67CF002ABAFB /* ParentDeclaAbsence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D02AEA67CF002ABAFB /* ParentDeclaAbsence.swift */; };
-		9B3EE3D42AEA67E2002ABAFB /* ParentListDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D22AEA67E2002ABAFB /* ParentListDoc.swift */; };
 		9B3EE3D52AEA67E2002ABAFB /* EleveListDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D32AEA67E2002ABAFB /* EleveListDoc.swift */; };
-		9B3EE3DA2AEA67F2002ABAFB /* ParentEnvoiMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D62AEA67F2002ABAFB /* ParentEnvoiMsg.swift */; };
-		9B3EE3DB2AEA67F2002ABAFB /* ParentMonEspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D72AEA67F2002ABAFB /* ParentMonEspace.swift */; };
 		9B3EE3DC2AEA67F2002ABAFB /* EleveMonEspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D82AEA67F2002ABAFB /* EleveMonEspace.swift */; };
 		9B3EE3DD2AEA67F2002ABAFB /* EleveNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3D92AEA67F2002ABAFB /* EleveNotification.swift */; };
 		9B3EE3E12AEA6880002ABAFB /* SelectUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3DE2AEA6880002ABAFB /* SelectUser.swift */; };
 		9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */; };
-		9B3EE3E32AEA6880002ABAFB /* ParentModalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */; };
 		9B3EE3E52AEA68A4002ABAFB /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E42AEA68A4002ABAFB /* tabView.swift */; };
-		9B3EE3E92AEA75B8002ABAFB /* ParentNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */; };
 		9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807F812AEA64770011A542 /* ProEducApp.swift */; };
 		9B807F862AEA64790011A542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F852AEA64790011A542 /* Assets.xcassets */; };
 		9B807F892AEA64790011A542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F882AEA64790011A542 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C8152802AF92698002331F2 /* BIDON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIDON.swift; sourceTree = "<group>"; };
+		3C8152822AF926A7002331F2 /* ParentContactprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentContactprof.swift; sourceTree = "<group>"; };
+		3C8152842AF926F8002331F2 /* ParentAjoutDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentAjoutDoc.swift; sourceTree = "<group>"; };
+		3C8152862AF92774002331F2 /* EleveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveModel.swift; sourceTree = "<group>"; };
+		3C8152882AF92799002331F2 /* ParentNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentNotification.swift; sourceTree = "<group>"; };
+		3C81528A2AF927AE002331F2 /* ParentAPIRequestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentAPIRequestViewModel.swift; sourceTree = "<group>"; };
+		3C81528C2AF927D9002331F2 /* ParentMonEspace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentMonEspace.swift; sourceTree = "<group>"; };
+		3C81528E2AF927F3002331F2 /* ParentListDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentListDoc.swift; sourceTree = "<group>"; };
+		3C8152902AF92805002331F2 /* ParentAnnuaire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentAnnuaire.swift; sourceTree = "<group>"; };
+		3C8152922AF92816002331F2 /* ParentDeclaAbsence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentDeclaAbsence.swift; sourceTree = "<group>"; };
+		3C8152942AF92825002331F2 /* ParentEnvoiMsg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentEnvoiMsg.swift; sourceTree = "<group>"; };
+		3C8152962AF92846002331F2 /* ParentConnexion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentConnexion.swift; sourceTree = "<group>"; };
+		3C8152982AF92855002331F2 /* ParentModalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModalNotification.swift; sourceTree = "<group>"; };
+		3C81529A2AF92865002331F2 /* ParentSelectEnfant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentSelectEnfant.swift; sourceTree = "<group>"; };
 		7B10EADE2AEFC98800D23857 /* local.env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = local.env.swift; sourceTree = "<group>"; };
 		7B10EAE42AEFF0A300D23857 /* imagemodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemodel.swift; sourceTree = "<group>"; };
 		7B10EAE62AEFF45100D23857 /* ParentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentModel.swift; sourceTree = "<group>"; };
 		7B10EAE82AEFF99B00D23857 /* APIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestViewModel.swift; sourceTree = "<group>"; };
 		7B10EAEA2AEFFCDB00D23857 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		7B10EAEE2AF0074800D23857 /* EleveAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveAPIRequestViewModel.swift; sourceTree = "<group>"; };
-		7B10EAF22AF11C3B00D23857 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		7B10EAF42AF13CDC00D23857 /* ProfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfModel.swift; sourceTree = "<group>"; };
-		7B10EAF82AF13E4400D23857 /* ParentContactprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentContactprof.swift; sourceTree = "<group>"; };
-		7B10EAFC2AF13F5200D23857 /* ParentAnnuaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentAnnuaire.swift; sourceTree = "<group>"; };
-		7B10EAFE2AF1401D00D23857 /* ParentConnexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentConnexion.swift; sourceTree = "<group>"; };
-		7B10EB002AF1478B00D23857 /* ParentAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentAPIRequestViewModel.swift; sourceTree = "<group>"; };
-		7B10EB022AF14A0F00D23857 /* ProfAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfAPIRequestViewModel.swift; sourceTree = "<group>"; };
-		7B10EB042AF39F9A00D23857 /* EleveConnexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveConnexion.swift; sourceTree = "<group>"; };
-		7B10EB062AF3FD6D00D23857 /* EleveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EleveModel.swift; path = ../../../../Desktop/EleveModel.swift; sourceTree = "<group>"; };
 		7B10EB0A2AF539F900D23857 /* Cartes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartes.swift; sourceTree = "<group>"; };
-		7B10EB0E2AF53C1700D23857 /* ParentSelectEnfant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParentSelectEnfant.swift; path = ../../../../Downloads/ParentSelectEnfant.swift; sourceTree = "<group>"; };
-		7B10EB102AF53C3D00D23857 /* ParentSelectEnfent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParentSelectEnfent.swift; path = ../../../../Downloads/ParentSelectEnfent.swift; sourceTree = "<group>"; };
-		7B10EB122AF53D8700D23857 /* Profils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profils.swift; path = ../../../../Downloads/Profils.swift; sourceTree = "<group>"; };
-		9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentAjoutDoc.swift; sourceTree = "<group>"; };
+		7B64CE3A2AF9385C000AE11F /* EleveCarts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveCarts.swift; sourceTree = "<group>"; };
+		7B64CE3C2AF93C60000AE11F /* ChangePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
+		7B64CE402AF941B1000AE11F /* tabViewEleve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabViewEleve.swift; sourceTree = "<group>"; };
+		7B64CE422AF941CC000AE11F /* tabViewParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabViewParent.swift; sourceTree = "<group>"; };
+		7B64CE442AF942CC000AE11F /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		7B64CE462AF9431F000AE11F /* EleveConnexion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveConnexion.swift; sourceTree = "<group>"; };
+		7B64CE482AF944AC000AE11F /* teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teste.swift; sourceTree = "<group>"; };
+		7B70634A2AF9241100290BDB /* ProfAPIRequestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfAPIRequestViewModel.swift; sourceTree = "<group>"; };
 		9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveBesoinAide.swift; sourceTree = "<group>"; };
-		9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentContactprof.swift; sourceTree = "<group>"; };
 		9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveContactImportant.swift; sourceTree = "<group>"; };
-		9B3EE3D02AEA67CF002ABAFB /* ParentDeclaAbsence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentDeclaAbsence.swift; sourceTree = "<group>"; };
-		9B3EE3D22AEA67E2002ABAFB /* ParentListDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentListDoc.swift; sourceTree = "<group>"; };
 		9B3EE3D32AEA67E2002ABAFB /* EleveListDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveListDoc.swift; sourceTree = "<group>"; };
-		9B3EE3D62AEA67F2002ABAFB /* ParentEnvoiMsg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentEnvoiMsg.swift; sourceTree = "<group>"; };
-		9B3EE3D72AEA67F2002ABAFB /* ParentMonEspace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentMonEspace.swift; sourceTree = "<group>"; };
 		9B3EE3D82AEA67F2002ABAFB /* EleveMonEspace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveMonEspace.swift; sourceTree = "<group>"; };
 		9B3EE3D92AEA67F2002ABAFB /* EleveNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveNotification.swift; sourceTree = "<group>"; };
 		9B3EE3DE2AEA6880002ABAFB /* SelectUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUser.swift; sourceTree = "<group>"; };
 		9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveMonProfil.swift; sourceTree = "<group>"; };
-		9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModalNotification.swift; sourceTree = "<group>"; };
 		9B3EE3E42AEA68A4002ABAFB /* tabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
-		9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentNotification.swift; sourceTree = "<group>"; };
 		9B807F7E2AEA64770011A542 /* ProEduc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProEduc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B807F812AEA64770011A542 /* ProEducApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProEducApp.swift; sourceTree = "<group>"; };
 		9B807F852AEA64790011A542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,16 +119,56 @@
 			children = (
 				7B10EAE42AEFF0A300D23857 /* imagemodel.swift */,
 				7B10EAE62AEFF45100D23857 /* ParentModel.swift */,
-				7B10EB062AF3FD6D00D23857 /* EleveModel.swift */,
 				7B10EAF42AF13CDC00D23857 /* ProfModel.swift */,
+				3C8152862AF92774002331F2 /* EleveModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7B7063232AF9174F00290BDB /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				3C8152802AF92698002331F2 /* BIDON.swift */,
+				3C8152882AF92799002331F2 /* ParentNotification.swift */,
+				3C8152842AF926F8002331F2 /* ParentAjoutDoc.swift */,
+				3C8152922AF92816002331F2 /* ParentDeclaAbsence.swift */,
+				3C8152942AF92825002331F2 /* ParentEnvoiMsg.swift */,
+				3C8152982AF92855002331F2 /* ParentModalNotification.swift */,
+				3C81529A2AF92865002331F2 /* ParentSelectEnfant.swift */,
+				3C8152822AF926A7002331F2 /* ParentContactprof.swift */,
+				3C81528A2AF927AE002331F2 /* ParentAPIRequestViewModel.swift */,
+				3C81528C2AF927D9002331F2 /* ParentMonEspace.swift */,
+				3C8152962AF92846002331F2 /* ParentConnexion.swift */,
+				3C81528E2AF927F3002331F2 /* ParentListDoc.swift */,
+				3C8152902AF92805002331F2 /* ParentAnnuaire.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		7B70632F2AF9183900290BDB /* Eleve */ = {
+			isa = PBXGroup;
+			children = (
+				9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */,
+				7B64CE3C2AF93C60000AE11F /* ChangePassword.swift */,
+				9B3EE3D82AEA67F2002ABAFB /* EleveMonEspace.swift */,
+				9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */,
+				7B64CE462AF9431F000AE11F /* EleveConnexion.swift */,
+				9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */,
+				9B3EE3D32AEA67E2002ABAFB /* EleveListDoc.swift */,
+				7B64CE3A2AF9385C000AE11F /* EleveCarts.swift */,
+				7B10EAEE2AF0074800D23857 /* EleveAPIRequestViewModel.swift */,
+				9B3EE3D92AEA67F2002ABAFB /* EleveNotification.swift */,
+				7B64CE482AF944AC000AE11F /* teste.swift */,
+			);
+			path = Eleve;
 			sourceTree = "<group>";
 		};
 		9B3EE3E62AEA6963002ABAFB /* App */ = {
 			isa = PBXGroup;
 			children = (
 				9B807F812AEA64770011A542 /* ProEducApp.swift */,
+				7B64CE402AF941B1000AE11F /* tabViewEleve.swift */,
+				7B64CE422AF941CC000AE11F /* tabViewParent.swift */,
 				9B3EE3E42AEA68A4002ABAFB /* tabView.swift */,
 			);
 			path = App;
@@ -131,34 +177,13 @@
 		9B3EE3E72AEA697F002ABAFB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9B3EE3D02AEA67CF002ABAFB /* ParentDeclaAbsence.swift */,
-				9B3EE3CC2AEA66DF002ABAFB /* EleveContactImportant.swift */,
-				9B3EE3CA2AEA66DF002ABAFB /* ParentContactprof.swift */,
-				9B3EE3D32AEA67E2002ABAFB /* EleveListDoc.swift */,
-				9B3EE3D22AEA67E2002ABAFB /* ParentListDoc.swift */,
-				7B10EAF82AF13E4400D23857 /* ParentContactprof.swift */,
-				9B3EE3D62AEA67F2002ABAFB /* ParentEnvoiMsg.swift */,
-				9B3EE3D82AEA67F2002ABAFB /* EleveMonEspace.swift */,
-				9B3EE3D72AEA67F2002ABAFB /* ParentMonEspace.swift */,
-				7B10EAF22AF11C3B00D23857 /* Classes.swift */,
-				7B10EB122AF53D8700D23857 /* Profils.swift */,
-				7B10EB0E2AF53C1700D23857 /* ParentSelectEnfant.swift */,
-				9B3EE3D92AEA67F2002ABAFB /* EleveNotification.swift */,
-				7B10EB102AF53C3D00D23857 /* ParentSelectEnfent.swift */,
-				9B3EE3E82AEA75B8002ABAFB /* ParentNotification.swift */,
-				9B3EE3DF2AEA6880002ABAFB /* EleveMonProfil.swift */,
+				7B64CE442AF942CC000AE11F /* WelcomeScreen.swift */,
+				7B70632F2AF9183900290BDB /* Eleve */,
+				7B7063232AF9174F00290BDB /* Parent */,
 				9B3EE3DE2AEA6880002ABAFB /* SelectUser.swift */,
-				9B3EE3E02AEA6880002ABAFB /* ParentModalNotification.swift */,
-				9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */,
-				9B3EE3C62AEA66C6002ABAFB /* ParentAjoutDoc.swift */,
 				7B10EAE82AEFF99B00D23857 /* APIRequestViewModel.swift */,
+				7B70634A2AF9241100290BDB /* ProfAPIRequestViewModel.swift */,
 				7B10EAEA2AEFFCDB00D23857 /* UserListView.swift */,
-				7B10EAEE2AF0074800D23857 /* EleveAPIRequestViewModel.swift */,
-				7B10EAFC2AF13F5200D23857 /* ParentAnnuaire.swift */,
-				7B10EAFE2AF1401D00D23857 /* ParentConnexion.swift */,
-				7B10EB002AF1478B00D23857 /* ParentAPIRequestViewModel.swift */,
-				7B10EB022AF14A0F00D23857 /* ProfAPIRequestViewModel.swift */,
-				7B10EB042AF39F9A00D23857 /* EleveConnexion.swift */,
 				7B10EB0A2AF539F900D23857 /* Cartes.swift */,
 			);
 			path = Views;
@@ -271,41 +296,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B64CE452AF942CC000AE11F /* WelcomeScreen.swift in Sources */,
+				7B64CE472AF9431F000AE11F /* EleveConnexion.swift in Sources */,
+				3C8152852AF926F8002331F2 /* ParentAjoutDoc.swift in Sources */,
 				9B3EE3E52AEA68A4002ABAFB /* tabView.swift in Sources */,
-				7B10EAFF2AF1401D00D23857 /* ParentConnexion.swift in Sources */,
-				9B3EE3D42AEA67E2002ABAFB /* ParentListDoc.swift in Sources */,
-				9B3EE3DB2AEA67F2002ABAFB /* ParentMonEspace.swift in Sources */,
-				9B3EE3E32AEA6880002ABAFB /* ParentModalNotification.swift in Sources */,
-				7B10EAF92AF13E4500D23857 /* ParentContactprof.swift in Sources */,
 				9B3EE3DC2AEA67F2002ABAFB /* EleveMonEspace.swift in Sources */,
-				7B10EB132AF53D8700D23857 /* Profils.swift in Sources */,
-				9B3EE3C72AEA66C6002ABAFB /* ParentAjoutDoc.swift in Sources */,
-				9B3EE3DA2AEA67F2002ABAFB /* ParentEnvoiMsg.swift in Sources */,
-				7B10EB032AF14A0F00D23857 /* ProfAPIRequestViewModel.swift in Sources */,
 				7B10EAE52AEFF0A300D23857 /* imagemodel.swift in Sources */,
-				9B3EE3D12AEA67CF002ABAFB /* ParentDeclaAbsence.swift in Sources */,
+				7B70634B2AF9241100290BDB /* ProfAPIRequestViewModel.swift in Sources */,
 				9B3EE3C92AEA66D4002ABAFB /* EleveBesoinAide.swift in Sources */,
-				7B10EB072AF3FD6E00D23857 /* EleveModel.swift in Sources */,
+				3C8152812AF92698002331F2 /* BIDON.swift in Sources */,
+				3C81528D2AF927D9002331F2 /* ParentMonEspace.swift in Sources */,
 				9B3EE3DD2AEA67F2002ABAFB /* EleveNotification.swift in Sources */,
+				3C8152872AF92774002331F2 /* EleveModel.swift in Sources */,
 				7B10EAE92AEFF99B00D23857 /* APIRequestViewModel.swift in Sources */,
+				3C8152932AF92816002331F2 /* ParentDeclaAbsence.swift in Sources */,
 				9B3EE3E12AEA6880002ABAFB /* SelectUser.swift in Sources */,
-				7B10EB052AF39F9A00D23857 /* EleveConnexion.swift in Sources */,
+				3C8152912AF92805002331F2 /* ParentAnnuaire.swift in Sources */,
+				3C8152952AF92825002331F2 /* ParentEnvoiMsg.swift in Sources */,
+				7B64CE492AF944AC000AE11F /* teste.swift in Sources */,
+				3C8152892AF92799002331F2 /* ParentNotification.swift in Sources */,
 				7B10EAF52AF13CDC00D23857 /* ProfModel.swift in Sources */,
-				7B10EAFD2AF13F5200D23857 /* ParentAnnuaire.swift in Sources */,
+				7B64CE432AF941CC000AE11F /* tabViewParent.swift in Sources */,
 				9B807F822AEA64770011A542 /* ProEducApp.swift in Sources */,
-				9B3EE3E92AEA75B8002ABAFB /* ParentNotification.swift in Sources */,
-				7B10EAF32AF11C3B00D23857 /* Classes.swift in Sources */,
-				7B10EB0F2AF53C1700D23857 /* ParentSelectEnfant.swift in Sources */,
 				7B10EAE72AEFF45100D23857 /* ParentModel.swift in Sources */,
 				9B3EE3D52AEA67E2002ABAFB /* EleveListDoc.swift in Sources */,
-				7B10EB012AF1478B00D23857 /* ParentAPIRequestViewModel.swift in Sources */,
 				9B3EE3E22AEA6880002ABAFB /* EleveMonProfil.swift in Sources */,
+				3C8152992AF92855002331F2 /* ParentModalNotification.swift in Sources */,
+				3C81528F2AF927F3002331F2 /* ParentListDoc.swift in Sources */,
+				3C8152972AF92846002331F2 /* ParentConnexion.swift in Sources */,
+				7B64CE412AF941B1000AE11F /* tabViewEleve.swift in Sources */,
+				3C81528B2AF927AE002331F2 /* ParentAPIRequestViewModel.swift in Sources */,
+				3C81529B2AF92865002331F2 /* ParentSelectEnfant.swift in Sources */,
+				7B64CE3D2AF93C61000AE11F /* ChangePassword.swift in Sources */,
 				7B10EAEB2AEFFCDB00D23857 /* UserListView.swift in Sources */,
+				3C8152832AF926A7002331F2 /* ParentContactprof.swift in Sources */,
+				7B64CE3B2AF9385C000AE11F /* EleveCarts.swift in Sources */,
 				7B10EADF2AEFC98800D23857 /* local.env.swift in Sources */,
 				7B10EAEF2AF0074800D23857 /* EleveAPIRequestViewModel.swift in Sources */,
-				9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */,
 				7B10EB0B2AF539F900D23857 /* Cartes.swift in Sources */,
-				7B10EB112AF53C3E00D23857 /* ParentSelectEnfent.swift in Sources */,
 				9B3EE3CF2AEA66DF002ABAFB /* EleveContactImportant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

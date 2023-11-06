@@ -35,10 +35,14 @@ struct ParentMonEspace: View {
                 NavigationLink(destination: ParentListDoc()) {
                     Text("Les documents")
                 }
-            } .scrollContentBackground(.hidden)
+            }
+                   
+
         }
             .background(.white)
+           
     }
+        
 }
 }
 
