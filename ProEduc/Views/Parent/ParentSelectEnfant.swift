@@ -11,7 +11,7 @@ struct ParentSelectEnfant: View {
     @State private var isChildDetailActive: Bool = false
     @State var selectedChild: String? = nil
     var placeholder = "Selectionner un enfant"
-    var dropDownList = ["Lida", "Wassila", "Zachari", "Sofian"]
+    var dropDownList = ["Lucie", "Sarah"]
     var body: some View {
         NavigationStack{
            
