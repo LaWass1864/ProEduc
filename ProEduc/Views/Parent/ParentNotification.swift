@@ -84,3 +84,7 @@ struct ParentNotification: View {
     }
     
 }
+
+#Preview {
+    ParentNotification()
+}

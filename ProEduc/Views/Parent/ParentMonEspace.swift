@@ -40,7 +40,9 @@ struct ParentMonEspace: View {
 
         }
             .background(.white)
+           
     }
+        
 }
 }
 

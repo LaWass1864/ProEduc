@@ -61,6 +61,7 @@ struct tabView: View {
                 
             }
         }.environmentObject(eleve)
+            .navigationBarBackButtonHidden(true)
     }
     
 }

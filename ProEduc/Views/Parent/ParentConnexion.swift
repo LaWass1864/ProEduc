@@ -48,7 +48,7 @@ struct ParentConnexion: View {
                 }
                 .padding()
                 if authenticationDidSucceed {
-                    NavigationLink(destination: ParentSelectEnfant()) {
+                    NavigationLink(destination: tabView()) {
                         
                         Text("Connexion réussie !")
                             .font(.headline)
