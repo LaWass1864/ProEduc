@@ -7,10 +7,10 @@ struct ParentNotification: View {
     @State private var isShowingNotificationDetails = false
     
     var messages: [Notification] = [
-        Notification(title: "Nouveau message", text: "Vous avez reçu un nouveau message."),
-        Notification(title: "Réunion", text: "N'oubliez pas la réunion demain à 18H."),
-        Notification(title: "Voyage scolaire", text: "Voyage scolaire en Italie du 8/11 au 15/11"),
-        Notification(title: "Absence professeur", text: "Mme Anglais sera absente du 9/11 au 10/11")
+        Notification(title: "Nouveau message", text: "Vous avez reçu un nouveau message.", background: Color.blue),
+                Notification(title: "Réunion", text: "N'oubliez pas la réunion demain à 18H.", background: Color.green),
+                Notification(title: "Voyage scolaire", text: "Voyage scolaire en Italie du 8/11 au 15/11", background: Color.orange),
+                Notification(title: "Absence professeur", text: "Mme Anglais sera absente du 9/11 au 10/11", background: Color.red)
     ]
     
     var body: some View {
@@ -31,7 +31,7 @@ struct ParentNotification: View {
                     
                     VStack {
                         ForEach(messages.indices, id: \.self) { index in
-                            NotificationBubble(notification: messages[index])
+                            NotificationBubble(notification: messages[index], selectedIndex: index)
                                 .onTapGesture {
                                     selectedNotification = messages[index]
                                     isShowingNotificationDetails = true
@@ -53,22 +53,31 @@ struct ParentNotification: View {
     
     struct NotificationBubble: View {
         var notification: Notification
-        
+        var selectedIndex: Int
         var body: some View {
-            RoundedRectangle(cornerRadius: 15)
-                .fill(Color(.blueParent))
-                .overlay(
-                    VStack(alignment: .leading) {
-                        Text(notification.title)
-                            .font(.headline)
-                            .foregroundColor(.white)
-                        Text(notification.text)
-                            .font(.subheadline)
-                            .foregroundColor(.white)
-                    }
+            // il faut des couleurs et mettre une pastille rouge dans le coin pour celle qui n'est pas encore ouverte
+            notification.background
+                            .overlay(
+                                VStack(alignment: .leading) {
+                                    Text(notification.title)
+                                        .font(.headline)
+                                        .foregroundColor(.white)
+                                    Text(notification.text)
+                                        .font(.subheadline)
+                                        .foregroundColor(.white)
+                                }
+                                    
                         .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+                                 
                                 )
                 )
+                            .cornerRadius(30)
+                            .overlay(
+                            Circle()
+                                .fill(selectedIndex == 1 ? Color(.red) : Color(.clear))
+                                .frame(width: 30, height: 30)
+                                .offset(x:140, y: -55)
+                            )
         }
         
         struct ParentNotification_Previews: PreviewProvider {
@@ -81,6 +90,7 @@ struct ParentNotification: View {
     struct Notification {
         var title: String
         var text: String
+        var background: Color
     }
     
 }

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SelectUser: View {
-    let imageCornerRadius: CGFloat = 20
+  
 
     var body: some View {
         VStack{
@@ -30,9 +30,9 @@ struct SelectUser: View {
     func ImageView(_ imageName: String, label: String) -> some View {
         Image(imageName)
             .resizable()
-            .aspectRatio(contentMode: .fit)
+            .aspectRatio(contentMode: .fill)
             .frame(width: 150, height: 150)
-            .cornerRadius(imageCornerRadius)
+            .clipShape(RoundedRectangle(cornerRadius: 30))
             .overlay(
                 Text(label)
                     .font(.headline)

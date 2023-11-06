@@ -71,11 +71,11 @@ struct ParentAjoutDoc: View {
                         .background(lightGreyColor)
                         .cornerRadius(5.0)
                         .padding(.bottom, 20)
-                    
+                   
                     Text("Description")
                         .font(.title3)
                         .bold()
-                        .padding(.bottom, 25)
+                        
                     TextEditor(text: $textAbsence)
                         .padding()
                         .background(lightGreyColor)
