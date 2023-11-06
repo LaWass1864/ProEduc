@@ -18,59 +18,40 @@ struct EleveCarts: View {
     
     @State var showTabView = false
     var body: some View {
-        NavigationStack{
-            ScrollView {
-                VStack{
-                    ZStack{
-                       
+        VStack{
+            ZStack{
                 RoundedRectangle(cornerRadius: 25)
                     .frame(width: 350.0, height: 120.0)
                     .foregroundColor(Color(red: 0.013, green: 0.78, blue: 0.778))
                     .padding(.top, 11.0)
                     .overlay(
-                        Text("Mon Space")
+                        Text("Les Cartes")
                             .font(.largeTitle)
                             .bold()
                             .foregroundColor(.white)
-                            )
-                    }
-                }
-           Spacer()
-             VStack{
-                    Rectangle()
-                        .cornerRadius(25)
-                        .foregroundColor(Color(red: 0.941, green: 0.941, blue: 0.941))
-                        .frame(width:350, height: 150)
-//                        .overlay(
-//                            Image("Carte Jeune")
-//                            Text("Carte jeune")
-//                                .font(.title2)
-//                                .fontWeight(.regular)
-                            
-//                        )
+                    )
+            }
+            Spacer()
+            .padding(.vertical)
+            VStack{
+                Section{
+                    Image("carte jeune")
+                        .resizable()
+                        .frame(width:350, height: 180)
+                    Text("Carte jeune")
+                        .font(.title2)
+                        .fontWeight(.regular)
                     
-                }
-
-                ZStack{
-                    Rectangle()
-                        .cornerRadius(25)
-                        .foregroundColor(Color(red: 0.941, green: 0.941, blue: 0.941))
-                        .frame(width:350, height: 150)
-                    VStack{
-                        Image("recto_min")
-                        Text("Carte Self")
-                            .font(.title2)
-                            .fontWeight(.regular)
-                    }
+//                    Spacer()
+                    Image("carte self")
+                        .resizable()
+                        .frame(width:350, height: 180)
+                    Text("Carte Self")
+                        .font(.title2)
+                        .fontWeight(.regular)
                 }
             }
-            
-            Spacer()
-            
-            
-                .navigationBarBackButtonHidden(true)
-        }
-        .navigationBarBackButtonHidden(true)
+        }.padding(30)
     }
 }
 

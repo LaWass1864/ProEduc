@@ -29,17 +29,21 @@ struct EleveListDoc: View {
             
             VStack{
                 List{
+                   
                     NavigationLink(destination: EleveBesoinAide()) {
-                        Text("Attestation maladie")
-                    }
-                    NavigationLink(destination: EleveBesoinAide()) {
+                        Image(systemName: "house")
+                            .foregroundColor(.pink)
                         Text("Justificatif de domicile")
                     }
                     NavigationLink(destination:EleveBesoinAide ()) {
-                        Text("Documents tiers")
+                        Image(systemName: "doc")
+                            .foregroundColor(.indigo)
+                        Text("Document tiers")
                     }
                     NavigationLink(destination: EleveBesoinAide()) {
-                        Text("Les cartes")
+                        Image(systemName: "bandage")
+                       .foregroundColor(.green)
+                        Text("Certificat médical")
                     }
                 }
              }

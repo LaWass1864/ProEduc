@@ -27,10 +27,13 @@ struct EleveMonProfil: View {
             Form {
                 ZStack {
                     HStack {
+//                        Spacer()
                         VStack {
+                            Spacer()
                             UserImage()
                             Text("Garcia Hugo")
                                 .font(.title)
+                                
                             Text("garciahugo@gmail.com")
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
@@ -49,7 +52,7 @@ struct EleveMonProfil: View {
                     NavigationLink(destination: EleveCarts()){
                         
                         Image(systemName: "person.text.rectangle")
-                        Text("les carts")
+                        Text("Les cartes")
                     }
                 }
                 HStack{
