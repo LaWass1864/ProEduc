@@ -14,7 +14,7 @@ struct SelectUser: View {
                                 ImageView("viescolaire", label: "Vie scolaire")
                             }
                         }
-                        NavigationLink(destination: EleveConnexion()){
+                        NavigationLink(destination: ParentConnexion()){
                             HStack {
                                 ImageView("parents", label: "Parent")
                                 ImageView("professeurs", label: "Professeur")

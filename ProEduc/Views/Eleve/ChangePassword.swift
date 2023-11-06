@@ -17,7 +17,7 @@ struct ChangePassword: View {
                         .padding(.top, 11.0)
                         .overlay(
                             Text("Changer le mot de passe")
-                                .font(.largeTitle)
+                                .font(.title)
                                 .multilineTextAlignment(.center)
                                 .bold()
                                 .foregroundColor(.white)
@@ -30,10 +30,12 @@ struct ChangePassword: View {
                         SecureField("Nouveau mot de passe", text: $newPassword)
                         SecureField("Confirmer le mot de passe", text: $confirmPassword)
                     }
-                    
-                    Button(action: changePassword) {
+                  
+                    Button(action: changePassword)
+                       {
                         Text("Enregistrer")
                             .foregroundColor(.white)
+                           
                     }
                     .frame(width: 250, height: 50) // Réglage de la largeur et la hauteur
                     .background(Color("green_btn")) // Modification de la couleur d'arrière-plan du bouton
