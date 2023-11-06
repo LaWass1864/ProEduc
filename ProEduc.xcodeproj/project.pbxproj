@@ -44,6 +44,8 @@
 		9B807F892AEA64790011A542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B807F882AEA64790011A542 /* Preview Assets.xcassets */; };
 		9BF895FE2AF6748000DBC6C3 /* SelectUser2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF895FD2AF6748000DBC6C3 /* SelectUser2.swift */; };
 		9BF896002AF6909100DBC6C3 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF895FF2AF6909100DBC6C3 /* WelcomeScreen.swift */; };
+		9BF896022AF941B900DBC6C3 /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF896012AF941B900DBC6C3 /* ChangePassword.swift */; };
+		9BF896042AF94D7C00DBC6C3 /* teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF896032AF94D7C00DBC6C3 /* teste.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,8 @@
 		9B807F882AEA64790011A542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9BF895FD2AF6748000DBC6C3 /* SelectUser2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUser2.swift; sourceTree = "<group>"; };
 		9BF895FF2AF6909100DBC6C3 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		9BF896012AF941B900DBC6C3 /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
+		9BF896032AF94D7C00DBC6C3 /* teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teste.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				9B3EE3FE2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift */,
 				9B3E03B92AF396BD0075E824 /* EleveConnexion.swift */,
 				9B3EE3C82AEA66D4002ABAFB /* EleveBesoinAide.swift */,
+				9BF896012AF941B900DBC6C3 /* ChangePassword.swift */,
+				9BF896032AF94D7C00DBC6C3 /* teste.swift */,
 			);
 			path = Eleve;
 			sourceTree = "<group>";
@@ -319,7 +325,9 @@
 				9BF896002AF6909100DBC6C3 /* WelcomeScreen.swift in Sources */,
 				9BF895FE2AF6748000DBC6C3 /* SelectUser2.swift in Sources */,
 				9B3E03B02AF139430075E824 /* ProfModel.swift in Sources */,
+				9BF896042AF94D7C00DBC6C3 /* teste.swift in Sources */,
 				9B3EE3FF2AF03AA8002ABAFB /* EleveAPIRequestViewModel.swift in Sources */,
+				9BF896022AF941B900DBC6C3 /* ChangePassword.swift in Sources */,
 				9B3EE3F72AF03622002ABAFB /* ParentModel.swift in Sources */,
 				9B3EE3EC2AEFAA39002ABAFB /* local.env.swift in Sources */,
 				9B3EE3CD2AEA66DF002ABAFB /* ParentContactprof.swift in Sources */,
