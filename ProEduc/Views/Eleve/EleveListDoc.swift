@@ -9,46 +9,44 @@ import SwiftUI
 
 struct EleveListDoc: View {
     var body: some View {
+        NavigationView{
         VStack{
-            ZStack{
+            ZStack {
+                RoundedRectangle(cornerRadius: 25)
                 
-                Rectangle()
-                    .cornerRadius(25)
-                    .frame(width:350, height: 100)
-                    .foregroundColor(Color("green_student"))
-                Text("Documents")
-                    .font(.title)
+                    .frame(width: 350.0, height: 120.0)
+                    .foregroundColor(Color(red: 0.013, green: 0.78, blue: 0.778))
+                    .padding(.all)
+                    .overlay(
+                        Text("Documents")
+                            .frame(width: 350.0, height: 120.0)
+                            .font(.title)
+                            .bold()
+                            .foregroundColor(.white)
+                    )
+                
             }
             
-            NavigationView {
-                ExtractedView()
-            }
-            
-        }
-        
-    }
-}
-struct ExtractedView: View {
-    var body: some View {
-        List{
-            NavigationLink(destination: EleveBesoinAide()) {
-                Text("Attestation maladie")
-            }
-            NavigationLink(destination: EleveBesoinAide()) {
-                Text("Justificatif de domicile")
-            }
-            NavigationLink(destination:EleveBesoinAide ()) {
-                Text("Documents tiers")
-            }
-            NavigationLink(destination: EleveBesoinAide()) {
-                Text("Les cartes")
+            VStack{
+                List{
+                    NavigationLink(destination: EleveBesoinAide()) {
+                        Text("Attestation maladie")
+                    }
+                    NavigationLink(destination: EleveBesoinAide()) {
+                        Text("Justificatif de domicile")
+                    }
+                    NavigationLink(destination:EleveBesoinAide ()) {
+                        Text("Documents tiers")
+                    }
+                    NavigationLink(destination: EleveBesoinAide()) {
+                        Text("Les cartes")
+                    }
+                }
+             }
             }
         }
     }
 }
-
-
-
 
 #Preview {
     EleveListDoc()

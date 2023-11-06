@@ -11,7 +11,7 @@ struct TabViewEleve: View {
         TabView{
 
 
-            EleveMonEspace()
+            EleveMonProfil()
                         .tabItem {
                             Label("Mon espace", systemImage: "person")
                                 .background(.black)

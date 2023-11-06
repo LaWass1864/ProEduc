@@ -10,7 +10,7 @@ import SwiftUI
 let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
 
 let storedUsername = "Dupont"
-let storedPassword = "12345"
+let storedPassword = "AZERTY"
 
 struct ParentConnexion: View {
     
@@ -21,7 +21,7 @@ struct ParentConnexion: View {
     @State var authenticationDidSucceed: Bool = false
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ZStack {
                 VStack {
                     HelloText()
@@ -48,13 +48,12 @@ struct ParentConnexion: View {
                 }
                 .padding()
                 if authenticationDidSucceed {
-                    NavigationLink(destination: ParentAnnuaire()) {
-                        
+                    NavigationLink(destination: tabViewParent()) {
                         
                         Text("Connexion réussie !")
                             .font(.headline)
                             .frame(width: 250, height: 80)
-                            .background(Color(.blueParent))
+                            .background(Color(.yellow))
                             .cornerRadius(20.0)
                         
                     }
@@ -76,7 +75,7 @@ struct ParentConnexion: View {
     
     struct UserImage: View {
         var body: some View {
-            Image("userImage")
+            Image("avatarParent")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 150, height: 150)
@@ -93,7 +92,7 @@ struct ParentConnexion: View {
                 .foregroundColor(.white)
                 .padding()
                 .frame(width: 220, height: 60)
-                .background(Color.black)
+                .background(Color("blue_parent"))
                 .cornerRadius(35.0)
         }
     }

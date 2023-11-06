@@ -17,72 +17,41 @@ import SwiftUI
 import Foundation
 
 struct EleveMonProfil: View {
+    @State private var DeclarationAbsence: Bool = false
     @State private var isDarkModeEnabled: Bool = false
     @State private var notificationEnabled: Bool = false
-    
-    // Switch the app language
     @State private var languageIndex = 0
     var languageOptions = ["Français", "English"]
-
-    
     var body: some View {
         NavigationView {
             Form {
                 ZStack {
-                    HStack{
-                        Spacer()
+                    HStack {
                         VStack {
-                            
-                            // user informations
-                            
-                            Image("oeoeoe")
-                                .resizable()
-                                .frame(width:100, height: 100, alignment: .center)
-                            Text("Jonatan diakaté")
+                            UserImage()
+                            Text("Garcia Hugo")
                                 .font(.title)
-                            Text("jonnhatan@gmail.com")
+                            Text("garciahugo@gmail.com")
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
-                            Spacer()
-                            
-                            // Edit the profil button
-                            
-                            Button(action: {
-                                print("Edit Profile tapped")
-                            })
-                            {
-                                Text("Editer le profil")
-                                    .frame(minWidth: 0, maxWidth: .infinity)
-                                    .font(.system(size: 18))
-                                    .padding()
-                                    .foregroundColor(.white)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 25)
-                                            .stroke(Color.white, lineWidth: 2)
-                                    )
-                            }
-                            .background(Color.blue)
-                            .cornerRadius(25)
                         }
                         Spacer()
                     }
                 }
-                
-                // Personal information section
-             
-                    HStack{
-                        NavigationLink(destination: EleveListDoc()){
-                            Image(systemName: "bookmark")
-                            Text("INFORMATIONS PERSONNELLES")
-                        }
+               
+                HStack{
+                    NavigationLink(destination: EleveListDoc()){
+                        Image(systemName: "key")
+                        Text("Mot de passe et sécurité")
                     }
-                    HStack{
-                        NavigationLink(destination: EleveListDoc()){
-                            Image(systemName: "bookmark")
-                            Text("Mot de passe et sécurité")
-                        }
+                }
+                HStack{
+                    NavigationLink(destination: EleveCarts()){
+                        
+                        Image(systemName: "person.text.rectangle")
+                        Text("les carts")
                     }
-                    
+                }
                 HStack{
                     NavigationLink(destination: EleveBesoinAide()) {
                         Image(systemName: "book")
@@ -90,7 +59,7 @@ struct EleveMonProfil: View {
                     }
                 }
                 
-                Section(header: Text("PREFERENCES"), content: {
+                Section(header: Text("Parametres"), content: {
                     HStack{
                         Image(systemName: "globe")
                         Picker(selection: $languageIndex, label: Text("Language")) {
@@ -112,15 +81,36 @@ struct EleveMonProfil: View {
                         }
                     }
                 })
-                
-                Button("Button title") {
-                    print("Button tapped!")
+                Button(action: {
+                    print("Edit Profile tapped")
+                })
+                {
+                    Text("Editer le profil")
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .font(.system(size: 18))
+                        .padding()
+                        .foregroundColor(.white)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 15)
+                                .stroke(Color.white, lineWidth: 2)
+                        )
                 }
+                .background(Color.blue)
+                .cornerRadius(25)
             }
-            .navigationBarTitle("Profils")
         }
-        
     }
+        struct UserImage: View {
+            var body: some View {
+                Image("avatarEleve")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 150, height: 150)
+                    .clipped()
+                    .cornerRadius(150)
+//                    .padding(.top)
+            }
+        }
 }
 
 #Preview {

@@ -22,7 +22,7 @@ struct ParentDeclaAbsence: View {
                     .foregroundColor(Color(.blueParent))
                     .frame(width: 350, height: 120)
                 
-                Text("Déclarer l'absence de mon enfant")
+                Text("Déclarer l'absence")
                     .foregroundColor(.white)
                     .font(.system(size: 32))
                     .fontWeight(.bold)

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct tabView: View {
+struct tabViewParent: View {
     @StateObject var eleve = EleveAPIRequestViewModel()
     @StateObject var parent = ParentAPIRequestViewModel()
     @StateObject var prof = ProfAPIRequestViewModel()
@@ -68,11 +68,12 @@ struct tabView: View {
                 
             }
         }.environmentObject(eleve)
+            .navigationBarBackButtonHidden()
     }
     
 }
 
 
 #Preview {
-    tabView()
+    tabViewParent()
 }
