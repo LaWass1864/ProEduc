@@ -2,15 +2,10 @@
 //  ParentConnexion.swift
 //  ProEduc
 //
-//  Created by Apprenant 76 on 31/10/2023.
+//  Created by Apprenant 45 on 31/10/2023.
 //
 
 import SwiftUI
-
-//let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
-//
-//let storedUsername = "Dupont"
-//let storedPassword = "qqq"
 
 struct EleveConnexion: View {
     

@@ -43,7 +43,7 @@ struct EleveMonProfil: View {
                 }
                
                 HStack{
-                    NavigationLink(destination: EleveListDoc()){
+                    NavigationLink(destination: ChangePassword()){
                         Image(systemName: "key")
                         Text("Mot de passe et sécurité")
                     }
