@@ -39,6 +39,8 @@ struct EleveConnexion: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                         .border(.red, width: CGFloat(wrongPassword))
+                        .padding(.bottom, 90)
+                    
                     Button("Connexion") {
                         authenticateUser(username: username, password: password)
                     }
@@ -55,7 +57,7 @@ struct EleveConnexion: View {
       }
     
     func authenticateUser(username: String, password: String) {
-        if username == "Garcia" {
+        if username == "Dupont Alex" {
             wrongUsername = 0
             if password == "123" {
                 wrongPassword = 0

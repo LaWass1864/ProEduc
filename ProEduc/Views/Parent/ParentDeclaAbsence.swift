@@ -79,6 +79,7 @@ struct ParentDeclaAbsence: View {
             }.padding(25)
             
         }
+//        .navigationBarBackButtonHidden(true)
     }
 }
 #Preview {

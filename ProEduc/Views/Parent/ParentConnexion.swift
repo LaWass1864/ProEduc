@@ -17,7 +17,7 @@ struct ParentConnexion: View {
      @State var password: String = ""
      @State private var wrongUsername: Float = 0
      @State private var wrongPassword: Float  = 0
-     @State private var showingtabViewEleve = false
+     @State private var showingParentSelectEnfant = false
     
     var body: some View {
             
@@ -51,11 +51,13 @@ struct ParentConnexion: View {
                         .frame(width: 300, height: 50)
                         .background(Color("blue_parent"))
                         .cornerRadius(10)
-                        NavigationLink(destination: tabViewParent(), isActive: $showingtabViewEleve) {
+                        NavigationLink(destination: ParentSelectEnfant(), isActive: $showingParentSelectEnfant){
                             EmptyView()
                         }
                     }
-                }.navigationBarHidden(true)
+                }
+                .navigationBarBackButtonHidden(true)
+                .navigationBarHidden(true)
             
           }
         
@@ -64,7 +66,7 @@ struct ParentConnexion: View {
                 wrongUsername = 0
                 if password == "1234" {
                     wrongPassword = 0
-                    showingtabViewEleve = true
+                    showingParentSelectEnfant = true
                 } else {
                     wrongPassword = 2
                 }

@@ -25,11 +25,11 @@ struct EleveBesoinAide: View {
                     )
                 
             }
-            .padding()
             VStack {
+                
                 Text("Pour contacter l'établissement")
                 Text("Nous vous proposons ce numéro ")
-                Spacer()
+                    .padding(.bottom, 90)
                 Rectangle()
                     .cornerRadius(25)
                     .frame(width: 350, height: 100)
@@ -55,6 +55,7 @@ struct EleveBesoinAide: View {
 //            Spacer()
                         .padding()
         }
+        .padding(.bottom)
        
     }
 }

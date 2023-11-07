@@ -40,6 +40,7 @@ struct ParentMonEspace: View {
         }
             .background(.white)
     }
+//        .navigationBarBackButtonHidden(true)
 }
 }
 

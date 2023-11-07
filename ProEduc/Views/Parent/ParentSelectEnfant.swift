@@ -11,9 +11,9 @@ struct ParentSelectEnfant: View {
     @State private var isChildDetailActive: Bool = false
     @State var selectedChild: String? = nil
     var placeholder = "Selectionner un enfant"
-    var dropDownList = ["Lucie", "Sarah"]
+    var dropDownList = ["Lucie Dupont", "Alex Dupont"]
     var body: some View {
-        NavigationStack{
+        NavigationView{
            
             VStack{
                 ZStack{
@@ -54,7 +54,8 @@ struct ParentSelectEnfant: View {
                     .padding()
                 }
                 Spacer()
-                NavigationLink(destination: ParentMonEspace()) {
+                
+                NavigationLink(destination: tabViewParent()) {
                     Text("Suivant")
                         .font(.headline)
                         .padding()
@@ -66,6 +67,7 @@ struct ParentSelectEnfant: View {
             }
            
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 #Preview {

@@ -78,7 +78,7 @@ struct EleveNotification: View {
                                 Circle()
                                     .fill(selectedIndex == 1 ? Color(.red) : Color(.clear))
                                     .frame(width: 30, height: 30)
-                                    .offset(x:110, y: -55)
+                                    .offset(x:135, y: -55)
                                 )
             }
             

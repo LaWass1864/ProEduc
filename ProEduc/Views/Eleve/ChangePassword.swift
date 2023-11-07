@@ -40,6 +40,7 @@ struct ChangePassword: View {
                 }
                     Button(action: changePassword) {
                         Text("Enregistrer")
+                            .foregroundColor(.white)
                     }
                     .frame(width: 250, height: 50)
                     .background(Color("green_btn"))

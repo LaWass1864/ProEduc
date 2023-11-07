@@ -19,7 +19,7 @@ struct SelectUser: View {
                             NavigationLink(destination: EleveConnexion()){
                                 ImageView("eleve 1", label: "Eleves")
                             }
-                                ImageView("viescolaire", label: "Vie scolaire")
+                                ImageView("VieScolaire", label: "Vie scolaire")
                             }
                         HStack {
                             NavigationLink(destination: ParentConnexion()){
@@ -30,8 +30,10 @@ struct SelectUser: View {
                         }
                     .ignoresSafeArea()
                 }
-            }
-        }
+            } 
+            .navigationBarBackButtonHidden(true)
+        } 
+        .navigationBarBackButtonHidden(true)
     }
 
     func ImageView(_ imageName: String, label: String) -> some View {

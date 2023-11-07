@@ -35,10 +35,9 @@ struct TabViewEleve: View {
                             Label("Notification", systemImage: "bell.and.waves.left.and.right")
                                 .foregroundColor(.blue)
                                 .tag(2)
-                        }   .navigationBarBackButtonHidden(true)
-        }
+                        }
+        }   
         .navigationBarBackButtonHidden(true)
-
     }
 }
 

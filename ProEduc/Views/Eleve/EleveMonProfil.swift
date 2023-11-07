@@ -8,7 +8,7 @@ struct EleveMonProfil: View {
     @State private var languageIndex = 0
     var languageOptions = ["Français", "English"]
     var body: some View {
-        NavigationView {
+       
             Form {
                 ZStack {
                     HStack {
@@ -19,10 +19,10 @@ struct EleveMonProfil: View {
                                 .padding(.top, 20)
                                 .frame(maxWidth: .infinity)
                             Spacer()
-                            Text("Garcia Hugo")
+                            Text("Dupont Alex")
                                 .font(.title)
                             
-                            Text("garciahugo@gmail.com")
+                            Text("dupontalex@gmail.com")
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                             Spacer()
@@ -36,6 +36,7 @@ struct EleveMonProfil: View {
                         Image(systemName: "key")
                         Text("Mot de passe et sécurité")
                     }
+                   
                 }
                 HStack{
                     NavigationLink(destination: EleveCarts()){
@@ -73,9 +74,10 @@ struct EleveMonProfil: View {
                         }
                     }
                 })
-            }
-        }
-    }
+                .navigationBarBackButtonHidden(true)
+            } .navigationBarBackButtonHidden(true)
+        
+    } 
         struct UserImage: View {
             var body: some View {
                 Image("avatarEleve")

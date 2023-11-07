@@ -55,7 +55,7 @@ struct EleveContactImportant: View {
                         Rectangle()
                             .cornerRadius(20)
                             .frame(width: 320, height: 100)
-                            .foregroundColor(Color(red: 0.877, green: 0.887, blue: 0.904))
+                            .foregroundColor(Color(red: 0.013, green: 0.78, blue: 0.778))
                             VStack {
                                 Text("Medecin")
                                 
