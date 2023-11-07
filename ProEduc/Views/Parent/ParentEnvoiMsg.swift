@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ParentEnvoiMsg: View {
-    @State private var usernameChild = "Enfant 1"
+    @State private var usernameChild = "DUPONT Lucie"
     @State private var textAbsence = "Texte"
     @State private var profContact = "Monsieur DEBUISSY"
     @State private var isShowingModal = false
