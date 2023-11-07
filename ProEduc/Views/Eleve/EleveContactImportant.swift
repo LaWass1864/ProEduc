@@ -11,7 +11,7 @@ struct EleveContactImportant: View {
                     .frame(width: 350.0, height: 120.0)
                     .foregroundColor(Color(red: 0.013, green: 0.78, blue: 0.778))
                 HStack{
-                   Image("eleve")
+                   Image("lesPetits")
                         .resizable()
                         .frame(width: 160.0, height: 160.0)
                         .padding()

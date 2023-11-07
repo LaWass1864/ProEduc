@@ -55,11 +55,7 @@ struct tabViewParent: View {
                     Text("Messagerie")
                     Image(systemName: "bell.and.waves.left.and.right")
                 }
-            UserListView()
-                .tabItem {
-                    Text("Messagerie")
-                    Image(systemName: "bell.and.waves.left.and.right")
-                }
+            
             
         }
         .onAppear {

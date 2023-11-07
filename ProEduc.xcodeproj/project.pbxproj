@@ -25,10 +25,8 @@
 		7B10EAE52AEFF0A300D23857 /* imagemodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAE42AEFF0A300D23857 /* imagemodel.swift */; };
 		7B10EAE72AEFF45100D23857 /* ParentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAE62AEFF45100D23857 /* ParentModel.swift */; };
 		7B10EAE92AEFF99B00D23857 /* APIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAE82AEFF99B00D23857 /* APIRequestViewModel.swift */; };
-		7B10EAEB2AEFFCDB00D23857 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAEA2AEFFCDB00D23857 /* UserListView.swift */; };
 		7B10EAEF2AF0074800D23857 /* EleveAPIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAEE2AF0074800D23857 /* EleveAPIRequestViewModel.swift */; };
 		7B10EAF52AF13CDC00D23857 /* ProfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EAF42AF13CDC00D23857 /* ProfModel.swift */; };
-		7B10EB0B2AF539F900D23857 /* Cartes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10EB0A2AF539F900D23857 /* Cartes.swift */; };
 		7B64CE3B2AF9385C000AE11F /* EleveCarts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64CE3A2AF9385C000AE11F /* EleveCarts.swift */; };
 		7B64CE3D2AF93C61000AE11F /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64CE3C2AF93C60000AE11F /* ChangePassword.swift */; };
 		7B64CE412AF941B1000AE11F /* tabViewEleve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64CE402AF941B1000AE11F /* tabViewEleve.swift */; };
@@ -69,10 +67,8 @@
 		7B10EAE42AEFF0A300D23857 /* imagemodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemodel.swift; sourceTree = "<group>"; };
 		7B10EAE62AEFF45100D23857 /* ParentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentModel.swift; sourceTree = "<group>"; };
 		7B10EAE82AEFF99B00D23857 /* APIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestViewModel.swift; sourceTree = "<group>"; };
-		7B10EAEA2AEFFCDB00D23857 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		7B10EAEE2AF0074800D23857 /* EleveAPIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleveAPIRequestViewModel.swift; sourceTree = "<group>"; };
 		7B10EAF42AF13CDC00D23857 /* ProfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfModel.swift; sourceTree = "<group>"; };
-		7B10EB0A2AF539F900D23857 /* Cartes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartes.swift; sourceTree = "<group>"; };
 		7B64CE3A2AF9385C000AE11F /* EleveCarts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleveCarts.swift; sourceTree = "<group>"; };
 		7B64CE3C2AF93C60000AE11F /* ChangePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
 		7B64CE402AF941B1000AE11F /* tabViewEleve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabViewEleve.swift; sourceTree = "<group>"; };
@@ -183,8 +179,6 @@
 				9B3EE3DE2AEA6880002ABAFB /* SelectUser.swift */,
 				7B10EAE82AEFF99B00D23857 /* APIRequestViewModel.swift */,
 				7B70634A2AF9241100290BDB /* ProfAPIRequestViewModel.swift */,
-				7B10EAEA2AEFFCDB00D23857 /* UserListView.swift */,
-				7B10EB0A2AF539F900D23857 /* Cartes.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,12 +322,10 @@
 				3C81528B2AF927AE002331F2 /* ParentAPIRequestViewModel.swift in Sources */,
 				3C81529B2AF92865002331F2 /* ParentSelectEnfant.swift in Sources */,
 				7B64CE3D2AF93C61000AE11F /* ChangePassword.swift in Sources */,
-				7B10EAEB2AEFFCDB00D23857 /* UserListView.swift in Sources */,
 				3C8152832AF926A7002331F2 /* ParentContactprof.swift in Sources */,
 				7B64CE3B2AF9385C000AE11F /* EleveCarts.swift in Sources */,
 				7B10EADF2AEFC98800D23857 /* local.env.swift in Sources */,
 				7B10EAEF2AF0074800D23857 /* EleveAPIRequestViewModel.swift in Sources */,
-				7B10EB0B2AF539F900D23857 /* Cartes.swift in Sources */,
 				9B3EE3CF2AEA66DF002ABAFB /* EleveContactImportant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

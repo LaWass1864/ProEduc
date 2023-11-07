@@ -1,16 +1,11 @@
-//
-//  envoiMsgprof.swift
-//  proEduc
-//
-//  Created by Apprenant 76 on 24/10/2023.
-// Cet écran est en trop
+
 
 import SwiftUI
 
 
 struct ParentEnvoiMsg: View {
-    @State private var usernameChild = "Enfant 1"
-    @State private var textAbsence = "Texte"
+    @State private var usernameChild = "DUPONT Lucie"
+    @State private var textAbsence = "Taper votre texte ici"
     @State private var profContact = "Monsieur DEBUISSY"
     @State private var isShowingModal = false
     var body: some View {

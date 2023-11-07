@@ -1,81 +1,42 @@
-//
-//  teste.swift
-//  ProEduc
-//
-//  Created by elamine heuss on 06/11/2023.
-//
-
 import SwiftUI
 
 struct teste: View {
     var body: some View {
-        HStack{
-            Spacer()
-            Text("Doccuments ")
-                .padding()
-           
-        }
-        HStack{ // des méditation
-            
-           
-                ZStack {    // pour superposer
+        NavigationStack {
+            HStack {
+                ZStack {
                     Rectangle()
-                    .cornerRadius(20)
-                    .foregroundColor(Color(hue: 1.0, saturation: 0.049, brightness: 0.603, opacity: 0.588))
-                //.multilineTextAlignment (.center)
-                    .frame(width: 350, height: 100)
-               
-                    VStack(alignment: .leading){
-                  
-//                        Text(" ")
-//                        .foregroundColor(.black)
-//                       // Text(" ")
-                        
-                            ZStack{
-                                Rectangle()
-                        
-                           
-                            . cornerRadius(40)
-                            .foregroundColor(Color(.white))
-                            .frame(width: 220, height: 40)
-                            Text("Justificatif de domicile 🏠")
-                                
+                        .cornerRadius(20)
+                        .foregroundColor(Color("green_student"))
+                        .frame(width: 350, height: 80) // Réduire la hauteur du rectangle
 
-                                }
-                                            }
-                    
-                        }
-       
-            
-        
-            
-//                ZStack{
-//
-//                Rectangle()
-//                    .cornerRadius(40)
-//                    .foregroundColor(Color(hue: 1.0, saturation: 0.049, brightness: 0.603, opacity: 0.588))
-//                    //.multilineTextAlignment (.center)
-//                    .frame(width: 180, height: 170)
-//
-//
-//                    }
-            
-            }//fin des méditation
-        Spacer()
-        Image("Unknown")
-        ZStack {
-            Rectangle()
-                .cornerRadius(40)
-                .foregroundColor(Color(hue: 1.0, saturation: 0.049, brightness: 0.603, opacity: 0.588))
-            //.multilineTextAlignment (.center)
-                .frame(width: 200, height: 45)
-            HStack{
-                Text("Enregistrer")
-                Image(systemName: "square.and.arrow.down")
-                    .foregroundColor(.black)
+                    Text("Justificatif de domicile 🏠")
+                        .foregroundColor(Color(.white))
+                        .frame(height: 80)
+                        .font(.title)
+                }
+
+            }
+Spacer()
+            Image("Unknow")
+                .resizable()
+                .frame(width: 400, height: 550) // Agrandir l'image
+
+            ZStack {
+                Rectangle()
+                    .cornerRadius(40)
+                    .foregroundColor(Color("green_student"))
+                    .frame(width: 200, height: 45)
+
+                HStack {
+                    Text("Enregistrer")
+                        .foregroundColor(.white)
+
+                    Image(systemName: "square.and.arrow.down")
+                        .foregroundColor(.white)
+                }
             }
         }
-        Spacer()
     }
 }
 

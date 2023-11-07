@@ -46,7 +46,7 @@ struct EleveCarts: View {
                     Image("carte self")
                         .resizable()
                         .frame(width:350, height: 180)
-                    Text("Carte Self")
+                    Text("Carte self")
                         .font(.title2)
                         .fontWeight(.regular)
                 }
