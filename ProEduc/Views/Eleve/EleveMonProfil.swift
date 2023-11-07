@@ -84,22 +84,22 @@ struct EleveMonProfil: View {
                         }
                     }
                 })
-                Button(action: {
-                    print("Edit Profile tapped")
-                })
-                {
-                    Text("Editer le profil")
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .font(.system(size: 18))
-                        .padding()
-                        .foregroundColor(.white)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(Color.white, lineWidth: 2)
-                        )
-                }
-                .background(Color.blue)
-                .cornerRadius(25)
+//                Button(action: {
+//                    print("Edit Profile tapped")
+//                })
+//                {
+//                    Text("Editer le profil")
+//                        .frame(minWidth: 0, maxWidth: .infinity)
+//                        .font(.system(size: 18))
+//                        .padding()
+//                        .foregroundColor(.white)
+//                        .overlay(
+//                            RoundedRectangle(cornerRadius: 15)
+//                                .stroke(Color.white, lineWidth: 2)
+//                        )
+//                }
+//                .background(Color.blue)
+//                .cornerRadius(25)
             }
         }
     }

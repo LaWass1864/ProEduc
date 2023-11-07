@@ -14,6 +14,7 @@ struct ParentMonEspace: View {
             // Encadré Mon espace
             VStack{
             ZStack{
+                
                 RoundedRectangle(cornerRadius: 25)
                     .foregroundColor(Color(.blueParent))
                     .frame(width: 350, height: 120)
@@ -21,9 +22,9 @@ struct ParentMonEspace: View {
                 
                 Text("Mon espace")
                     .foregroundColor(.white)
-                    .font(.system(size: 36))
+                    .font(.system(size: 30))
                     .fontWeight(.bold)
-            }
+            }.padding(.vertical, 12.0)
             
             List {
                 NavigationLink(destination: ParentAnnuaire()) {

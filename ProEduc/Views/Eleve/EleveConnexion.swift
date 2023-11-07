@@ -16,7 +16,7 @@ struct EleveConnexion: View {
     @State private var showingtabViewEleve = false
     
     var body: some View {
-        NavigationStack{
+     
             ZStack {
                 VStack {
                     
@@ -51,7 +51,7 @@ struct EleveConnexion: View {
                     }
                 }
             }.navigationBarHidden(true)
-        }
+        
       }
     
     func authenticateUser(username: String, password: String) {

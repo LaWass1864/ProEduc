@@ -20,7 +20,7 @@ struct EleveListDoc: View {
                     .overlay(
                         Text("Documents")
                             .frame(width: 350.0, height: 120.0)
-                            .font(.title)
+                            .font(.system(size: 30))
                             .bold()
                             .foregroundColor(.white)
                     )
@@ -30,7 +30,7 @@ struct EleveListDoc: View {
             VStack{
                 List{
                    
-                    NavigationLink(destination: EleveBesoinAide()) {
+                    NavigationLink(destination: JustificatifDeDomicile()) {
                         Image(systemName: "house")
                             .foregroundColor(.pink)
                         Text("Justificatif de domicile")
@@ -40,7 +40,7 @@ struct EleveListDoc: View {
                             .foregroundColor(.indigo)
                         Text("Document tiers")
                     }
-                    NavigationLink(destination: EleveBesoinAide()) {
+                    NavigationLink(destination: CertificatMedical()) {
                         Image(systemName: "bandage")
                        .foregroundColor(.green)
                         Text("Certificat médical")

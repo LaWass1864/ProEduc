@@ -24,7 +24,7 @@ struct ParentNotification: View {
                             
                             Text("Mes notifications")
                                 .foregroundColor(.white)
-                                .font(.system(size: 32))
+                                .font(.system(size: 30))
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
                         }

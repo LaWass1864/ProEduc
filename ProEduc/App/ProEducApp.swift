@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct ProEducApp: App {
+   
     var body: some Scene {
         WindowGroup {
-            SelectUser()
-//            tabView()
+            NavigationView {
+                WelcomeScreen()
+            }
         }
     }
 }

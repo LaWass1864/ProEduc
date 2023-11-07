@@ -2,17 +2,19 @@
 //  envoiMsgprof.swift
 //  proEduc
 //
-//  Created by Apprenant 76 on 24/10/2023.
+//  Created by Apprenant 45 on 24/10/2023.
 // Cet écran est en trop
 
 import SwiftUI
 
 
 struct ParentEnvoiMsg: View {
-    @State private var usernameChild = "Enfant 1"
-    @State private var textAbsence = "Texte"
-    @State private var profContact = "Mister DEBUISSY"
+    @State private var usernameChild = "DUPONT Lucie"
+    @State private var textAbsence = "Taper votre texte ici"
+    @State private var profContact = "Monsieur DEBUISSY"
+    @State private var isShowingModal = false
     var body: some View {
+        
         VStack{
             ZStack{
                 
@@ -29,39 +31,48 @@ struct ParentEnvoiMsg: View {
             }
             
             VStack{
-                HStack{
-                    TextField("Nom et prenom de votre enfant", text: $usernameChild)
-                        .padding()
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .foregroundColor(.black)
-                        .font(.headline)
-                        .border(Color.yellow, width: 1)
-                    Image(systemName: "mail")
+                HStack {
+                    ZStack {
+                        TextField("Nom et prenom de votre enfant", text: $usernameChild)
+                            .padding()
+                            .background(lightGreyColor)
+                            .cornerRadius(5.0)
+                            .padding(.bottom, 20)
+                        
+                        Image(systemName: "mail")
+                            .foregroundColor(.gray) // Couleur de l'image
+                            .offset(x: 140, y: -10) // Ajustez cette valeur pour déplacer l'image à droite
+                    }
                 }
                 TextEditor(text: $textAbsence)
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity) // Pour occuper tout l'espace disponible
-                    .foregroundColor(.black) // Couleur du texte
-                    .background(Color.gray) // Couleur d'arrière-plan
-                    .cornerRadius(10) // Coins arrondis
-                    .padding() // Remplissage
-                    .font(.headline) // Taille de la police
-                    .border(Color.yellow, width: 1)
+                    .padding()
+                    .background(lightGreyColor)
+                    .cornerRadius(5.0)
+                    .padding(.bottom, 20)
                 
                 Button(action: {
-                    // Action à exécuter lorsque le bouton est appuyé
-                }) {
-                    Text("Envoyer")
-                        .foregroundColor(.white)
-                        .padding()
-                }
-                .frame(width: 250, height: 50) // Réglage de la largeur et la hauteur
-                .background(Color("green_btn")) // Modification de la couleur d'arrière-plan du bouton
-                .cornerRadius(10) // Ajoutez des coins arrondis si nécessaire
-            }.padding()
+                           isShowingModal = true
+                       }) {
+                           Text("Envoyer")
+                               .font(.headline)
+                               .foregroundColor(.white)
+                               .padding()
+                               .frame(width: 220, height: 60)
+                               .background(Color("blue_parent"))
+                               .cornerRadius(35.0)
+                       }
+                       .alert(isPresented: $isShowingModal) {
+                           Alert(
+                               title: Text("Votre message a bien été envoyé"),
+                              
+                               dismissButton: .default(Text("OK"))
+                           )
+                       }
+                   }
+            }.padding(25)
         }
     }
-}
+
 #Preview {
     ParentEnvoiMsg()
 }

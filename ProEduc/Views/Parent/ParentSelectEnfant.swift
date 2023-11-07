@@ -25,7 +25,7 @@ struct ParentSelectEnfant: View {
                     
                     Text("Mes enfants")
                         .foregroundColor(.white)
-                        .font(.system(size: 36))
+                        .font(.system(size: 30))
                         .fontWeight(.bold)
                     
                 }

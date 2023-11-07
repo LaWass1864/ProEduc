@@ -16,28 +16,29 @@ struct ParentDeclaAbsence: View {
     @State private var textAbsence = "Saisissez votre texte ici"
     
     var body: some View {
-        VStack{
-            ZStack{
-                RoundedRectangle(cornerRadius: 25)
-                    .foregroundColor(Color(.blueParent))
-                    .frame(width: 350, height: 120)
-                
-                Text("Déclarer l'absence")
-                    .foregroundColor(.white)
-                    .font(.system(size: 32))
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                
-            }
-            
+        NavigationStack {
             VStack{
-                
-                // Déclaration de l'absence de mon enfant
-                Toggle(isOn: $isToggled) {
-                    Text("Déclarer mon enfant absent")
+                ZStack{
+                    RoundedRectangle(cornerRadius: 25)
+                        .foregroundColor(Color(.blueParent))
+                        .frame(width: 350, height: 120)
+                    
+                    Text("Déclarer l'absence de mon enfant")
+                        .foregroundColor(.white)
+                        .font(.system(size: 30))
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                    
                 }
-                .padding()
-            }
+                
+                VStack{
+                    
+                    // Déclaration de l'absence de mon enfant
+                    Toggle(isOn: $isToggled) {
+                        Text("Déclarer mon enfant absent")
+                    }
+                    .padding()
+                }
                 
                 // Input text avec le nom de l'enfant
                 Text("Nom et prénom de votre enfant")
@@ -45,10 +46,9 @@ struct ParentDeclaAbsence: View {
                     .bold()
                 TextField("Nom et prenom de votre enfant", text: $username)
                     .padding()
-                    .cornerRadius(10)
-                    .foregroundColor(.white)
-                    .border(Color.yellow, width: 1)
-                    .font(.title)
+                    .background(Color(hue: 1.0, saturation: 0.0, brightness: 0.906))
+                    .cornerRadius(5.0)
+                    .padding(.bottom, 20)
                 
                 // TextArea Motif de l'absence
                 Text("Motif de l'absence")
@@ -56,29 +56,31 @@ struct ParentDeclaAbsence: View {
                     .bold()
                 
                 TextEditor(text: $textAbsence)
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity) // Pour occuper tout l'espace disponible
-                    .foregroundColor(.black) // Couleur du texte
-                    .background(Color.gray) // Couleur d'arrière-plan
-                    .cornerRadius(10) // Coins arrondis
-                    .padding() // Remplissage
-                    .font(.title) // Taille de la police
-                    .border(Color.yellow, width: 1) // border jaune
-            
+                    .padding()
+                    .background(Color(hue: 1.0, saturation: 0.0, brightness: 0.906))
+                    .cornerRadius(5.0)
+                    .padding(.bottom, 20)
                 // Bouton upload document
                 Button(action: {
                     // Action à exécuter lorsque le bouton est appuyé
                 }) {
-                    Text("Ajouter une attestation")
-                        .foregroundColor(.white)
-                        .padding()
+                    NavigationLink(destination: ParentAjoutDoc()) {
+                        Text("Ajouter un document")
+                            .foregroundColor(.white)
+                            .padding()
+                    }
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(width: 220, height: 60)
+                    .background(Color("blue_parent"))
+                    .cornerRadius(35.0)
                 }
-                .frame(width: 250, height: 50) // Réglage de la largeur et la hauteur
-                .background(Color("green_btn")) // Modification de la couleur d'arrière-plan du bouton
-                .cornerRadius(10) // Ajoutez des coins arrondis si nécessaire
-            }.padding()
+            }.padding(25)
+            
+        }
     }
-    }
-
+}
 #Preview {
     ParentDeclaAbsence()
 }

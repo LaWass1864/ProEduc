@@ -26,7 +26,7 @@ struct EleveCarts: View {
                     .padding(.top, 11.0)
                     .overlay(
                         Text("Les Cartes")
-                            .font(.largeTitle)
+                            .font(.system(size: 30))
                             .bold()
                             .foregroundColor(.white)
                     )

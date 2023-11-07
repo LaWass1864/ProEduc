@@ -24,7 +24,7 @@ struct EleveNotification: View {
                                 .padding(.top, 11.0)
                                 .overlay(
                                     Text("Mes Notifications")
-                                        .font(.largeTitle)
+                                        .font(.system(size: 30))
                                         .bold()
                                         .foregroundColor(.white)
                                 )
@@ -78,7 +78,7 @@ struct EleveNotification: View {
                                 Circle()
                                     .fill(selectedIndex == 1 ? Color(.red) : Color(.clear))
                                     .frame(width: 30, height: 30)
-                                    .offset(x:140, y: -55)
+                                    .offset(x:110, y: -55)
                                 )
             }
             

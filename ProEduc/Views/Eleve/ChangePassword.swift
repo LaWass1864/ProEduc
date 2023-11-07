@@ -15,7 +15,7 @@ struct ChangePassword: View {
     @State private var showingAlert = false
 
     var body: some View {
-        NavigationView {
+      
             VStack{
                 ZStack {
                     RoundedRectangle(cornerRadius: 25)
@@ -24,7 +24,7 @@ struct ChangePassword: View {
                         .padding(.top, 11.0)
                         .overlay(
                             Text("Changer le mot de passe")
-                                .font(.largeTitle)
+                                .font(.system(size: 30))
                                 .multilineTextAlignment(.center)
                                 .bold()
                                 .foregroundColor(.white)
@@ -37,19 +37,14 @@ struct ChangePassword: View {
                         SecureField("Nouveau mot de passe", text: $newPassword)
                         SecureField("Confirmer le mot de passe", text: $confirmPassword)
                     }
-                    
+                }
                     Button(action: changePassword) {
                         Text("Enregistrer")
                     }
-                    .frame(width: 250, height: 50) // Réglage de la largeur et la hauteur
-                    .background(Color("green_btn")) // Modification de la couleur d'arrière-plan du bouton
-                    .cornerRadius(10) // Ajoutez des coins arrondis si nécessaire
-//                    Button(action: changePassword) {
-//                        Text("Enregistrer")
-//                    }
-                }
-              
-                .alert(isPresented: $showingAlert) {
+                    .frame(width: 250, height: 50)
+                    .background(Color("green_btn"))
+                    .cornerRadius(10)
+                    .alert(isPresented: $showingAlert) {
                     if passwordChangeSuccess {
                         return Alert(title: Text("Succès"), message: Text("Le mot de passe a été modifié avec succès."), dismissButton: .default(Text("OK")))
                     } else {
@@ -58,7 +53,7 @@ struct ChangePassword: View {
                 }
             }
         }
-    }
+
     func changePassword() {
         // Add your password change logic here, similar to the previous example.
         if currentPassword == "123" && newPassword == confirmPassword {

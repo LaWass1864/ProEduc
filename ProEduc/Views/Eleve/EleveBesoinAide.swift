@@ -19,7 +19,7 @@ struct EleveBesoinAide: View {
                     .padding(.top, 11.0)
                     .overlay(
                         Text("Besoin D'aide")
-                            .font(.largeTitle)
+                            .font(.system(size: 30))
                             .bold()
                             .foregroundColor(.white)
                     )

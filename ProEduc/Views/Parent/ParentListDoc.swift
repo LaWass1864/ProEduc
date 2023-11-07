@@ -22,22 +22,22 @@ struct ParentListDoc: View {
                             .overlay(
                                 Text("Documents")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 36))
+                                    .font(.system(size: 30))
                                     .fontWeight(.bold)
                             )
                         VStack{
                             List {
-                                NavigationLink(destination: ParentAjoutDoc()) {
+                                NavigationLink(destination: CertificatMedical()) {
                                     
                                     Image(systemName: "bandage")
                                         .foregroundColor(.green)
                                     Text("Certificat médical")
                                     
                                 }
-                                NavigationLink(destination: ParentAjoutDoc()) {
+                                NavigationLink(destination: JustificatifDeDomicile()) {
                                     Image(systemName: "house")
                                         .foregroundColor(.pink)
-                                    Text("Justificatif de domicile")
+                                    Text("Justificatif De Domicile")
                                 }
                                 NavigationLink(destination: ParentAjoutDoc()) {
                                     Image(systemName: "doc")
@@ -45,10 +45,10 @@ struct ParentListDoc: View {
                                     Text("Document tiers")
                                     
                                 }
-                                NavigationLink(destination: ParentAjoutDoc()) {
+                                NavigationLink(destination: EleveCarts()) {
                                     Image(systemName: "ticket")
                                         .foregroundColor(.orange)
-                                    Text("Cartes jeune")
+                                    Text("Les Cartes d'eleve")
                                 }
                                 NavigationLink(destination: ParentAjoutDoc()) {
                                     Image(systemName: "doc.viewfinder")
