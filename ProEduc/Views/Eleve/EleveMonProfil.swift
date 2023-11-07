@@ -1,18 +1,3 @@
-
-//  ProfilsView.swift
-//  ProEduc
-//
-//  Created by elamine heuss on 19/10/2023.
-//
-
-//
-//  ContentView.swift
-//  GiveGood
-//
-//  Created by Louise Ta on 21/09/2023.
-//
-
-
 import SwiftUI
 import Foundation
 
@@ -27,21 +12,25 @@ struct EleveMonProfil: View {
             Form {
                 ZStack {
                     HStack {
-//                        Spacer()
+                        //                        Spacer()
                         VStack {
                             Spacer()
                             UserImage()
+                                .padding(.top, 20)
+                                .frame(maxWidth: .infinity)
+                            Spacer()
                             Text("Garcia Hugo")
                                 .font(.title)
-                                
+                            
                             Text("garciahugo@gmail.com")
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
+                            Spacer()
                         }
                         Spacer()
                     }
                 }
-               
+                
                 HStack{
                     NavigationLink(destination: ChangePassword()){
                         Image(systemName: "key")
@@ -84,22 +73,6 @@ struct EleveMonProfil: View {
                         }
                     }
                 })
-//                Button(action: {
-//                    print("Edit Profile tapped")
-//                })
-//                {
-//                    Text("Editer le profil")
-//                        .frame(minWidth: 0, maxWidth: .infinity)
-//                        .font(.system(size: 18))
-//                        .padding()
-//                        .foregroundColor(.white)
-//                        .overlay(
-//                            RoundedRectangle(cornerRadius: 15)
-//                                .stroke(Color.white, lineWidth: 2)
-//                        )
-//                }
-//                .background(Color.blue)
-//                .cornerRadius(25)
             }
         }
     }
@@ -111,7 +84,6 @@ struct EleveMonProfil: View {
                     .frame(width: 150, height: 150)
                     .clipped()
                     .cornerRadius(150)
-//                    .padding(.top)
             }
         }
 }
