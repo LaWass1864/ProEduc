@@ -60,7 +60,7 @@ struct ParentListDoc: View {
                             .frame(width: 220, height: 60)
                             .background(Color("blue_parent"))
                             .cornerRadius(35.0)
-                    }
+                    }.padding()
                 }
             }
         }

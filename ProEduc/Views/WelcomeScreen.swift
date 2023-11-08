@@ -28,7 +28,7 @@ struct WelcomeScreen: View {
             }
             .onAppear {
                 // Use a delay to automatically navigate to the userSelect screen after a few seconds.
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
                                     self.showSelectUser = true
                                 }
             }

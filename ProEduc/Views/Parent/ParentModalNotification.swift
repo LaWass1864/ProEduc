@@ -24,7 +24,7 @@ struct ParentModalNotification: View {
                 .overlay(
                     Text("Message")
                         .frame(width: 350.0, height: 120.0)
-                        .font(.largeTitle)
+                        .font(.system(size: 30))
                         .bold()
                         .foregroundColor(.white)
                 )
